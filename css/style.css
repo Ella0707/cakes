@@ -370,6 +370,7 @@ input[type=number] {
   background: #FAFBFC;
   border-radius: 1.2rem;
   margin-right: 2.8rem;
+  height: 48.8rem;
 }
 .profile__name-wrap {
   display: -webkit-box;
