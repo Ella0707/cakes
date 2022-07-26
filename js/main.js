@@ -12,7 +12,7 @@
 
 // слайдеры
 new Swiper('.profile__portfolio-slider', {
-    slidesPerView: 3.7,
+    slidesPerView: 3.4,
     observer: true,
     observeParents: true,
     loop: true,

@@ -327,16 +327,26 @@
     &__stars {
         display: flex;
         align-items: center;
-        margin-right: 2rem;
+        margin-right: 2.5rem;
+
+        // img {
+        //     width: 1.9rem;
+        //     height: 1.9rem;
+        //     object-fit: contain;
+
+        //     &:not(:last-child) {
+        //         margin-right: 0.6rem;
+        //     }
+        // }
 
         img {
-            width: 1.9rem;
+            width: 11.2rem;
             height: 1.9rem;
             object-fit: contain;
 
-            &:not(:last-child) {
-                margin-right: 0.6rem;
-            }
+            // &:not(:last-child) {
+            //     margin-right: 0.6rem;
+            // }
         }
     }
 
@@ -576,7 +586,7 @@
         height: 2rem;
         position: absolute;
         top: 50%;
-        right: 5rem;
+        right: 2rem;
         z-index: 100;
         transform: translateY(-50%);
         cursor: pointer;
@@ -593,7 +603,7 @@
         height: 2rem;
         position: absolute;
         top: 50%;
-        left: 5rem;
+        left: 2rem;
         z-index: 100;
         transform: translateY(-50%);
         cursor: pointer;
