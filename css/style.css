@@ -551,6 +551,8 @@ input[type=number] {
 .profile__stars img {
   width: 1.9rem;
   height: 1.9rem;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .profile__stars img:not(:last-child) {
   margin-right: 0.6rem;

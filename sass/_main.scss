@@ -332,6 +332,7 @@
         img {
             width: 1.9rem;
             height: 1.9rem;
+            object-fit: contain;
 
             &:not(:last-child) {
                 margin-right: 0.6rem;
