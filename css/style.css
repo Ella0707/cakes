@@ -1140,7 +1140,9 @@ input[type=number] {
     padding: 4.8rem 2rem 6rem 6rem;
     border-radius: 2.4rem;
     margin-right: 0;
-    min-height: 65rem;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
     position: absolute;
     top: 0;
     width: 100%;
