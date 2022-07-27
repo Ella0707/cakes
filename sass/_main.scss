@@ -6,7 +6,8 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 1.8rem 0 2.1rem 0;
+        // padding: 1.8rem 0 2.1rem 0;
+        height: 8rem;
     }
 
     &__logo {
@@ -22,6 +23,8 @@
 
     &__nav {
         padding-right: 12rem;
+        display: flex;
+        height: 100%;
 
         ul {
             display: flex;
@@ -31,24 +34,28 @@
                 font-size: 1.4rem;
                 font-weight: 400;
                 color: rgba(48, 48, 48, 1);
+                display: flex;
+                height: 100%;
+                align-items: center;
+                position: relative;
 
                 &:not(:last-child) {
                     margin-right: 4.8rem;
                 }
 
-                // &:hover {
-                //     &::before {
-                //         content: "";
-                //         width: 100%;
-                //         height: 0.4rem;
-                //         background: linear-gradient(92.85deg, #FF8A00 -43.75%, #FF007A 106.98%);
-                //         border-radius: 0px 0px 0.7rem 0.7rem;
+                &.active {
+                    &::before {
+                        content: "";
+                        width: 100%;
+                        height: 0.4rem;
+                        background: linear-gradient(92.85deg, #FF8A00 -43.75%, #FF007A 106.98%);
+                        border-radius: 0px 0px 0.7rem 0.7rem;
 
-                //         position: absolute;
-                //         top: 0;
-                //         left: 0;
-                //     }
-                // }
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                    }
+                }
             }
         }
     }
@@ -81,14 +88,14 @@
 
             background: linear-gradient(92.85deg, #FF8A00 -43.75%, #FF007A 106.98%);
 
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             font-weight: 500;
             color: rgba(255, 255, 255, 1);
 
             position: absolute;
             top: 0;
             right: 0;
-            transform: translate(50%, -30%);
+            transform: translate(30%, -10%);
             z-index: 1;
         }
     }
@@ -141,6 +148,7 @@
 
 
 .profile {
+    margin-bottom: 10rem;
 
     &__inner {
         display: flex;
@@ -153,6 +161,7 @@
         border-radius: 1.2rem;
         margin-right: 2.8rem;
         height: 48.8rem;
+
     }
 
     &__name-wrap {
@@ -204,7 +213,7 @@
         cursor: pointer;
         position: relative;
 
-        img {
+        .icon {
             width: 2rem;
             height: 2rem;
             object-fit: contain;
@@ -413,13 +422,31 @@
         margin-right: 0.95rem;
         position: relative;
         padding-bottom: 0.7rem;
-        border-bottom: 0.1rem solid linear-gradient(92.85deg, #FF8A00 -43.75%, #FF007A 106.98%);
 
         img {
             width: 1.5rem;
             height: 1.5rem;
             object-fit: contain;
             margin-left: 0.5rem;
+        }
+
+        &:before {
+            content: "";
+            width: 0;
+            height: 0.1rem;
+            background: linear-gradient(92.85deg, #FF8A00 -43.75%, #FF007A 106.98%);
+
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            transition: 0.3s;
+        }
+
+        &:hover {
+            &:before {
+                content: "";
+                width: 100%;
+            }
         }
     }
 
@@ -615,4 +642,163 @@
             object-fit: contain;
         }
     }
+}
+
+
+.footer {
+    padding-top: 5.1rem;
+    box-shadow: 0.8rem -0.2rem 4.8rem rgba(0, 0, 0, 0.03);
+
+    &__inner {}
+
+    &__top {
+        display: flex;
+        margin-bottom: 8.65rem;
+
+    }
+
+    &__logo {
+        width: 9.7rem;
+        height: 2rem;
+        margin-right: 11.4rem;
+
+        svg {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+    }
+
+    &__info-wrap {
+        display: flex;
+
+    }
+
+    &__info-block {
+        margin-right: 3rem;
+        font-size: 1.4rem;
+        font-weight: 500;
+
+        a {
+            color: #0A142F;
+            display: block;
+            transition: 0.4s;
+
+            &:hover {
+                color: rgba(255, 0, 122, 1);
+            }
+
+            &:not(:last-child) {
+                margin-bottom: 2.9rem;
+            }
+        }
+    }
+
+    &__nav-block {
+        margin-right: 6.4rem;
+        font-size: 1.4rem;
+        font-weight: 500;
+        color: #0A142F;
+
+        ul {
+            li {
+                transition: 0.4s;
+            }
+
+            li:hover {
+                color: rgba(255, 0, 122, 1);
+            }
+
+            li:not(:last-child) {
+                margin-bottom: 2rem;
+            }
+        }
+
+    }
+
+    &__social {
+        display: flex;
+        align-items: center;
+        align-self: start;
+
+        a {
+            width: 3.3rem;
+            height: 3.3rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            svg {
+                height: 2.2rem;
+                width: 2.2rem;
+                object-fit: contain;
+                fill: #585858;
+                transition: 0.4s;
+            }
+
+            &:not(:last-child) {
+                margin-right: 1rem;
+            }
+
+            &:hover {
+                svg {
+                    fill: rgba(255, 0, 122, 1);
+                }
+            }
+        }
+
+    }
+
+    &__bottom {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 4.9rem;
+    }
+
+    &__small {
+        font-size: 1.4rem;
+        font-weight: 500;
+        color: #0A142F;
+        opacity: 0.65;
+
+        span {
+            text-transform: uppercase;
+        }
+    }
+
+    &__up {
+        width: 5.2rem;
+        height: 5.2rem;
+        border-radius: 50%;
+        background: linear-gradient(92.85deg, #FF8A00 -43.75%, #FF007A 106.98%);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        position: fixed;
+        bottom: 10rem;
+        right: 10rem;
+        z-index: 10;
+
+        transition: background-color .3s, 
+        opacity .5s, visibility .5s;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 1000;
+
+        img {
+            width: 1.2rem;
+            height: 1.5rem;
+            object-fit: contain;
+        }
+
+        &.show {
+            opacity: 1;
+            visibility: visible;
+        }
+}
+
 }
