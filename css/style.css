@@ -235,14 +235,14 @@ input[type=number] {
   height: 8rem;
 }
 .header__logo {
-  font-size: 1.4rem;
-  font-weight: 500;
-  background-color: #FF007A;
-  background: linear-gradient(92.85deg, #FF8A00 -43.75%, #FF007A 106.98%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-transform: uppercase;
+  width: 9.7rem;
+  height: 2rem;
+}
+.header__logo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .header__nav {
   display: -webkit-box;
@@ -1033,6 +1033,8 @@ input[type=number] {
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
+    width: 20rem;
+    height: 4rem;
   }
   .header__favorites {
     width: 4rem;
