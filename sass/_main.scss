@@ -22,7 +22,7 @@
     }
 
     &__nav {
-        padding-right: 12rem;
+        // padding-right: 12rem;
         display: flex;
         height: 100%;
 
@@ -783,8 +783,8 @@
         right: 10rem;
         z-index: 10;
 
-        transition: background-color .3s, 
-        opacity .5s, visibility .5s;
+        transition: background-color .3s,
+            opacity .5s, visibility .5s;
         opacity: 0;
         visibility: hidden;
         z-index: 1000;
@@ -799,6 +799,6 @@
             opacity: 1;
             visibility: visible;
         }
-}
+    }
 
 }
