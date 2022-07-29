@@ -1,0 +1,94 @@
+.filter-block {
+    background: #FFFFFF;
+    box-shadow: 0px 0.4rem 2.8rem rgba(36, 64, 117, 0.06);
+    border-radius: 0.9rem;
+    padding: 3.4rem 3rem 5rem 3.3rem;
+
+
+
+    &__title {
+        font-size: 2.4rem;
+        font-weight: 500;
+        color: rgba(0, 0, 0, 1);
+        text-align: center;
+        margin-bottom: 3.7rem;
+    }
+
+    &__filtes {}
+
+    &__item {
+
+        &:not(:last-child) {
+            margin-bottom: 2.9rem;
+        }
+    }
+
+    &__item-title {
+        font-size: 2rem;
+        font-weight: 500;
+        color: rgba(0, 0, 0, 1);
+        margin-bottom: 2.1rem;
+
+
+    }
+
+    &__radiobutton {
+        display: flex;
+        align-items: center;
+
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: rgba(94, 94, 94, 1);
+        cursor: pointer;
+
+        input {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            margin: -1px;
+            border: 0;
+            padding: 0;
+            clip: rect(0 0 0 0);
+            overflow: hidden;
+
+            &:checked + .radiobutton-style::after {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                background: linear-gradient(92.85deg, #FF8A00 -43.75%, #FF007A 106.98%);
+                transform: translate(-50%, -50%);
+                visibility: visible;
+            }
+        }
+
+        .radiobutton-style {
+            position: relative;
+            margin-right: 2rem;
+            padding-left: 1.5rem;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 2rem;
+                height: 2rem;
+                border-radius: 50%;
+                transform: translate(-50%, -50%);
+                background-color: white;
+                border: 2px solid #FF007A;
+            }
+        }
+
+
+        
+
+        &:not(:last-child) {
+            margin-bottom: 2.8rem;
+        }
+    }
+}

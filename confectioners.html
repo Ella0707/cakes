@@ -65,254 +65,63 @@
     </header>
 
     <main>
-        <section class="profile">
+        <section class="confectioners-banner">
             <div class="container">
-                <div class="profile__inner">
-                    <div class="profile__info">
-                        <button class="profile__btn profile-open mobile">
-                            <img src="./img/close.svg" alt="">
-                        </button>
-                        <div class="profile__name-wrap">
-                            <div class="profile__name">Natali134</div>
-                            <img src="./img/name-icon.svg" alt="">
-                        </div>
-                        <div class="profile__tabslinks-wrap">
-                            <ul>
-                                <li class="profile__tablinks active" onclick="openTab(event, 'tab-1')">
-                                    <img class="icon" src="./img/profile-icon.svg" alt="">
-                                    Мой профиль
-                                    <img class="arrow mobile" src="./img/arrow-right.svg" alt="">
-                                </li>
-                                <li class="profile__tablinks" onclick="openTab(event, 'tab-2')">
-                                    <img class="icon" src="./img/message-icon.svg" alt="">
-                                    Сообщения
-                                    <img class="arrow mobile" src="./img/arrow-right.svg" alt="">
-                                </li>
-                                <li class="profile__tablinks" onclick="openTab(event, 'tab-3')">
-                                    <img class="icon" src="./img/comment-icon.svg" alt="">
-                                    Комментарии
-                                    <img class="arrow mobile" src="./img/arrow-right.svg" alt="">
-                                </li>
-                                <li class="profile__tablinks submenu" onclick="openTab(event, 'tab-4')">
-                                    <div class="menu-item-open">
-                                        <img class="icon" src="./img/save-icon.svg" alt="">
-                                        Сохраненные
-                                        <img class="arrow mobile" src="./img/arrow-right.svg" alt="">
-                                    </div>
-
-                                    <ul class="profile__tablinks-submenu ">
-                                        <li>
-                                            Рецепты
-                                        </li>
-                                        <li>
-                                            Статьи
-                                        </li>
-                                        <li>
-                                            Курсы
-                                        </li>
-                                        <li>
-                                            Новости
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="profile__tablinks" onclick="openTab(event, 'tab-5')">
-                                    <img class="icon" src="./img/order-icon.svg" alt="">
-                                    Заказы
-                                    <img class="arrow mobile" src="./img/arrow-right.svg" alt="">
-                                </li>
-                            </ul>
-                        </div>
-
+                <div class="confectioners-banner__inner">
+                    <img src="./img/banner-conf.png" alt="">
+                    <div class="confectioners-banner__text-block">
+                        <h1 class="confectioners-banner__title">
+                            Кондитеры
+                        </h1>
+                        <h2 class="confectioners-banner__subtitle">
+                            Здесь вы сможете выбрать кондитера,который подходит именно вам.
+                            Более 1500 человек в нашей базе
+                        </h2>
                     </div>
-                    <div class="profile__content">
-                        <div class="profile__my-profile  tabcontent" id="tab-1" style="display: block;">
-                            <button class="profile__edit mobile">
-                                Редактировать профиль
-                                <img src="./img/edit-icon.svg" alt="">
-                            </button>
-                            <div class="profile__personal">
-                                <div class="profile__personal-left">
-                                    <div class="profile__personal-img">
-                                        <img src="./img/cake-img.jpg" alt="">
-                                    </div>
-                                    <div class="profile__personal-about desctop">
-                                        <div class="profile__rate-wrap">
-                                            <div class="profile__stars-wrap">
-                                                <div class="profile__stars">
-                                                    <img src="./img/stars.svg" alt="">
-                                                </div>
-                                                <div class="profile__rate-value">4.9</div>
-                                            </div>
-                                            <div class="profile__rate-key">120 оценок</div>
-                                            <div class="profile__rate-key">340 выполненных работ</div>
-                                        </div>
-                                        <div class="profile__personal-social">
-                                            <a href="">
-                                                <img src="./img/icon-2.svg" alt="">
-                                            </a>
-                                            <a href="">
-                                                <img src="./img/icon-1.svg" alt="">
-                                            </a>
-                                            <a href="">
-                                                <img src="./img/icon-3.svg" alt="">
-                                            </a>
-                                            <a href="">
-                                                <img src="./img/icon-4.svg" alt="">
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="profile__personal-right">
-                                    <div class="profile__name-top">
-                                        <div class="profile__name-wrap right">
-                                            <div class="profile__name">Natali134</div>
-                                            <img src="./img/name-icon.svg" alt="">
-                                        </div>
-                                        <button class="profile__edit desctop">
-                                            Редактировать профиль
-                                            <img src="./img/edit-icon.svg" alt="">
-                                        </button>
-                                        <div class="profile__location mobile">
-                                            <img src="./img/location-icon.svg" alt="">
-                                            Минск
-                                        </div>
-                                    </div>
-                                    <div class="profile__location desctop">
-                                        <img src="./img/location-icon.svg" alt="">
-                                        Минск
-                                    </div>
-                                    <div class="profile__description">
-                                        Краткое описание можно топить многократно.
-                                        В толстостенном сотейнике топлю изомальт на среднем огне.
-                                        В толстостенном сотейнике топлю изомальт на среднем огне
-                                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="confectioners">
+            <div class="container">
+                <div class="confectioners__inner">
+                    <div class="confectioners__filter-block filter-block">
+                        <div class="filter-block__title">Фильтр</div>
+                        <div class="filter-block__filtes">
+                            <div class="filter-block__item">
+                                <div class="filter-block__item-title">Статус</div>
+                                <label class="filter-block__radiobutton" >
+                                    <input type="radio" name="accaunt">
+                                    <span class="radiobutton-style"></span>
+                                    Все аккаунты
+                                </label>
+                                <label class="filter-block__radiobutton" >
+                                    <input type="radio" name="accaunt">
+                                    <span class="radiobutton-style"></span>
+                                    Только проверенные
+                                </label>
+                            </div>
+                            <div class="filter-block__item">
+                                <div class="filter-block__item-title">Фото</div>
+                                <label class="filter-block__radiobutton">
+                                    <input type="radio"  name="photo">
+                                    <span class="radiobutton-style"></span>
+                                    Все 
+                                </label>
+                                <label class="filter-block__radiobutton">
+                                    <input type="radio"  name="photo">
+                                    <span class="radiobutton-style"></span>
+                                    Только с фото
+                                </label>
+                                <label class="filter-block__radiobutton">
+                                    <input type="radio"  name="photo">
+                                    <span class="radiobutton-style"></span>
+                                    Только без фото
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="confectioners__content">
 
-                                    <div class="profile__description-items">
-                                        <ul>
-                                            <li>
-                                                <img src="./img/done-icon.svg" alt="">
-                                                Срок изготовления 1 день
-                                            </li>
-                                            <li>
-                                                <img src="./img/done-icon.svg" alt="">
-                                                Торты любой сложности
-                                            </li>
-                                            <li>
-                                                <img src="./img/done-icon.svg" alt="">
-                                                Бесплатная доставка
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="profile__price-wrap">
-                                        <div class="profile__price-item">
-                                            <div class="profile__price-key">Простые торты 1кг </div>
-                                            <div class="profile__price-value">от 30 BYN</div>
-                                        </div>
-                                        <div class="profile__price-item">
-                                            <div class="profile__price-key">Бенто торты </div>
-                                            <div class="profile__price-value">от 20 BYN</div>
-                                        </div>
-                                        <div class="profile__price-item">
-                                            <div class="profile__price-key">Свадебные торты</div>
-                                            <div class="profile__price-value">от 60 BYN</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="profile__personal-about mobile">
-                                    <div class="profile__rate-wrap">
-                                        <div class="profile__stars-wrap">
-                                            <div class="profile__stars">
-                                                <img src="./img/stars.svg" alt="">
-                                            </div>
-                                            <div class="profile__rate-value">4.9</div>
-                                        </div>
-                                        <div class="profile__rate-key">120 оценок</div>
-                                        <div class="profile__rate-key">340 выполненных работ</div>
-                                    </div>
-                                    <div class="profile__personal-social">
-                                        <a href="">
-                                            <img src="./img/icon-2.svg" alt="">
-                                        </a>
-                                        <a href="">
-                                            <img src="./img/icon-1.svg" alt="">
-                                        </a>
-                                        <a href="">
-                                            <img src="./img/icon-3.svg" alt="">
-                                        </a>
-                                        <a href="">
-                                            <img src="./img/icon-4.svg" alt="">
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="profile__portfolio">
-                                <div class="profile__portfolio-title">Работы кондитера</div>
-                                <div class="profile__portfolio-slider swiper" id="destroy-1">
-                                    <div class="profile__portfolio-slider-wrapper swiper-wrapper">
-                                        <div class="profile__portfolio-slide swiper-slide">
-                                            <img src="./img/cake-slide1.jpg" alt="">
-                                            <div class="profile__portfolio-slide-text">
-                                                <div class="profile__portfolio-cake-name">Свадебный торт</div>
-                                                <div class="profile__portfolio-cake-price">350 BYN</div>
-                                            </div>
-                                        </div>
-                                        <div class="profile__portfolio-slide swiper-slide">
-                                            <img src="./img/cake-slide2.jpg" alt="">
-                                            <div class="profile__portfolio-slide-text">
-                                                <div class="profile__portfolio-cake-name">Свадебный торт</div>
-                                                <div class="profile__portfolio-cake-price">350 BYN</div>
-                                            </div>
-                                        </div>
-                                        <div class="profile__portfolio-slide swiper-slide">
-                                            <img src="./img/cake-slide3.png" alt="">
-                                            <div class="profile__portfolio-slide-text">
-                                                <div class="profile__portfolio-cake-name">Свадебный торт</div>
-                                                <div class="profile__portfolio-cake-price">350 BYN</div>
-                                            </div>
-                                        </div>
-                                        <div class="profile__portfolio-slide swiper-slide">
-                                            <img src="./img/cake-slide4.png" alt="">
-                                            <div class="profile__portfolio-slide-text">
-                                                <div class="profile__portfolio-cake-name">Свадебный торт</div>
-                                                <div class="profile__portfolio-cake-price">350 BYN</div>
-                                            </div>
-                                        </div>
-                                        <div class="profile__portfolio-slide swiper-slide desctop">
-                                            <img src="./img/cake-slide1.jpg" alt="">
-                                            <div class="profile__portfolio-slide-text">
-                                                <div class="profile__portfolio-cake-name">Свадебный торт</div>
-                                                <div class="profile__portfolio-cake-price">350 BYN</div>
-                                            </div>
-                                        </div>
-                                        <div class="profile__portfolio-slide swiper-slide desctop">
-                                            <img src="./img/cake-slide2.jpg" alt="">
-                                            <div class="profile__portfolio-slide-text">
-                                                <div class="profile__portfolio-cake-name">Свадебный торт</div>
-                                                <div class="profile__portfolio-cake-price">350 BYN</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="slider-arrow-prev">
-                                        <img src="./img/arrow-prev.svg" alt="">
-                                    </div>
-                                    <div class="slider-arrow-next">
-                                        <img src="./img/arrow-next.svg" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="profile__my-profile  tabcontent" id="tab-2">
-                            <div class="profile__wrapper"> Контент 2</div>
-                        </div>
-                        <div class="profile__my-profile  tabcontent" id="tab-3">
-                            <div class="profile__wrapper"> Контент 3</div>
-                        </div>
-                        <div class="profile__my-profile  tabcontent" id="tab-4">
-                            <div class="profile__wrapper"> Контент 4</div>
-                        </div>
-                        <div class="profile__my-profile  tabcontent" id="tab-5">
-                            <div class="profile__wrapper"> Контент 5 заказы</div>
-                        </div>
                     </div>
                 </div>
             </div>

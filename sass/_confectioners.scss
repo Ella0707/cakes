@@ -1,0 +1,57 @@
+.confectioners-banner {
+    margin-bottom: 5.4rem;
+    
+    
+    &__inner {
+        height: 47.2rem;
+        position: relative;
+        padding: 10.3rem 7rem 3rem 7.3rem;
+
+        &>img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+    }
+    
+    &__text-block {
+       
+    
+    }
+    
+    &__title {
+        font-size: 4.1rem;
+        font-weight: 500;
+        color: rgba(0, 0, 0, 1);
+        margin-bottom: 1rem;
+    }
+    
+    &__subtitle {
+        font-size: 2rem;
+        font-weight: 400;
+        color: rgba(68, 68, 68, 1);
+        width: 45rem;
+        line-height: 1.25;
+    }
+}
+
+.confectioners {
+
+    &__inner {
+        display: flex;
+    }
+
+    &__filter-block {
+        width: 30.2rem;
+    }
+
+}
+
+
+
