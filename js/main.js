@@ -81,3 +81,48 @@ $(".header__nav ul li").click(function (e) {
     $(".header__nav ul li").removeClass('active');
     $(this).addClass('active');
 })
+
+
+// селект в фильтре
+$('.dropdown').click(function () {
+  $(this).attr('tabindex', 1).focus();
+  $(this).toggleClass('active');
+  $(this).find('.dropdown-menu').slideToggle();
+});
+$('.dropdown').focusout(function () {
+  $(this).removeClass('active');
+  $(this).find('.dropdown-menu').slideUp();
+});
+$('.dropdown .dropdown-menu li').click(function () {
+  $(this).parents('.dropdown').find('span').text($(this).text());
+  $(this).parents('.dropdown').find('input').attr('value', $(this).attr('id'));
+});
+
+
+$('.dropdown-menu li').click(function () {
+var input = '<strong>' + $(this).parents('.dropdown').find('input').val() + '</strong>',
+msg = '<span class="msg">Hidden input value: ';
+$('.msg').html(msg + input + '</span>');
+}); 
+
+
+
+var swiper = new Swiper(".confectioners__item-thumbs", {
+  loop: true,
+  spaceBetween: 17,
+  slidesPerView: 3,
+  freeMode: true,
+  watchSlidesProgress: true,
+});
+var swiper2 = new Swiper(".confectioners__item-photo-main", {
+  loop: true,
+  spaceBetween: 10,
+  effect: "fade",
+  navigation: {
+    nextEl: ".confectioners__arrow-next",
+    prevEl: ".confectioners__arrow-prev",
+  },
+  thumbs: {
+    swiper: swiper,
+  },
+});

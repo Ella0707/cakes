@@ -1,0 +1,111 @@
+.dropdown {
+    width: 100%;
+    display: inline-block;
+    transition: all 0.5s ease;
+    position: relative;
+    font-size: 1.6rem;
+    font-weight: 400;
+    height: 100%;
+    color: rgba(94, 94, 94, 1);
+    cursor: pointer;
+    // margin-bottom: 5rem;
+
+    &:focus-visible {
+        border: none;
+        outline: none;
+    }
+
+    img {
+        width: 1rem;
+        height: 0.5rem;
+        object-fit: contain;
+        position: absolute;
+        top: 50%;
+        right: 1.5rem;
+        transform: translateY(-50%);
+        transition: 0.3s;
+}
+
+    
+
+    .select {
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: rgba(94, 94, 94, 1);
+        display: block;
+        padding: 1rem 1.5rem;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 0.8rem rgba(0, 0, 0, 0.06);
+        border-radius: 0.3rem;
+        position: relative;
+        &:focus-visible {
+            border: none;
+            outline: none;
+        }
+
+    }
+
+    .input-search {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        font-size: 2rem;
+        padding: 1rem;
+        color: #ffffff;
+      }
+
+      .dropdown-menu {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        top: 5rem;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 0.8rem rgba(0, 0, 0, 0.06);
+        border-radius: 0.3rem;
+        z-index: 10;
+        padding: 1rem 1.5rem;
+        max-height: 15rem;
+        overflow-y: scroll;
+        display: none;
+
+        
+        &::-webkit-scrollbar {
+            width: 0.6rem; /* ширина для вертикального скролла */
+            background-color: rgba(232, 232, 232, 1);
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: linear-gradient(92.85deg, #FF8A00 -43.75%, #FF007A 106.98%);
+            border-radius: 2rem;
+        }
+        
+        &::-webkit-scrollbar-thumb:hover {
+            background:  #FF007A;
+        }
+
+        // для firefox
+        scrollbar-color:  #FF007A rgba(232, 232, 232, 1); /* «цвет ползунка» «цвет полосы скроллбара» */
+        scrollbar-width: thin;  /* толщина */
+      }
+
+    .dropdown-menu li {
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: rgba(94, 94, 94, 1);
+
+        &:not(:last-child) {
+            margin-bottom: 1rem;
+        }
+
+        &:hover {
+            font-weight: 500;
+        }
+      }
+
+      &.active img {
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+      }
+}

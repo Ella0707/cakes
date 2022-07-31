@@ -89,12 +89,12 @@
                         <div class="filter-block__filtes">
                             <div class="filter-block__item">
                                 <div class="filter-block__item-title">Статус</div>
-                                <label class="filter-block__radiobutton" >
+                                <label class="filter-block__radiobutton">
                                     <input type="radio" name="accaunt">
                                     <span class="radiobutton-style"></span>
                                     Все аккаунты
                                 </label>
-                                <label class="filter-block__radiobutton" >
+                                <label class="filter-block__radiobutton">
                                     <input type="radio" name="accaunt">
                                     <span class="radiobutton-style"></span>
                                     Только проверенные
@@ -103,25 +103,156 @@
                             <div class="filter-block__item">
                                 <div class="filter-block__item-title">Фото</div>
                                 <label class="filter-block__radiobutton">
-                                    <input type="radio"  name="photo">
+                                    <input type="radio" name="photo">
                                     <span class="radiobutton-style"></span>
-                                    Все 
+                                    Все
                                 </label>
                                 <label class="filter-block__radiobutton">
-                                    <input type="radio"  name="photo">
+                                    <input type="radio" name="photo">
                                     <span class="radiobutton-style"></span>
                                     Только с фото
                                 </label>
                                 <label class="filter-block__radiobutton">
-                                    <input type="radio"  name="photo">
+                                    <input type="radio" name="photo">
                                     <span class="radiobutton-style"></span>
                                     Только без фото
                                 </label>
                             </div>
+                            <div class="filter-block__item">
+                                <div class="filter-block__item-title">Страна</div>
+                                <div class="dropdown">
+                                    <div class="select">
+                                        <span>Беларусь</span>
+                                        <input type="text" class="input-search" id="input-search">
+                                        <img src="./img/arrow-down.svg" alt="">
+                                    </div>
+                                    <input type="hidden" name="category">
+                                    <ul class="dropdown-menu">
+                                        <li>Беларусь</li>
+                                        <li>Россия</li>
+                                        <li>Казахстан</li>
+                                        <!-- <li>Еще какая-то</li>
+                                        <li>Еще какая-то</li>
+                                        <li>Еще какая-то</li>
+                                        <li>Еще какая-то</li> -->
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="filter-block__item">
+                                <div class="filter-block__item-title">Город</div>
+                                <div class="dropdown">
+                                    <div class="select">
+                                        <span>Минск</span>
+                                        <input type="text" class="input-search" id="input-search">
+                                        <img src="./img/arrow-down.svg" alt="">
+                                    </div>
+                                    <input type="hidden" name="category">
+                                    <ul class="dropdown-menu">
+                                        <li>Пинск</li>
+                                        <li>Еще какой-то</li>
+                                        <li>Еще какой-то</li>
+                                        <li>Еще какой-то</li>
+                                        <li>Еще какой-то</li>
+                                        <li>Еще какой-то</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
+                        <button class="filter-block__btn btn btn--color">
+                            Поиск
+                        </button>
+                        <button class="filter-block__btn-reset">
+                            <span>
+                                Сбросить все фильтры
+                            </span>
+                            <img src="./img/arrow-reset.svg" alt="">
+                        </button>
                     </div>
                     <div class="confectioners__content">
+                        <div class="confectioners__item">
+                            <div class="confectioners__item-photo">
+                                <div class="confectioners__item-photo-main swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="./img/cake-slide1.jpg" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./img/cake-slide2.jpg" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./img/cake-slide3.png" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./img/cake-slide4.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="confectioners__arrow-prev">
+                                        <img src="./img/arrow-prev.svg" alt="">
+                                    </div>
+                                    <div class="confectioners__arrow-next">
+                                        <img src="./img/arrow-next.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="confectioners__item-thumbs swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="confectioners__item-thumbs-slide swiper-slide">
+                                            <img src="./img/cake-slide1.jpg" alt="">
+                                        </div>
+                                        <div class="confectioners__item-thumbs-slide swiper-slide">
+                                            <img src="./img/cake-slide2.jpg" alt="">
+                                        </div>
+                                        <div class="confectioners__item-thumbs-slide swiper-slide">
+                                            <img src="./img/cake-slide3.png" alt="">
+                                        </div>
+                                        <div class="confectioners__item-thumbs-slide swiper-slide">
+                                            <img src="./img/cake-slide4.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="__info">
+                                <div class="profile__name-top">
+                                    <div class="profile__name-wrap right">
+                                        <div class="profile__name">Natali134</div>
+                                        <img src="./img/name-icon.svg" alt="">
+                                    </div>
+                                    <button class="profile__edit desctop">
+                                        Редактировать профиль
+                                        <img src="./img/edit-icon.svg" alt="">
+                                    </button>
+                                    <div class="profile__location mobile">
+                                        <img src="./img/location-icon.svg" alt="">
+                                        Минск
+                                    </div>
+                                </div>
+                                <div class="profile__location desctop">
+                                    <img src="./img/location-icon.svg" alt="">
+                                    Минск
+                                </div>
+                                <div class="profile__description">
+                                    Краткое описание можно топить многократно.
+                                    В толстостенном сотейнике топлю изомальт на среднем огне.
+                                    В толстостенном сотейнике топлю изомальт на среднем огне
+                                </div>
 
+                                <div class="profile__description-items">
+                                    <ul>
+                                        <li>
+                                            <img src="./img/done-icon.svg" alt="">
+                                            Срок изготовления 1 день
+                                        </li>
+                                        <li>
+                                            <img src="./img/done-icon.svg" alt="">
+                                            Торты любой сложности
+                                        </li>
+                                        <li>
+                                            <img src="./img/done-icon.svg" alt="">
+                                            Бесплатная доставка
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
