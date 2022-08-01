@@ -76,11 +76,11 @@ btn.on('click', function(e) {
 });
 
 // класс active для ссылок в хэдере (навигация)
-$(".header__nav ul li").click(function (e) {
-    e.preventDefault();
-    $(".header__nav ul li").removeClass('active');
-    $(this).addClass('active');
-})
+// $(".header__nav ul li").click(function (e) {
+//     e.preventDefault();
+//     $(".header__nav ul li").removeClass('active');
+//     $(this).addClass('active');
+// })
 
 
 // селект в фильтре
@@ -107,22 +107,43 @@ $('.msg').html(msg + input + '</span>');
 
 
 
-var swiper = new Swiper(".confectioners__item-thumbs", {
-  loop: true,
-  spaceBetween: 17,
-  slidesPerView: 3,
-  freeMode: true,
-  watchSlidesProgress: true,
-});
-var swiper2 = new Swiper(".confectioners__item-photo-main", {
-  loop: true,
-  spaceBetween: 10,
-  effect: "fade",
-  navigation: {
-    nextEl: ".confectioners__arrow-next",
-    prevEl: ".confectioners__arrow-prev",
-  },
-  thumbs: {
-    swiper: swiper,
-  },
-});
+
+const myCustomSlider = document.querySelectorAll('.gallery-top');
+const myCustomGalleryThumbs = document.querySelectorAll('.thumbs-class');
+
+for (i = 0; i < myCustomSlider.length; i++) {
+
+    myCustomSlider[i].classList.add('gallery-top-' + i);
+    myCustomGalleryThumbs[i].classList.add('thumbs-class-' + i);
+
+    var galleryThumbs = new Swiper('.thumbs-class-' + i , {
+        spaceBetween: 10,
+        slidesPerView: 3,
+        freeMode: true,
+        watchSlidesProgress: true,
+        loop: true,
+    });
+
+    var galleryTop = new Swiper('.gallery-top-' + i, {
+        spaceBetween: 10,
+        slidesPerView: 1,
+        effect: "fade",
+        loop: true,
+
+        navigation: {
+              nextEl: ".confectioners__arrow-next",
+              prevEl: ".confectioners__arrow-prev",
+        },
+
+        thumbs: {
+            swiper: galleryThumbs
+        }
+    }); 
+}
+
+// переключение класса active в пагинации
+$(".pagination__item").click(function (e) {
+  e.preventDefault();
+  $(".pagination__item").removeClass('active');
+  $(this).addClass('active');
+})

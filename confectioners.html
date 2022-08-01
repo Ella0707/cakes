@@ -26,11 +26,11 @@
                         <img src="./img/close.svg" alt="">
                     </button>
                     <ul>
-                        <li class="active">
-                            <a href="">Рецепты</a>
-                        </li>
                         <li>
-                            <a href="">Кондитеры</a>
+                            <a href="/my-profile.html">Рецепты</a>
+                        </li>
+                        <li class="active">
+                            <a href="/confectioners.html">Кондитеры</a>
                         </li>
                         <li>
                             <a href="">Обьявления</a>
@@ -119,7 +119,7 @@
                                 </label>
                             </div>
                             <div class="filter-block__item">
-                                <div class="filter-block__item-title">Страна</div>
+                                <div class="filter-block__item-title select-title">Страна</div>
                                 <div class="dropdown">
                                     <div class="select">
                                         <span>Беларусь</span>
@@ -131,15 +131,15 @@
                                         <li>Беларусь</li>
                                         <li>Россия</li>
                                         <li>Казахстан</li>
-                                        <!-- <li>Еще какая-то</li>
+                                        <li>Еще какая-то</li> 
                                         <li>Еще какая-то</li>
                                         <li>Еще какая-то</li>
-                                        <li>Еще какая-то</li> -->
+                                        <li>Еще какая-то</li> 
                                     </ul>
                                 </div>
                             </div>
                             <div class="filter-block__item">
-                                <div class="filter-block__item-title">Город</div>
+                                <div class="filter-block__item-title select-title">Город</div>
                                 <div class="dropdown">
                                     <div class="select">
                                         <span>Минск</span>
@@ -169,91 +169,443 @@
                         </button>
                     </div>
                     <div class="confectioners__content">
-                        <div class="confectioners__item">
-                            <div class="confectioners__item-photo">
-                                <div class="confectioners__item-photo-main swiper">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <img src="./img/cake-slide1.jpg" alt="">
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="./img/cake-slide2.jpg" alt="">
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="./img/cake-slide3.png" alt="">
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="./img/cake-slide4.png" alt="">
+                        <div class="confectioners__items">
+                            <div class="confectioners__item">
+                                <div class="confectioners__item-photo">
+                                    <div class="confectioners__item-photo-main swiper gallery-top">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="./img/cake-slide1.jpg" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="./img/cake-slide2.jpg" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="./img/cake-slide3.png" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="./img/cake-slide4.png" alt="">
+                                            </div>
+                                            <div class="confectioners__arrow-prev">
+                                                <img src="./img/arrow-prev.svg" alt="">
+                                            </div>
+                                            <div class="confectioners__arrow-next">
+                                                <img src="./img/arrow-next.svg" alt="">
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="confectioners__arrow-prev">
-                                        <img src="./img/arrow-prev.svg" alt="">
-                                    </div>
-                                    <div class="confectioners__arrow-next">
-                                        <img src="./img/arrow-next.svg" alt="">
+                                    <div class="confectioners__item-thumbs swiper thumbs-class">
+                                        <div class="swiper-wrapper">
+                                            <div class="confectioners__item-thumbs-slide swiper-slide">
+                                                <img src="./img/cake-slide1.jpg" alt="">
+                                            </div>
+                                            <div class="confectioners__item-thumbs-slide swiper-slide">
+                                                <img src="./img/cake-slide2.jpg" alt="">
+                                            </div>
+                                            <div class="confectioners__item-thumbs-slide swiper-slide">
+                                                <img src="./img/cake-slide3.png" alt="">
+                                            </div>
+                                            <div class="confectioners__item-thumbs-slide swiper-slide">
+                                                <img src="./img/cake-slide4.png" alt="">
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="confectioners__item-thumbs swiper">
-                                    <div class="swiper-wrapper">
-                                        <div class="confectioners__item-thumbs-slide swiper-slide">
-                                            <img src="./img/cake-slide1.jpg" alt="">
+                                <div class="confectioners__info">
+                                    <div class="confectioners__name-top">
+                                        <div class="confectioners__name-wrap">
+                                            <div class="confectioners__name">Natali134</div>
+                                            <img src="./img/name-icon.svg" alt="">
                                         </div>
-                                        <div class="confectioners__item-thumbs-slide swiper-slide">
-                                            <img src="./img/cake-slide2.jpg" alt="">
+                                        <div class="confectioners__rate-wrap rating">
+                                            <div class="confectioners__stars-wrap">
+                                                <div class="confectioners__stars">
+                                                    <img src="./img/stars.svg" alt="">
+                                                </div>
+                                                <div class="confectioners__rate-value">4.9</div>
+                                            </div>
                                         </div>
-                                        <div class="confectioners__item-thumbs-slide swiper-slide">
-                                            <img src="./img/cake-slide3.png" alt="">
-                                        </div>
-                                        <div class="confectioners__item-thumbs-slide swiper-slide">
-                                            <img src="./img/cake-slide4.png" alt="">
+                                        <div class="confectioners__location mobile">
+                                            <img src="./img/location-icon.svg" alt="">
+                                            Минск
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="__info">
-                                <div class="profile__name-top">
-                                    <div class="profile__name-wrap right">
-                                        <div class="profile__name">Natali134</div>
-                                        <img src="./img/name-icon.svg" alt="">
-                                    </div>
-                                    <button class="profile__edit desctop">
-                                        Редактировать профиль
-                                        <img src="./img/edit-icon.svg" alt="">
-                                    </button>
-                                    <div class="profile__location mobile">
+                                    <div class="confectioners__location desctop">
                                         <img src="./img/location-icon.svg" alt="">
                                         Минск
                                     </div>
+                                    <div class="confectioners__description">
+                                        Краткое описание можно топить многократно.
+                                        В толстостенном сотейнике топлю изомальт на среднем огне.
+                                        В толстостенном сотейнике топлю изомальт на среднем огне
+                                    </div>
+    
+                                    <div class="confectioners__description-items">
+                                        <ul>
+                                            <li>
+                                                <img src="./img/done-icon.svg" alt="">
+                                                Срок изготовления 1 день
+                                            </li>
+                                            <li>
+                                                <img src="./img/done-icon.svg" alt="">
+                                                Торты любой сложности
+                                            </li>
+                                            <li>
+                                                <img src="./img/done-icon.svg" alt="">
+                                                Бесплатная доставка
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="confectioners__btns">
+                                        <button class="confectioners__btn-more btn btn--more">
+                                            <span>Подробнее</span>
+                                            <img src="./img/arrow-btn.svg" alt="">
+                                        </button>
+                                        <button class="confectioners__btn-save btn btn--save">
+                                            <span>В избранное</span>
+                                            <img src="./img/heart-save.svg" alt="">
+                                        </button>
+                                    </div>
                                 </div>
-                                <div class="profile__location desctop">
-                                    <img src="./img/location-icon.svg" alt="">
-                                    Минск
+                            </div>
+    
+                            <div class="confectioners__item">
+                                <div class="confectioners__item-photo">
+                                    <div class="confectioners__item-photo-main swiper gallery-top">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="./img/cake-slide1.jpg" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="./img/cake-slide2.jpg" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="./img/cake-slide3.png" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="./img/cake-slide4.png" alt="">
+                                            </div>
+                                            <div class="confectioners__arrow-prev">
+                                                <img src="./img/arrow-prev.svg" alt="">
+                                            </div>
+                                            <div class="confectioners__arrow-next">
+                                                <img src="./img/arrow-next.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="confectioners__item-thumbs swiper thumbs-class">
+                                        <div class="swiper-wrapper">
+                                            <div class="confectioners__item-thumbs-slide swiper-slide">
+                                                <img src="./img/cake-slide1.jpg" alt="">
+                                            </div>
+                                            <div class="confectioners__item-thumbs-slide swiper-slide">
+                                                <img src="./img/cake-slide2.jpg" alt="">
+                                            </div>
+                                            <div class="confectioners__item-thumbs-slide swiper-slide">
+                                                <img src="./img/cake-slide3.png" alt="">
+                                            </div>
+                                            <div class="confectioners__item-thumbs-slide swiper-slide">
+                                                <img src="./img/cake-slide4.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="profile__description">
-                                    Краткое описание можно топить многократно.
-                                    В толстостенном сотейнике топлю изомальт на среднем огне.
-                                    В толстостенном сотейнике топлю изомальт на среднем огне
+                                <div class="confectioners__info">
+                                    <div class="confectioners__name-top">
+                                        <div class="confectioners__name-wrap">
+                                            <div class="confectioners__name">Natali134</div>
+                                            <img src="./img/name-icon.svg" alt="">
+                                        </div>
+                                        <div class="confectioners__rate-wrap rating">
+                                            <div class="confectioners__stars-wrap">
+                                                <div class="confectioners__stars">
+                                                    <img src="./img/stars.svg" alt="">
+                                                </div>
+                                                <div class="confectioners__rate-value">4.9</div>
+                                            </div>
+                                        </div>
+                                        <div class="confectioners__location mobile">
+                                            <img src="./img/location-icon.svg" alt="">
+                                            Минск
+                                        </div>
+                                    </div>
+                                    <div class="confectioners__location desctop">
+                                        <img src="./img/location-icon.svg" alt="">
+                                        Минск
+                                    </div>
+                                    <div class="confectioners__description">
+                                        Краткое описание можно топить многократно.
+                                        В толстостенном сотейнике топлю изомальт на среднем огне.
+                                        В толстостенном сотейнике топлю изомальт на среднем огне
+                                    </div>
+    
+                                    <div class="confectioners__description-items">
+                                        <ul>
+                                            <li>
+                                                <img src="./img/done-icon.svg" alt="">
+                                                Срок изготовления 1 день
+                                            </li>
+                                            <li>
+                                                <img src="./img/done-icon.svg" alt="">
+                                                Торты любой сложности
+                                            </li>
+                                            <li>
+                                                <img src="./img/done-icon.svg" alt="">
+                                                Бесплатная доставка
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="confectioners__btns">
+                                        <button class="confectioners__btn-more btn btn--more">
+                                            <span>Подробнее</span>
+                                            <img src="./img/arrow-btn.svg" alt="">
+                                        </button>
+                                        <button class="confectioners__btn-save btn btn--save">
+                                            <span>В избранное</span>
+                                            <img src="./img/heart-save.svg" alt="">
+                                        </button>
+                                    </div>
                                 </div>
-
-                                <div class="profile__description-items">
-                                    <ul>
-                                        <li>
-                                            <img src="./img/done-icon.svg" alt="">
-                                            Срок изготовления 1 день
-                                        </li>
-                                        <li>
-                                            <img src="./img/done-icon.svg" alt="">
-                                            Торты любой сложности
-                                        </li>
-                                        <li>
-                                            <img src="./img/done-icon.svg" alt="">
-                                            Бесплатная доставка
-                                        </li>
-                                    </ul>
+                            </div>
+    
+                            <div class="confectioners__item">
+                                <div class="confectioners__item-photo">
+                                    <div class="confectioners__item-photo-main swiper gallery-top">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="./img/cake-slide1.jpg" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="./img/cake-slide2.jpg" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="./img/cake-slide3.png" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="./img/cake-slide4.png" alt="">
+                                            </div>
+                                            <div class="confectioners__arrow-prev">
+                                                <img src="./img/arrow-prev.svg" alt="">
+                                            </div>
+                                            <div class="confectioners__arrow-next">
+                                                <img src="./img/arrow-next.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="confectioners__item-thumbs swiper thumbs-class">
+                                        <div class="swiper-wrapper">
+                                            <div class="confectioners__item-thumbs-slide swiper-slide">
+                                                <img src="./img/cake-slide1.jpg" alt="">
+                                            </div>
+                                            <div class="confectioners__item-thumbs-slide swiper-slide">
+                                                <img src="./img/cake-slide2.jpg" alt="">
+                                            </div>
+                                            <div class="confectioners__item-thumbs-slide swiper-slide">
+                                                <img src="./img/cake-slide3.png" alt="">
+                                            </div>
+                                            <div class="confectioners__item-thumbs-slide swiper-slide">
+                                                <img src="./img/cake-slide4.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="confectioners__info">
+                                    <div class="confectioners__name-top">
+                                        <div class="confectioners__name-wrap">
+                                            <div class="confectioners__name">Natali134</div>
+                                            <img src="./img/name-icon.svg" alt="">
+                                        </div>
+                                        <div class="confectioners__rate-wrap rating">
+                                            <div class="confectioners__stars-wrap">
+                                                <div class="confectioners__stars">
+                                                    <img src="./img/stars.svg" alt="">
+                                                </div>
+                                                <div class="confectioners__rate-value">4.9</div>
+                                            </div>
+                                        </div>
+                                        <div class="confectioners__location mobile">
+                                            <img src="./img/location-icon.svg" alt="">
+                                            Минск
+                                        </div>
+                                    </div>
+                                    <div class="confectioners__location desctop">
+                                        <img src="./img/location-icon.svg" alt="">
+                                        Минск
+                                    </div>
+                                    <div class="confectioners__description">
+                                        Краткое описание можно топить многократно.
+                                        В толстостенном сотейнике топлю изомальт на среднем огне.
+                                        В толстостенном сотейнике топлю изомальт на среднем огне
+                                    </div>
+    
+                                    <div class="confectioners__description-items">
+                                        <ul>
+                                            <li>
+                                                <img src="./img/done-icon.svg" alt="">
+                                                Срок изготовления 1 день
+                                            </li>
+                                            <li>
+                                                <img src="./img/done-icon.svg" alt="">
+                                                Торты любой сложности
+                                            </li>
+                                            <li>
+                                                <img src="./img/done-icon.svg" alt="">
+                                                Бесплатная доставка
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="confectioners__btns">
+                                        <button class="confectioners__btn-more btn btn--more">
+                                            <span>Подробнее</span>
+                                            <img src="./img/arrow-btn.svg" alt="">
+                                        </button>
+                                        <button class="confectioners__btn-save btn btn--save">
+                                            <span>В избранное</span>
+                                            <img src="./img/heart-save.svg" alt="">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="confectioners__item">
+                                <div class="confectioners__item-photo">
+                                    <div class="confectioners__item-photo-main swiper gallery-top">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="./img/cake-slide1.jpg" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="./img/cake-slide2.jpg" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="./img/cake-slide3.png" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="./img/cake-slide4.png" alt="">
+                                            </div>
+                                            <div class="confectioners__arrow-prev">
+                                                <img src="./img/arrow-prev.svg" alt="">
+                                            </div>
+                                            <div class="confectioners__arrow-next">
+                                                <img src="./img/arrow-next.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="confectioners__item-thumbs swiper thumbs-class">
+                                        <div class="swiper-wrapper">
+                                            <div class="confectioners__item-thumbs-slide swiper-slide">
+                                                <img src="./img/cake-slide1.jpg" alt="">
+                                            </div>
+                                            <div class="confectioners__item-thumbs-slide swiper-slide">
+                                                <img src="./img/cake-slide2.jpg" alt="">
+                                            </div>
+                                            <div class="confectioners__item-thumbs-slide swiper-slide">
+                                                <img src="./img/cake-slide3.png" alt="">
+                                            </div>
+                                            <div class="confectioners__item-thumbs-slide swiper-slide">
+                                                <img src="./img/cake-slide4.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="confectioners__info">
+                                    <div class="confectioners__name-top">
+                                        <div class="confectioners__name-wrap">
+                                            <div class="confectioners__name">Natali134</div>
+                                            <img src="./img/name-icon.svg" alt="">
+                                        </div>
+                                        <div class="confectioners__rate-wrap rating">
+                                            <div class="confectioners__stars-wrap">
+                                                <div class="confectioners__stars">
+                                                    <img src="./img/stars.svg" alt="">
+                                                </div>
+                                                <div class="confectioners__rate-value">4.9</div>
+                                            </div>
+                                        </div>
+                                        <div class="confectioners__location mobile">
+                                            <img src="./img/location-icon.svg" alt="">
+                                            Минск
+                                        </div>
+                                    </div>
+                                    <div class="confectioners__location desctop">
+                                        <img src="./img/location-icon.svg" alt="">
+                                        Минск
+                                    </div>
+                                    <div class="confectioners__description">
+                                        Краткое описание можно топить многократно.
+                                        В толстостенном сотейнике топлю изомальт на среднем огне.
+                                        В толстостенном сотейнике топлю изомальт на среднем огне
+                                    </div>
+    
+                                    <div class="confectioners__description-items">
+                                        <ul>
+                                            <li>
+                                                <img src="./img/done-icon.svg" alt="">
+                                                Срок изготовления 1 день
+                                            </li>
+                                            <li>
+                                                <img src="./img/done-icon.svg" alt="">
+                                                Торты любой сложности
+                                            </li>
+                                            <li>
+                                                <img src="./img/done-icon.svg" alt="">
+                                                Бесплатная доставка
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="confectioners__btns">
+                                        <button class="confectioners__btn-more btn btn--more">
+                                            <span>Подробнее</span>
+                                            <img src="./img/arrow-btn.svg" alt="">
+                                        </button>
+                                        <button class="confectioners__btn-save btn btn--save">
+                                            <span>В избранное</span>
+                                            <img src="./img/heart-save.svg" alt="">
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+
+                        <div class="confectioners__pagination pagination">
+                            <button class="pagination__btn-prev">
+                                <!-- <img src="./img/arrow-pagin-prev.svg" alt=""> -->
+                                <svg width="9" height="12" viewBox="0 0 9 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8.16016 1.41L3.58016 6L8.16016 10.59L6.75016 12L0.750156 6L6.75016 0L8.16016 1.41Z"
+                                        fill="" />
+                                </svg>
+                            </button>
+                            <div class="pagination__items">
+                                <a href="#" class="pagination__item active">
+                                    <span>1</span>
+                                </a>
+                                <a href="#" class="pagination__item">
+                                    <span>2</span>
+                                </a>
+                                <a href="#" class="pagination__item">
+                                    <span>...</span>
+                                </a>
+                                <a href="#" class="pagination__item">
+                                    <span>3</span>
+                                </a>
+                                <a href="#" class="pagination__item">
+                                    <span>4</span>
+                                </a>
+                            </div>
+                            <button class="pagination__btn-next active">
+                                <!-- <img src="./img/arrow-pagin-next.svg" alt=""> -->
+                                <svg width="9" height="12" viewBox="0 0 9 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0.839844 1.41L5.41984 6L0.839844 10.59L2.24984 12L8.24984 6L2.24984 0L0.839844 1.41Z"
+                                        fill="" />
+                                </svg>
+                            </button>
+                        </div>
                     </div>
+                  
                 </div>
             </div>
         </section>
