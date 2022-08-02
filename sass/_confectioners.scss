@@ -21,8 +21,19 @@
     }
     
     &__text-block {
-       
-    
+        position: relative;
+
+        &::before {
+            content: "";
+            height: 100%;
+            width: 40%;
+            background: #E7E5DC;
+            filter: blur(5.2rem);
+
+            position: absolute;
+            left: 0;
+            bottom: -40%;
+        }
     }
     
     &__title {
@@ -30,6 +41,8 @@
         font-weight: 500;
         color: rgba(0, 0, 0, 1);
         margin-bottom: 1rem;
+        position: relative;
+        z-index: 1;
     }
     
     &__subtitle {
@@ -38,6 +51,8 @@
         color: rgba(68, 68, 68, 1);
         width: 40rem;
         line-height: 1.25;
+        position: relative;
+        z-index: 1;
     }
 }
 
@@ -166,7 +181,7 @@
     &__description {
         font-size: 1.4rem;
         font-weight: 300;
-        color: rgba(94, 94, 94, 1);
+        color: #5E5E5E;
         line-height: 1.45;
         letter-spacing: 0.18px;
         width: 95%;
