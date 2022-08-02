@@ -2396,7 +2396,7 @@ input[type=number] {
   }
   .confectioners-banner__title {
     font-size: 4.6rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.6rem;
   }
   .confectioners-banner__subtitle {
     font-size: 2.8rem;
@@ -2412,7 +2412,7 @@ input[type=number] {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin-bottom: 4.4rem;
+    margin-bottom: 2.4rem;
   }
   .confectioners__filter-open-btn {
     display: -webkit-box;
@@ -2474,16 +2474,16 @@ input[type=number] {
     padding: 2.6rem 2rem 5.2rem 2rem;
   }
   .confectioners__item:not(:last-child) {
-    margin-bottom: 5.4rem;
+    margin-bottom: 6rem;
   }
   .confectioners__item-photo {
     width: 100%;
     position: relative;
-    margin-bottom: 3.2rem;
+    margin-bottom: 3rem;
   }
   .confectioners__btn-save.mobile {
     position: absolute;
-    top: 3rem;
+    top: 2rem;
     right: 3rem;
     z-index: 30;
   }
@@ -2518,17 +2518,21 @@ input[type=number] {
   .confectioners__arrow-prev {
     height: 2.4rem;
     width: 1.4rem;
+    left: 3rem;
   }
   .confectioners__arrow-next {
     height: 2.4rem;
     width: 1.4rem;
+    right: 3rem;
   }
   .confectioners__info {
     width: 100%;
   }
+  .confectioners__name-top {
+    margin-bottom: 2rem;
+  }
   .confectioners__name-wrap {
     padding-left: 0rem;
-    margin-bottom: 2.4rem;
   }
   .confectioners__name-wrap img {
     width: 2.6rem;
@@ -2544,6 +2548,11 @@ input[type=number] {
     display: flex;
     font-size: 2.8rem;
     margin-bottom: 0;
+    padding-right: 1rem;
+  }
+  .confectioners__location.mobile img {
+    width: 2.3rem;
+    height: 2.3rem;
   }
   .confectioners__description {
     font-size: 2.6rem;
