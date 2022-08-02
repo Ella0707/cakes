@@ -187,7 +187,7 @@ ul li {
 }
 
 .container {
-  width: 130.4rem;
+  width: 120.4rem;
   margin: 0 auto;
 }
 
@@ -208,9 +208,11 @@ input[type=number] {
     font-size: 1.5625vw;
     -webkit-text-size-adjust: none;
   }
+
   body {
     -webkit-text-size-adjust: none;
   }
+
   .container {
     padding: 0 4.8rem;
     width: 100%;
@@ -1463,11 +1465,14 @@ input[type=number] {
   max-height: 15rem;
   overflow-y: scroll;
   display: none;
-  scrollbar-color: #FF007A rgb(232, 232, 232); /* «цвет ползунка» «цвет полосы скроллбара» */
-  scrollbar-width: thin; /* толщина */
+  scrollbar-color: #FF007A rgb(232, 232, 232);
+  /* «цвет ползунка» «цвет полосы скроллбара» */
+  scrollbar-width: thin;
+  /* толщина */
 }
 .dropdown .dropdown-menu::-webkit-scrollbar {
-  width: 0.6rem; /* ширина для вертикального скролла */
+  width: 0.6rem;
+  /* ширина для вертикального скролла */
   background-color: rgb(232, 232, 232);
 }
 .dropdown .dropdown-menu::-webkit-scrollbar-thumb {
@@ -1732,9 +1737,11 @@ input[type=number] {
   .mobile {
     display: block;
   }
+
   .desctop {
     display: none;
   }
+
   .header__burger-btn {
     height: 5.4rem;
     width: 5rem;
@@ -1848,6 +1855,7 @@ input[type=number] {
     right: 5.2rem;
     z-index: 100;
   }
+
   .profile__inner {
     position: relative;
     margin-bottom: 12.6rem;
@@ -2268,6 +2276,7 @@ input[type=number] {
     -o-object-fit: contain;
        object-fit: contain;
   }
+
   .footer__top {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2350,9 +2359,11 @@ input[type=number] {
     width: 2.4rem;
     height: 2.4rem;
   }
+
   .confectioners-banner {
     position: relative;
   }
+
   .confectioners__inner {
     display: block;
   }
@@ -2385,6 +2396,7 @@ input[type=number] {
   .confectioners__item-photo {
     width: 100%;
   }
+
   .filter-block {
     position: fixed;
     top: 0;
