@@ -208,11 +208,9 @@ input[type=number] {
     font-size: 1.5625vw;
     -webkit-text-size-adjust: none;
   }
-
   body {
     -webkit-text-size-adjust: none;
   }
-
   .container {
     padding: 0 4.8rem;
     width: 100%;
@@ -1090,7 +1088,7 @@ input[type=number] {
   -webkit-box-shadow: 0px 4px 24px rgba(28, 40, 105, 0.1);
           box-shadow: 0px 4px 24px rgba(28, 40, 105, 0.1);
   border-radius: 0.8rem;
-  padding: 1rem 2.9rem 2.6rem 2.6rem;
+  padding: 2.6rem 2.9rem 2.6rem 2.6rem;
 }
 .confectioners__item:not(:last-child) {
   margin-bottom: 4rem;
@@ -1483,14 +1481,11 @@ input[type=number] {
   max-height: 15rem;
   overflow-y: scroll;
   display: none;
-  scrollbar-color: #FF007A rgb(232, 232, 232);
-  /* «цвет ползунка» «цвет полосы скроллбара» */
-  scrollbar-width: thin;
-  /* толщина */
+  scrollbar-color: #FF007A rgb(232, 232, 232); /* «цвет ползунка» «цвет полосы скроллбара» */
+  scrollbar-width: thin; /* толщина */
 }
 .dropdown .dropdown-menu::-webkit-scrollbar {
-  width: 0.6rem;
-  /* ширина для вертикального скролла */
+  width: 0.6rem; /* ширина для вертикального скролла */
   background-color: rgb(232, 232, 232);
 }
 .dropdown .dropdown-menu::-webkit-scrollbar-thumb {
@@ -1542,8 +1537,8 @@ input[type=number] {
   height: 4.4rem;
   border-radius: 4.4rem;
   background: linear-gradient(92.85deg, #FF8A00 -43.75%, #FF007A 106.98%);
-  -webkit-filter: drop-shadow(0px 10px 23px rgba(150, 146, 144, 0.15));
-          filter: drop-shadow(0px 10px 23px rgba(150, 146, 144, 0.15));
+  -webkit-box-shadow: none;
+          box-shadow: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1755,11 +1750,9 @@ input[type=number] {
   .mobile {
     display: block;
   }
-
   .desctop {
     display: none;
   }
-
   .header__burger-btn {
     height: 5.4rem;
     width: 5rem;
@@ -1873,7 +1866,6 @@ input[type=number] {
     right: 5.2rem;
     z-index: 100;
   }
-
   .profile__inner {
     position: relative;
     margin-bottom: 12.6rem;
@@ -2294,7 +2286,6 @@ input[type=number] {
     -o-object-fit: contain;
        object-fit: contain;
   }
-
   .footer__top {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2377,7 +2368,6 @@ input[type=number] {
     width: 2.4rem;
     height: 2.4rem;
   }
-
   .confectioners-banner {
     margin-bottom: 4rem;
   }
@@ -2402,7 +2392,6 @@ input[type=number] {
     font-size: 2.8rem;
     width: 100%;
   }
-
   .confectioners__inner {
     display: block;
   }
@@ -2576,7 +2565,6 @@ input[type=number] {
     width: 2rem;
     height: 2rem;
   }
-
   .filter-block {
     position: fixed;
     top: 0;
@@ -2597,7 +2585,6 @@ input[type=number] {
     -webkit-transform: translateX(0);
             transform: translateX(0);
   }
-
   .pagination__btn-prev {
     width: 6rem;
     height: 6rem;
