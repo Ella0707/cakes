@@ -2344,10 +2344,65 @@ input[type=number] {
     height: 10.4rem;
     bottom: 10rem;
     right: 5rem;
-    z-index: 10;
+    z-index: 2;
   }
   .footer__up img {
     width: 2.4rem;
     height: 2.4rem;
+  }
+  .confectioners-banner {
+    position: relative;
+  }
+  .confectioners__inner {
+    display: block;
+  }
+  .confectioners__filter-open-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 3.2rem;
+    font-weight: 500;
+    color: rgb(94, 94, 94);
+    margin-bottom: 4.2rem;
+  }
+  .confectioners__filter-open-btn img {
+    width: 3.6rem;
+    height: 2rem;
+    margin-right: 2rem;
+  }
+  .confectioners__content {
+    width: 100%;
+  }
+  .confectioners__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .confectioners__item-photo {
+    width: 100%;
+  }
+  .filter-block {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    z-index: 10;
+    overflow-y: scroll;
+    height: auto;
+    margin-right: 0;
+  }
+  .filter-block.active {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 }/*# sourceMappingURL=style.css.map */

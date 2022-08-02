@@ -75,13 +75,14 @@ btn.on('click', function(e) {
   $('html, body').animate({scrollTop:0}, '100');
 });
 
-// класс active для ссылок в хэдере (навигация)
-// $(".header__nav ul li").click(function (e) {
-//     e.preventDefault();
-//     $(".header__nav ul li").removeClass('active');
-//     $(this).addClass('active');
-// })
+// класс active для фильтра (открыть фильтр в мобильной версии)
 
+$('.confectioners__filter-open-btn').on('click', function (e) {
+  e.preventDefault();
+  document.body.classList.toggle('lock');
+  $('.confectioners__filter-open-btn').toggleClass("active");
+  $('.confectioners__filter-block').toggleClass("active");
+});
 
 // селект в фильтре
 $('.dropdown').click(function () {

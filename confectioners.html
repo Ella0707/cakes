@@ -84,7 +84,14 @@
         <section class="confectioners">
             <div class="container">
                 <div class="confectioners__inner">
+                    <button class="confectioners__filter-open-btn mobile">
+                        <img src="./img/filter-btn.svg" alt="">
+                        Фильтр
+                    </button>
                     <div class="confectioners__filter-block filter-block">
+                        <button class="confectioners__filter-open-btn close mobile">
+                            <img src="./img/close.svg" alt="">
+                        </button>
                         <div class="filter-block__title">Фильтр</div>
                         <div class="filter-block__filtes">
                             <div class="filter-block__item">
@@ -120,7 +127,7 @@
                             </div>
                             <div class="filter-block__item">
                                 <div class="filter-block__item-title select-title">Страна</div>
-                                <div class="dropdown">
+                                <div class="dropdown" id="countries">
                                     <div class="select">
                                         <span>Беларусь</span>
                                         <input type="text" class="input-search" id="input-search">
@@ -147,8 +154,17 @@
                                         <img src="./img/arrow-down.svg" alt="">
                                     </div>
                                     <input type="hidden" name="category">
-                                    <ul class="dropdown-menu">
+                                    <ul class="dropdown-menu"  id="by">
                                         <li>Пинск</li>
+                                        <li>Еще какой-то</li>
+                                        <li>Еще какой-то</li>
+                                        <li>Еще какой-то</li>
+                                        <li>Еще какой-то</li>
+                                        <li>Еще какой-то</li>
+                                    </ul>
+
+                                    <ul class="dropdown-menu" id="ru">
+                                        <li>Российские города</li>
                                         <li>Еще какой-то</li>
                                         <li>Еще какой-то</li>
                                         <li>Еще какой-то</li>
@@ -217,7 +233,7 @@
                                             <div class="confectioners__name">Natali134</div>
                                             <img src="./img/name-icon.svg" alt="">
                                         </div>
-                                        <div class="confectioners__rate-wrap rating">
+                                        <div class="confectioners__rate-wrap rating desctop">
                                             <div class="confectioners__stars-wrap">
                                                 <div class="confectioners__stars">
                                                     <img src="./img/stars.svg" alt="">
