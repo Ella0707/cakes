@@ -120,3 +120,91 @@
         }
     }
 }
+
+
+@media (max-width: 48em) {
+
+    .filter-block {
+        border-radius: 1.8rem;
+        padding: 5rem 10rem 9.4rem 6.5rem;
+    
+        &__title {
+            font-size: 2.8rem;
+            margin-bottom: 7.5rem;
+        }
+    
+        &__filtes {
+            margin-bottom: 6rem;
+        }
+    
+        &__item {
+    
+            &:not(:last-child) {
+                margin-bottom: 5.6rem;
+            }
+        }
+    
+        &__item-title {
+            font-size: 2.8rem;
+            margin-bottom: 8.4rem;
+    
+            &.select-title {
+                margin-bottom: 4.8rem;
+            }
+        }
+    
+        &__radiobutton {
+            font-size: 2.8rem;
+    
+            input {
+                &:checked + .radiobutton-style::after {
+                    width: 10px;
+                    height: 10px;
+                }
+            }
+    
+            .radiobutton-style {
+                margin-right: 2rem;
+                padding-left: 4rem;
+    
+                &::before {
+                    width: 4rem;
+                    height: 4rem;
+                    border-radius: 50%;
+                }
+            }
+
+            &:not(:last-child) {
+                margin-bottom: 5rem;
+            }
+        }
+    
+        &__btn {
+            width: 100%;
+            margin-bottom: 3rem;
+
+            &.btn.btn--color {
+                font-size: 2.8rem;
+                height: 10rem;
+                border-radius: 8.8rem;
+            }
+        }
+    
+        &__btn-reset {
+            display: flex;
+            align-items: center;
+            margin: 0 auto;
+    
+            span {
+                font-size: 2.8rem;
+                margin-right: 2rem;
+            }
+    
+            img {
+                width: 2rem;
+                height: 2rem;
+            }
+        }
+    }
+
+}

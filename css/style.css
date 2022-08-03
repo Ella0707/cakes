@@ -1412,6 +1412,74 @@ input[type=number] {
      object-fit: contain;
 }
 
+@media (max-width: 48em) {
+  .filter-block {
+    border-radius: 1.8rem;
+    padding: 5rem 10rem 9.4rem 6.5rem;
+  }
+  .filter-block__title {
+    font-size: 2.8rem;
+    margin-bottom: 7.5rem;
+  }
+  .filter-block__filtes {
+    margin-bottom: 6rem;
+  }
+  .filter-block__item:not(:last-child) {
+    margin-bottom: 5.6rem;
+  }
+  .filter-block__item-title {
+    font-size: 2.8rem;
+    margin-bottom: 8.4rem;
+  }
+  .filter-block__item-title.select-title {
+    margin-bottom: 4.8rem;
+  }
+  .filter-block__radiobutton {
+    font-size: 2.8rem;
+  }
+  .filter-block__radiobutton input:checked + .radiobutton-style::after {
+    width: 10px;
+    height: 10px;
+  }
+  .filter-block__radiobutton .radiobutton-style {
+    margin-right: 2rem;
+    padding-left: 4rem;
+  }
+  .filter-block__radiobutton .radiobutton-style::before {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+  }
+  .filter-block__radiobutton:not(:last-child) {
+    margin-bottom: 5rem;
+  }
+  .filter-block__btn {
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+  .filter-block__btn.btn.btn--color {
+    font-size: 2.8rem;
+    height: 10rem;
+    border-radius: 8.8rem;
+  }
+  .filter-block__btn-reset {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 auto;
+  }
+  .filter-block__btn-reset span {
+    font-size: 2.8rem;
+    margin-right: 2rem;
+  }
+  .filter-block__btn-reset img {
+    width: 2rem;
+    height: 2rem;
+  }
+}
 .dropdown {
   width: 100%;
   display: inline-block;
@@ -1481,11 +1549,14 @@ input[type=number] {
   max-height: 15rem;
   overflow-y: scroll;
   display: none;
-  scrollbar-color: #FF007A rgb(232, 232, 232); /* «цвет ползунка» «цвет полосы скроллбара» */
-  scrollbar-width: thin; /* толщина */
+  scrollbar-color: #FF007A rgb(232, 232, 232);
+  /* «цвет ползунка» «цвет полосы скроллбара» */
+  scrollbar-width: thin;
+  /* толщина */
 }
 .dropdown .dropdown-menu::-webkit-scrollbar {
-  width: 0.6rem; /* ширина для вертикального скролла */
+  width: 0.6rem;
+  /* ширина для вертикального скролла */
   background-color: rgb(232, 232, 232);
 }
 .dropdown .dropdown-menu::-webkit-scrollbar-thumb {
@@ -1511,6 +1582,51 @@ input[type=number] {
   transform: rotate(180deg);
 }
 
+@media (max-width: 48em) {
+  .dropdown {
+    font-size: 2.8rem;
+  }
+  .dropdown img {
+    width: 2rem;
+    height: 1rem;
+    right: 3rem;
+  }
+  .dropdown .select {
+    font-size: 2.8rem;
+    padding: 2rem 3rem;
+    border-radius: 0.6rem;
+  }
+  .dropdown .input-search {
+    font-size: 2.8rem;
+    padding: 1rem;
+  }
+  .dropdown .dropdown-menu {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 8rem;
+    background: #FFFFFF;
+    -webkit-box-shadow: 0px 0px 0.8rem rgba(0, 0, 0, 0.06);
+            box-shadow: 0px 0px 0.8rem rgba(0, 0, 0, 0.06);
+    border-radius: 0.3rem;
+    z-index: 10;
+    padding: 2rem 3rem;
+    max-height: 20rem;
+    overflow-y: scroll;
+    display: none;
+  }
+  .dropdown .dropdown-menu::-webkit-scrollbar {
+    width: 0.7rem;
+    /* ширина для вертикального скролла */
+    background-color: rgb(232, 232, 232);
+  }
+  .dropdown .dropdown-menu li {
+    font-size: 2.8rem;
+  }
+  .dropdown .dropdown-menu li:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+}
 .btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2420,6 +2536,11 @@ input[type=number] {
     height: 2rem;
     margin-right: 2rem;
   }
+  .confectioners__filter-open-btn.close img {
+    width: 3rem;
+    height: 3rem;
+    margin-right: 0rem;
+  }
   .confectioners__filter-selected-item {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2474,7 +2595,7 @@ input[type=number] {
     position: absolute;
     top: 2rem;
     right: 3rem;
-    z-index: 30;
+    z-index: 2;
   }
   .confectioners__btn-save.mobile.btn--save {
     width: 5.4rem;

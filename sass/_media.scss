@@ -718,6 +718,14 @@
                 margin-right: 2rem;
             }
 
+            &.close {
+
+                img {
+                    width: 3rem;
+                    height: 3rem;
+                    margin-right: 0rem;
+                }
+            }
         }
 
         &__filter-selected-item {
@@ -774,7 +782,7 @@
             position: absolute;
             top: 2rem;
             right: 3rem;
-            z-index: 30;
+            z-index: 2;
 
             &.btn--save {
                 width: 5.4rem;

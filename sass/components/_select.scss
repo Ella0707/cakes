@@ -24,9 +24,9 @@
         right: 1.5rem;
         transform: translateY(-50%);
         transition: 0.3s;
-}
+    }
 
-    
+
 
     .select {
         font-size: 1.6rem;
@@ -38,6 +38,7 @@
         box-shadow: 0px 0px 0.8rem rgba(0, 0, 0, 0.06);
         border-radius: 0.3rem;
         position: relative;
+
         &:focus-visible {
             border: none;
             outline: none;
@@ -54,9 +55,9 @@
         font-size: 2rem;
         padding: 1rem;
         color: #ffffff;
-      }
+    }
 
-      .dropdown-menu {
+    .dropdown-menu {
         position: absolute;
         left: 0;
         width: 100%;
@@ -70,9 +71,10 @@
         overflow-y: scroll;
         display: none;
 
-        
+
         &::-webkit-scrollbar {
-            width: 0.6rem; /* ширина для вертикального скролла */
+            width: 0.6rem;
+            /* ширина для вертикального скролла */
             background-color: rgba(232, 232, 232, 1);
         }
 
@@ -80,15 +82,17 @@
             background: linear-gradient(92.85deg, #FF8A00 -43.75%, #FF007A 106.98%);
             border-radius: 2rem;
         }
-        
+
         &::-webkit-scrollbar-thumb:hover {
-            background:  #FF007A;
+            background: #FF007A;
         }
 
         // для firefox
-        scrollbar-color:  #FF007A rgba(232, 232, 232, 1); /* «цвет ползунка» «цвет полосы скроллбара» */
-        scrollbar-width: thin;  /* толщина */
-      }
+        scrollbar-color: #FF007A rgba(232, 232, 232, 1);
+        /* «цвет ползунка» «цвет полосы скроллбара» */
+        scrollbar-width: thin;
+        /* толщина */
+    }
 
     .dropdown-menu li {
         font-size: 1.6rem;
@@ -102,11 +106,65 @@
         &:hover {
             font-weight: 500;
         }
-      }
+    }
 
-      &.active img {
+    &.active img {
         -webkit-transform: rotate(180deg);
         transform: rotate(180deg);
-      }
-      
+    }
+}
+
+@media (max-width: 48em) {
+
+    .dropdown {
+        font-size: 2.8rem;
+
+        img {
+            width: 2rem;
+            height: 1rem;
+            right: 3rem;
+        }
+
+        .select {
+            font-size: 2.8rem;
+            padding: 2rem 3rem;
+            border-radius: 0.6rem;
+        }
+
+        .input-search {
+            font-size: 2.8rem;
+            padding: 1rem;
+        }
+
+        .dropdown-menu {
+            position: absolute;
+            left: 0;
+            width: 100%;
+            top: 8rem;
+            background: #FFFFFF;
+            box-shadow: 0px 0px 0.8rem rgba(0, 0, 0, 0.06);
+            border-radius: 0.3rem;
+            z-index: 10;
+            padding: 2rem 3rem;
+            max-height: 20rem;
+            overflow-y: scroll;
+            display: none;
+
+
+            &::-webkit-scrollbar {
+                width: 0.7rem;
+                /* ширина для вертикального скролла */
+                background-color: rgba(232, 232, 232, 1);
+            }
+        }
+
+        .dropdown-menu li {
+            font-size: 2.8rem;
+
+            &:not(:last-child) {
+                margin-bottom: 2rem;
+            }
+        }
+    }
+
 }
