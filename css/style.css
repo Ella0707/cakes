@@ -1438,8 +1438,8 @@ input[type=number] {
     font-size: 2.8rem;
   }
   .filter-block__radiobutton input:checked + .radiobutton-style::after {
-    width: 10px;
-    height: 10px;
+    width: 2rem;
+    height: 2rem;
   }
   .filter-block__radiobutton .radiobutton-style {
     margin-right: 2rem;

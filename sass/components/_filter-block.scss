@@ -158,8 +158,8 @@
     
             input {
                 &:checked + .radiobutton-style::after {
-                    width: 10px;
-                    height: 10px;
+                    width: 2rem;
+                    height: 2rem;
                 }
             }
     
