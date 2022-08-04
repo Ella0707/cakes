@@ -27,7 +27,6 @@
     }
 
 
-
     .select {
         font-size: 1.6rem;
         font-weight: 400;
@@ -43,7 +42,6 @@
             border: none;
             outline: none;
         }
-
     }
 
     .input-search {
@@ -150,7 +148,6 @@
             overflow-y: scroll;
             display: none;
 
-
             &::-webkit-scrollbar {
                 width: 0.7rem;
                 /* ширина для вертикального скролла */
@@ -166,5 +163,5 @@
             }
         }
     }
-
 }
+

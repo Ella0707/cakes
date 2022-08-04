@@ -1858,6 +1858,169 @@ input[type=number] {
   background-clip: text;
 }
 
+.select-box {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 20rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.select-box .options-container {
+  max-height: 0;
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+  overflow: hidden;
+  position: absolute;
+  top: 4rem;
+  left: 0;
+  z-index: 10;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 1px 13px rgba(27, 29, 86, 0.14);
+          box-shadow: 0px 1px 13px rgba(27, 29, 86, 0.14);
+  border-radius: 5px;
+  color: #616161;
+  font-size: 1.4rem;
+  font-weight: 400;
+  padding: 1rem;
+}
+
+.selected {
+  color: #828BBD;
+  position: relative;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 1rem 0 2rem;
+  height: 3rem;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.selected::before {
+  content: "";
+  background: url("./../../img/location-icon.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  height: 2rem;
+  width: 1.4rem;
+  left: 0rem;
+  top: 0.4rem;
+}
+
+.selected::after {
+  content: "";
+  background: url("./../../img/arrow-down-grey.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  height: 1rem;
+  width: 1rem;
+  right: -2rem;
+  top: 1rem;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.select-box .options-container.active {
+  max-height: 25rem;
+  opacity: 1;
+  display: block;
+}
+.select-box .options-container.active .search-box {
+  visibility: visible;
+}
+
+.select-box .options-container.active + .selected::after {
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
+}
+
+.search-list {
+  max-height: 17rem;
+  overflow-y: scroll;
+  min-height: -webkit-max-content;
+  min-height: -moz-max-content;
+  min-height: max-content;
+}
+.search-list::-webkit-scrollbar {
+  width: 0.6rem;
+  background: #E8E8E8;
+  border-radius: 2.1rem;
+}
+.search-list::-webkit-scrollbar-thumb {
+  background: #818BBD;
+  border-radius: 2.1rem;
+}
+
+.select-box .option:hover {
+  font-weight: 500;
+}
+
+.select-box .option {
+  padding: 0.5rem 2rem 0.5rem 0;
+}
+
+.select-box label {
+  cursor: pointer;
+}
+
+.select-box .option .radio {
+  display: none;
+}
+
+/* Searchbox */
+.search-box {
+  position: relative;
+  height: 3rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  visibility: hidden;
+}
+.search-box::after {
+  content: "";
+  background: url("./../../img/loup.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  height: 1.3rem;
+  width: 1.3rem;
+  right: 1rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.search-box input {
+  width: 100%;
+  height: 100%;
+  padding: 0 2rem 0 0.5rem;
+  font-size: 1.2rem;
+  background: #FFFFFF;
+  border: 1px solid #828BBD;
+  border-radius: 0.5rem;
+}
+
+.search-box input:focus {
+  outline: none;
+}
+
 .mobile {
   display: none;
 }
@@ -2253,14 +2416,7 @@ input[type=number] {
     display: none;
   }
   .profile__location {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    font-size: 2.8rem;
-    margin-bottom: 0rem;
+    padding-left: 1rem;
   }
   .profile__location img {
     width: 2.2rem;
@@ -2269,6 +2425,42 @@ input[type=number] {
   }
   .profile__location.desctop {
     display: none;
+  }
+  .profile__location .select-box {
+    width: 100%;
+  }
+  .profile__location .selected {
+    padding: 0 1rem 0 3rem;
+    height: 3rem;
+    font-size: 2.8rem;
+  }
+  .profile__location .selected::before {
+    height: 3rem;
+    width: 2.5rem;
+    left: 0rem;
+    top: 0rem;
+  }
+  .profile__location .selected::after {
+    height: 2rem;
+    width: 2rem;
+    right: -2rem;
+    top: 0.5rem;
+  }
+  .profile__location .select-box .options-container {
+    font-size: 2.2rem;
+  }
+  .profile__location .search-box {
+    height: 5rem;
+  }
+  .profile__location .search-box input {
+    padding: 0 2rem 0 1.5rem;
+    font-size: 2.4rem;
+    border-radius: 1rem;
+  }
+  .profile__location .search-box::after {
+    height: 2.6rem;
+    width: 2.6rem;
+    right: 2rem;
   }
   .profile__description {
     font-size: 2.8rem;
