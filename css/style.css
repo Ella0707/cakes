@@ -1911,7 +1911,7 @@ input[type=number] {
 
 .selected::before {
   content: "";
-  background: url("/../../img/location-icon.svg");
+  background: url("/img/location-icon.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -1924,7 +1924,7 @@ input[type=number] {
 
 .selected::after {
   content: "";
-  background: url("/../../img/arrow-down-grey.svg");
+  background: url("/img/arrow-down-grey.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
