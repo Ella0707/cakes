@@ -1,0 +1,33 @@
+.slider-arrow-next {
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    top: 50%;
+    right: 2rem;
+    z-index: 100;
+    transform: translateY(-50%);
+    cursor: pointer;
+
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
+}
+
+.slider-arrow-prev {
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 2rem;
+    z-index: 100;
+    transform: translateY(-50%);
+    cursor: pointer;
+
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
+}

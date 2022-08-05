@@ -65,62 +65,378 @@
     </header>
 
     <main>
-       <section class="banner-main">
-        <div class="container">
-            <div class="banner-main__inner">
-                <img src="./img/banner-main.png" alt="">
-                <div class="banner-main__search">
-                    <input type="text" placeholder="Найти рецепт">
-                    <button>
-                        <img src="./img/loup.svg" alt="">
-                    </button>
+        <section class="banner-main">
+            <div class="container">
+                <div class="banner-main__inner">
+                    <img src="./img/banner-main.png" alt="">
+                    <div class="banner-main__search">
+                        <input type="text" placeholder="Найти рецепт">
+                        <button>
+                            <img src="./img/loup.svg" alt="">
+                        </button>
+                    </div>
                 </div>
             </div>
-        </div>
-       </section>
+        </section>
 
-       <section class="base">
-        <div class="container">
-            <div class="base__inner">
-                <div class="base__text-block">
-                    <div class="base__title-wrap title-wrap">
-                        <h2 class="base__title">Кондитеры</h2>
-                        <div class="base__title-img">
-                            <img src="./img/title-icon.svg" alt="">
+        <section class="base">
+            <div class="container">
+                <div class="base__inner">
+                    <div class="base__text-block">
+                        <div class="base__title-wrap title-wrap">
+                            <h2 class="base__title">Кондитеры</h2>
+                            <div class="base__title-img">
+                                <img src="./img/title-icon.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="base__description">
+                            Здесь вы сможете выбрать кондитера,
+                            который подходит именно вам.
+                            Более 1500 человек в нашей базе
                         </div>
                     </div>
-                    <div class="base__description">
-                        Здесь вы сможете выбрать кондитера,
-                        который подходит именно вам.
-                        Более 1500 человек в нашей базе
+                    <div class="base__slider swiper">
+                        <div class="base__slider-wrapper swiper-wrapper">
+                            <div class="base__slide swiper-slide">
+                                <img src="./img/base-slide1.png" alt="">
+                                <div class="base__slide-rating">
+                                    <img src="./img/star-icon.svg" alt="">
+                                    <img src="./img/star-icon.svg" alt="">
+                                    <img src="./img/star-icon.svg" alt="">
+                                    <img src="./img/star-icon.svg" alt="">
+                                    <img src="./img/star-icon.svg" alt="">
+                                </div>
+                                <div class="base__slide-text">
+                                    <h4 class="base__slide-title">
+                                        Название
+                                    </h4>
+                                    <h5 class="base__slide-subtitle">
+                                        Краткое описание можно топить многократно.
+                                        В толстостенном сотейнике топлю изомальт на среднем огне ...
+                                    </h5>
+                                </div>
+                            </div>
+                            <div class="base__slide swiper-slide">
+                                <img src="./img/base-slide2.png" alt="">
+                                <div class="base__slide-rating">
+                                    <img src="./img/star-icon.svg" alt="">
+                                    <img src="./img/star-icon.svg" alt="">
+                                    <img src="./img/star-icon.svg" alt="">
+                                    <img src="./img/star-icon.svg" alt="">
+                                    <img src="./img/star-icon.svg" alt="">
+                                </div>
+                                <div class="base__slide-text">
+                                    <h4 class="base__slide-title">
+                                        Название
+                                    </h4>
+                                    <h5 class="base__slide-subtitle">
+                                        Краткое описание можно топить многократно.
+                                        В толстостенном сотейнике топлю изомальт на среднем огне ...
+                                    </h5>
+                                </div>
+                            </div>
+                            <div class="base__slide swiper-slide">
+                                <img src="./img/base-slide3.png" alt="">
+                                <div class="base__slide-rating">
+                                    <img src="./img/star-icon.svg" alt="">
+                                    <img src="./img/star-icon.svg" alt="">
+                                    <img src="./img/star-icon.svg" alt="">
+                                    <img src="./img/star-icon.svg" alt="">
+                                    <img src="./img/star-icon.svg" alt="">
+                                </div>
+                                <div class="base__slide-text">
+                                    <h4 class="base__slide-title">
+                                        Название
+                                    </h4>
+                                    <h5 class="base__slide-subtitle">
+                                        Краткое описание можно топить многократно.
+                                        В толстостенном сотейнике топлю изомальт на среднем огне ...
+                                    </h5>
+                                </div>
+                            </div>
+                            <div class="base__slide swiper-slide">
+                                <img src="./img/base-slide1.png" alt="">
+                                <div class="base__slide-rating">
+                                    <img src="./img/star-icon.svg" alt="">
+                                    <img src="./img/star-icon.svg" alt="">
+                                    <img src="./img/star-icon.svg" alt="">
+                                    <img src="./img/star-icon.svg" alt="">
+                                    <img src="./img/star-grey.svg" alt="">
+                                </div>
+                                <div class="base__slide-text">
+                                    <h4 class="base__slide-title">
+                                        Название
+                                    </h4>
+                                    <h5 class="base__slide-subtitle">
+                                        Краткое описание можно топить многократно.
+                                        В толстостенном сотейнике топлю изомальт на среднем огне ...
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="base__arrow-prev">
+                                                <img src="./img/arrow-color.svg" alt="">
+                                            </div> -->
+                        <div class="base__arrow-next">
+                            <img src="./img/arrow-color.svg" alt="">
+                        </div>
+                        <button class="base__btn">
+                            <span>Смотреть всеx</span>
+                            <img src="./img/arrow-white-icon.svg" alt="">
+                        </button>
                     </div>
                 </div>
-                <div class="base__slider swiper">
-                    <div class="base__slider-wrapper swiper-wrapper">
-                        <div class="base__slide swiper-slide">
-                            <img src="./img/base-slide1.png" alt="">
-                            <div class="base__slide-rating">
-                                <img src="./img/star.svg" alt="">
-                                <img src="./img/star.svg" alt="">
-                                <img src="./img/star.svg" alt="">
-                                <img src="./img/star.svg" alt="">
-                                <img src="./img/star.svg" alt="">
+            </div>
+        </section>
+
+        <section class="recipes">
+            <div class="container">
+                <div class="recipes__inner">
+                    <h2 class="recipes__title">Рецепты</h2>
+                    <div class="recipes__content">
+                        <div class="recipes__column">
+                            <div class="recipes__box one">
+                                <img src="./img/recipes1.png" alt="">
+                                <div class="recipes__box-title">Выпечка</div>
+                                <a href="" class="recipes__btn">
+                                    <span>Перейти</span>
+                                    <img src="./img/arrow-white-icon.svg" alt="">
+                                </a>
                             </div>
-                            <div class="base__slide-text">
-                                <h4 class="base__slide-title">
-                                    Название
-                                </h4>
-                                <h5 class="base__slide-subtitle">
-                                    Краткое описание можно топить многократно. 
-                                    В толстостенном сотейнике топлю изомальт на среднем огне ...
-                                </h5>
+                            <div class="recipes__box two">
+                                <img src="./img/recipes3.png" alt="">
+                                <div class="recipes__box-title">Кексы</div>
+                                <a href="" class="recipes__btn">
+                                    <span>Перейти</span>
+                                    <img src="./img/arrow-white-icon.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="recipes__column">
+                            <div class="recipes__box three">
+                                <img src="./img/recipes2.png" alt="">
+                                <div class="recipes__box-title">Сладости</div>
+                                <a href="" class="recipes__btn">
+                                    <span>Перейти</span>
+                                    <img src="./img/arrow-white-icon.svg" alt="">
+                                </a>
+                            </div>
+                            <div class="recipes__box four">
+                                <img src="./img/recipes4.png" alt="">
+                                <div class="recipes__box-title">Торты</div>
+                                <a href="" class="recipes__btn">
+                                    <span>Перейти</span>
+                                    <img src="./img/arrow-white-icon.svg" alt="">
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-       </section>
+        </section>
+
+        <section class="vacancies">
+            <div class="container">
+                <div class="vacancies__inner">
+                    <div class="vacancies__title-wrap">
+                        <h2 class="vacancies__title">Вакансии</h2>
+                        <a class="vacancies__link" href="">
+                            <span>Смотреть все</span>
+                            <img src="./img/arrow-link.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="vacancies__content">
+                        <div class="vacancies__box">
+                            <img src="./img/vacancies1.png" alt="">
+                            <div class="vacancies__box-author-wrap">
+                                <div class="vacancies__box-author">Татьяна А.</div>
+                                <div class="vacancies__box-location-wrap">
+                                    <img src="./img/location-icon.svg" alt="">
+                                    Минск
+                                </div>
+                            </div>
+                            <h3 class="vacancies__box-title">Сделать торт на свадьбу</h3>
+                            <div class="vacancies__box-description">Краткое описание можно топить многократно. 
+                                В толстостенном сотейнике топлю изомальт на среднем огне ...
+                            </div>
+                            <a href="" class="vacancies__box-link btn btn--more-link">
+                                <span>Подробнее</span>
+                                <img class="static" src="./img/arrow-link.svg" alt="">
+                                <img class="hover" src="./img/arrow-white-icon.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="vacancies__box">
+                            <img src="./img/vacancies2.png" alt="">
+                            <div class="vacancies__box-author-wrap">
+                                <div class="vacancies__box-author">Татьяна А.</div>
+                                <div class="vacancies__box-location-wrap">
+                                    <img src="./img/location-icon.svg" alt="">
+                                    Минск
+                                </div>
+                            </div>
+                            <h3 class="vacancies__box-title">Сделать торт на свадьбу</h3>
+                            <div class="vacancies__box-description">Краткое описание можно топить многократно. 
+                                В толстостенном сотейнике топлю изомальт на среднем огне ...
+                            </div>
+                            <a href="" class="vacancies__box-link btn btn--more-link">
+                                <span>Подробнее</span>
+                                <img class="static" src="./img/arrow-link.svg" alt="">
+                                <img class="hover" src="./img/arrow-white-icon.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="vacancies__box">
+                            <img src="./img/vacancies3.png" alt="">
+                            <div class="vacancies__box-author-wrap">
+                                <div class="vacancies__box-author">Татьяна А.</div>
+                                <div class="vacancies__box-location-wrap">
+                                    <img src="./img/location-icon.svg" alt="">
+                                    Минск
+                                </div>
+                            </div>
+                            <h3 class="vacancies__box-title">Сделать торт на свадьбу</h3>
+                            <div class="vacancies__box-description">Краткое описание можно топить многократно. 
+                                В толстостенном сотейнике топлю изомальт на среднем огне ...
+                            </div>
+                            <a href="" class="vacancies__box-link btn btn--more-link">
+                                <span>Подробнее</span>
+                                <img class="static" src="./img/arrow-link.svg" alt="">
+                                <img class="hover" src="./img/arrow-white-icon.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="courses">
+            <div class="container">
+                <div class="courses__inner">
+                    <div class="courses__left-block">
+                        <div class="courses__text-block">
+                            <div class="courses__title-wrap">
+                                <h2 class="courses__title">Онлайн курсы</h2>
+                                <img src="./img/online-icon.svg" alt="">
+                            </div>
+                            <h3 class="courses__description">Краткое описание можно топить многократно. 
+                                В толстостенном сотейнике топлю изомальт на среднем огне ...
+                            </h3>
+                        </div>
+                        <div class="courses__img-block">
+                            <img src="./img/courses1.png" alt="">
+                            <div class="courses__sticker">ДЕКОР</div>
+                            <div class="courses__box-text">
+                                <h3 class="courses__box-title">Название курса</h3>
+                                <a href="" class="courses__box-link">
+                                    Подробнее
+                                    <img src="./img/arrow-black-icon.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="courses__right-block">
+                        <div class="courses__img-block">
+                            <img src="./img/courses2.png" alt="">
+                            <div class="courses__sticker">ДЕКОР</div>
+                            <div class="courses__box-text">
+                                <h3 class="courses__box-title">Название курса</h3>
+                                <a href="" class="courses__box-link">
+                                    Подробнее
+                                    <img src="./img/arrow-black-icon.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="courses__img-block">
+                            <img src="./img/courses3.png" alt="">
+                            <div class="courses__sticker">ДЕКОР</div>
+                            <div class="courses__box-text">
+                                <h3 class="courses__box-title">Название курса</h3>
+                                <a href="" class="courses__box-link">
+                                    Подробнее
+                                    <img src="./img/arrow-black-icon.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="" class="courses__btn">
+                    <span>Смотреть всеx</span>
+                    <img class="static" src="./img/arrow-white-icon.svg" alt="">
+                </a>
+            </div>
+        </section>
+
+        <section class="article">
+            <div class="container">
+                <div class="article__inner">
+                    <div class="article__title-wrap">
+                        <h2 class="article__title">Полезные статьи</h2>
+                        <a class="article__link" href="">
+                            <span>Смотреть все</span>
+                            <img src="./img/arrow-link.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="article__content">
+                        <div class="article__box">
+                            <img src="./img/article1.png" alt="">
+                            <div class="article__box-info-wrap">
+                                <div class="article__box-sticker">ДЕКОР</div>
+                                <div class="article__box-views">
+                                    <img src="./img/views-icon.svg" alt="">
+                                    320
+                                </div>
+                            </div>
+                            <h3 class="article__box-title">Декор из изомальта советы</h3>
+                            <h4 class="article__box-subtitle">Изомальт можно топить многократно. 
+                                В толстостенном сотейнике топлю изомальт на среднем огне. 
+                                После образования пузырей...
+                            </h4>
+                            <a class="article__box-link" href="">
+                                <span>Подробнее</span>
+                                <img src="./img/arrow-link.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="article__box">
+                            <img src="./img/article2.png" alt="">
+                            <div class="article__box-info-wrap">
+                                <div class="article__box-sticker">ДЕКОР</div>
+                                <div class="article__box-views">
+                                    <img src="./img/views-icon.svg" alt="">
+                                    320
+                                </div>
+                            </div>
+                            <h3 class="article__box-title">Декор из изомальта советы</h3>
+                            <h4 class="article__box-subtitle">Изомальт можно топить многократно. 
+                                В толстостенном сотейнике топлю изомальт на среднем огне. 
+                                После образования пузырей...
+                            </h4>
+                            <a class="article__box-link" href="">
+                                <span>Подробнее</span>
+                                <img src="./img/arrow-link.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="article__box">
+                            <img src="./img/article3.png" alt="">
+                            <div class="article__box-info-wrap">
+                                <div class="article__box-sticker">ДЕКОР</div>
+                                <div class="article__box-views">
+                                    <img src="./img/views-icon.svg" alt="">
+                                    320
+                                </div>
+                            </div>
+                            <h3 class="article__box-title">Декор из изомальта советы</h3>
+                            <h4 class="article__box-subtitle">Изомальт можно топить многократно. 
+                                В толстостенном сотейнике топлю изомальт на среднем огне. 
+                                После образования пузырей...
+                            </h4>
+                            <a class="article__box-link" href="">
+                                <span>Подробнее</span>
+                                <img src="./img/arrow-link.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
     </main>

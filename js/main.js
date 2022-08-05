@@ -40,6 +40,19 @@ if ($('#destroy-1').length) {
 }
 
 
+const baseSlider = new Swiper('.base__slider', {
+  slidesPerView: 2.8,
+  spaceBetween: 13,
+  speed: 800,
+  loop: true,
+
+  navigation: {
+    nextEl: '.base__arrow-next',
+    // prevEl: '.base__arrow-prev',
+},
+
+});
+
 // табы в профиле
 function openTab(evt, tabsName) {
     var i, tabcontent, tablinks;
@@ -191,3 +204,4 @@ const filterList = searchTerm => {
         }
     });
 };
+
