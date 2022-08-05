@@ -1496,9 +1496,7 @@ input[type=number] {
       -ms-flex-pack: center;
           justify-content: center;
   position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
+  top: 35%;
   right: -2rem;
   z-index: 10;
   cursor: pointer;
