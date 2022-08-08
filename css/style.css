@@ -1313,6 +1313,7 @@ input[type=number] {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  border-radius: 2rem;
 }
 .banner-main__inner > img {
   position: absolute;
@@ -1324,6 +1325,7 @@ input[type=number] {
   -o-object-fit: cover;
      object-fit: cover;
   z-index: -1;
+  border-radius: inherit;
 }
 .banner-main__search {
   display: -webkit-box;
@@ -2000,6 +2002,7 @@ input[type=number] {
   -o-object-fit: cover;
      object-fit: cover;
   z-index: -1;
+  border-radius: inherit;
 }
 .courses__sticker {
   background: rgba(130, 139, 189, 0.11);
@@ -2042,6 +2045,9 @@ input[type=number] {
 .courses__box-link:hover img {
   -webkit-transform: translateX(0.5rem);
           transform: translateX(0.5rem);
+}
+.courses__left-block .courses__img-block {
+  border-radius: 0;
 }
 .courses__right-block {
   width: 59.2rem;
@@ -2125,7 +2131,7 @@ input[type=number] {
   margin-bottom: 6.8rem;
 }
 .article__title {
-  font-size: 3.4re;
+  font-size: 3.4rem;
   font-weight: 500;
   color: #000000;
 }
@@ -2264,6 +2270,510 @@ input[type=number] {
           transform: translateX(0.5rem);
 }
 
+@media (max-width: 48em) {
+  .banner-main {
+    height: 61.4rem;
+    margin-bottom: 8rem;
+  }
+  .banner-main__inner {
+    height: 61.4rem;
+    padding: 0 4rem;
+  }
+  .banner-main__search {
+    width: 100%;
+    height: 7rem;
+    -webkit-box-shadow: 0px 1rem 6rem rgba(0, 0, 0, 0.09);
+            box-shadow: 0px 1rem 6rem rgba(0, 0, 0, 0.09);
+    border-radius: 1rem;
+    position: relative;
+  }
+  .banner-main__search input {
+    padding: 0 5rem 0 2rem;
+    font-size: 2.8rem;
+  }
+  .banner-main__search button {
+    width: 2.8rem;
+    height: 2.8rem;
+  }
+  .base {
+    position: relative;
+    height: auto;
+  }
+  .base .container {
+    padding: 0;
+  }
+  .base__inner {
+    display: block;
+  }
+  .base__text-block {
+    width: 100%;
+    padding-right: 0rem;
+    padding: 0 4.8rem;
+  }
+  .base__title-wrap {
+    margin-bottom: 1.4rem;
+  }
+  .base__title {
+    font-size: 4rem;
+  }
+  .base__title-img {
+    border-radius: 3rem 3rem 3rem 0;
+    width: 4rem;
+    height: 4rem;
+  }
+  .base__title-img img {
+    width: 3rem;
+    height: 3rem;
+  }
+  .base__description {
+    font-size: 2.8rem;
+    line-height: 1.42;
+  }
+  .base__slider {
+    width: 100%;
+    position: static;
+    padding: 2rem 4.8rem 10rem 4.8rem;
+  }
+  .base__slider-wrapper {
+    position: relative;
+    margin-bottom: 5.6rem;
+  }
+  .base__slide {
+    border-radius: 1.2rem;
+    padding: 2.4rem 2.4rem 4rem 2.4rem;
+  }
+  .base__slide > img {
+    height: 31.2rem;
+    margin-bottom: 2rem;
+  }
+  .base__slide-rating {
+    margin-bottom: 0.2rem;
+  }
+  .base__slide-rating img {
+    width: 2.6rem;
+    height: 2.6rem;
+  }
+  .base__slide-rating img:not(:last-child) {
+    margin-right: 1rem;
+  }
+  .base__slide-title {
+    font-size: 3.4rem;
+    margin-bottom: 1.5rem;
+  }
+  .base__slide-subtitle {
+    font-size: 2.4rem;
+    line-height: 1.33;
+  }
+  .base__arrow-next {
+    display: none;
+  }
+  .base__btn {
+    border-radius: 8.8rem;
+    width: 45.2rem;
+    height: 9rem;
+    margin: 0 auto 0 auto;
+  }
+  .base__btn span {
+    font-size: 2.8rem;
+    margin-right: 1rem;
+  }
+  .base__btn img {
+    width: 3rem;
+    height: 2rem;
+  }
+  .base__btn::after {
+    width: 80%;
+  }
+  .recipes {
+    margin-bottom: 7.5rem;
+  }
+  .recipes__title {
+    font-size: 4rem;
+    margin-bottom: 3.6rem;
+  }
+  .recipes__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .recipes__box {
+    padding: 4.6rem;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 2.4rem;
+  }
+  .recipes__box > img {
+    border-radius: inherit;
+  }
+  .recipes__box.one {
+    width: 100%;
+    height: 38.6rem;
+    margin-right: 0rem;
+    margin-bottom: 4rem;
+  }
+  .recipes__box.two {
+    width: 100%;
+    height: 38.6rem;
+    margin-right: 0rem;
+    margin-bottom: 4rem;
+  }
+  .recipes__box.three {
+    width: 100%;
+    height: 38.6rem;
+    margin-right: 0rem;
+    margin-bottom: 4rem;
+  }
+  .recipes__box.four {
+    width: 100%;
+    height: 38.6rem;
+    margin-right: 0rem;
+    margin-bottom: 0rem;
+  }
+  .recipes__box::before {
+    border-radius: inherit;
+  }
+  .recipes__box-title {
+    font-size: 4rem;
+    color: #62698F;
+  }
+  .recipes__btn {
+    width: 25rem;
+    height: 8rem;
+    border-radius: 8.8rem;
+  }
+  .recipes__btn span {
+    font-size: 2.4rem;
+  }
+  .recipes__btn img {
+    width: 2rem;
+    height: 2rem;
+  }
+  .vacancies {
+    margin-bottom: 10rem;
+  }
+  .vacancies__title-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 4rem;
+  }
+  .vacancies__title {
+    font-size: 4rem;
+    font-weight: 500;
+    color: #000000;
+  }
+  .vacancies__link {
+    font-size: 3.2rem;
+    margin: 0 auto;
+  }
+  .vacancies__link.desctop {
+    display: none;
+  }
+  .vacancies__link.mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .vacancies__link img {
+    width: 3rem;
+    height: 2rem;
+  }
+  .vacancies__content {
+    display: grid;
+    grid-template-columns: 1fr;
+    -webkit-column-gap: 0rem;
+       -moz-column-gap: 0rem;
+            column-gap: 0rem;
+    row-gap: 2.6rem;
+    margin-bottom: 6.6rem;
+  }
+  .vacancies__box {
+    border-radius: 1.4rem;
+    padding: 1rem 2rem 4rem 2rem;
+  }
+  .vacancies__box > img {
+    height: 37.8rem;
+    margin-bottom: 1.6rem;
+  }
+  .vacancies__box-author-wrap {
+    margin-bottom: 2.8rem;
+  }
+  .vacancies__box-author {
+    font-size: 2.4rem;
+  }
+  .vacancies__box-location-wrap {
+    font-size: 2.4rem;
+  }
+  .vacancies__box-location-wrap img {
+    width: 2.8rem;
+    height: 2.8rem;
+  }
+  .vacancies__box-title {
+    font-size: 3.2rem;
+    margin-bottom: 1rem;
+  }
+  .vacancies__box-description {
+    font-size: 2.4rem;
+    margin-bottom: 2.8rem;
+  }
+  .vacancies__box-link {
+    margin: 0 auto;
+    font-size: 2.8rem;
+    border-radius: 4.4rem;
+    padding: 1.5rem;
+  }
+  .vacancies__box-link.btn--more-link {
+    width: 45.4rem;
+    padding: 1rem;
+    height: 8rem;
+    border-radius: 8.8rem;
+  }
+  .vacancies__box-link.btn--more-link::before {
+    inset: 2px;
+    border-radius: 8.8rem;
+  }
+  .vacancies__box-link.btn--more-link::after {
+    width: 80%;
+  }
+  .vacancies__box-link.btn--more-link span {
+    font-size: 2.8rem;
+    margin-right: 1rem;
+  }
+  .vacancies__box-link.btn--more-link img {
+    width: 3rem;
+    height: 2rem;
+  }
+  .vacancies__box-link.btn--more-link:hover {
+    -webkit-box-shadow: 0px 10px 23px rgba(150, 146, 144, 0.15);
+            box-shadow: 0px 10px 23px rgba(150, 146, 144, 0.15);
+  }
+  .vacancies__box-link.btn--more-link:hover::before {
+    opacity: 0;
+  }
+  .vacancies__box-link.btn--more-link:hover span {
+    font-size: 2.8rem;
+  }
+  .vacancies__box-link.btn--more-link:hover img.hover {
+    display: block;
+    width: 3rem;
+    height: 2rem;
+  }
+  .vacancies__box-link.btn--more-link:hover img.static {
+    display: none;
+  }
+  .vacancies__box-link.btn--more-link:hover::after {
+    opacity: 1;
+  }
+  .courses {
+    margin-bottom: 16.5rem;
+  }
+  .courses__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 6.8rem;
+  }
+  .courses__left-block {
+    margin-right: 0rem;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .courses__left-block .courses__img-block {
+    height: 51.6rem;
+    margin-bottom: 4rem;
+  }
+  .courses__text-block {
+    margin-bottom: 3rem;
+  }
+  .courses__title-wrap {
+    margin-bottom: 3rem;
+  }
+  .courses__title-wrap img {
+    width: 4rem;
+    height: 4rem;
+  }
+  .courses__title {
+    font-size: 4rem;
+  }
+  .courses__description {
+    font-size: 2.8rem;
+    width: 100%;
+    line-height: 1.3;
+  }
+  .courses__img-block {
+    border-radius: 1.2rem;
+    padding: 9.6rem 3rem;
+  }
+  .courses__sticker {
+    border-radius: 0.2rem;
+    font-size: 2.4rem;
+    padding: 0.3rem 2rem 0.3rem 3.2rem;
+    position: absolute;
+    top: 3rem;
+    right: 3rem;
+  }
+  .courses__box-title {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+  }
+  .courses__box-link {
+    font-size: 2.8rem;
+  }
+  .courses__box-link img {
+    width: 3rem;
+    height: 2rem;
+  }
+  .courses__right-block {
+    width: 100%;
+    padding-top: 0rem;
+  }
+  .courses__right-block .courses__img-block:nth-child(1) {
+    height: 44rem;
+    margin-bottom: 4rem;
+  }
+  .courses__right-block .courses__img-block:nth-child(2) {
+    height: 44rem;
+  }
+  .courses__btn {
+    border-radius: 8.8rem;
+    width: 45.7rem;
+    height: 9rem;
+    font-size: 2.8rem;
+  }
+  .courses__btn img {
+    width: 3rem;
+    height: 2rem;
+  }
+  .courses__btn::after {
+    width: 80%;
+  }
+  .article {
+    margin-bottom: 9.2rem;
+  }
+  .article__title-wrap {
+    margin-bottom: 4.6rem;
+  }
+  .article__title {
+    font-size: 4rem;
+  }
+  .article__link {
+    margin: 0 auto;
+    width: 45.4rem;
+    height: 9rem;
+    position: relative;
+    padding: 1rem;
+    border-radius: 8.8rem;
+    background: linear-gradient(92.85deg, #FF8A00 -43.75%, #FF007A 106.98%);
+  }
+  .article__link.desctop {
+    display: none;
+  }
+  .article__link.mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .article__link::before {
+    content: "";
+    position: absolute;
+    inset: 2px;
+    background: #fff;
+    border-radius: 4.4rem;
+    -webkit-transition: 0.6s;
+    transition: 0.6s;
+  }
+  .article__link span {
+    font-size: 2.8rem;
+    position: relative;
+    z-index: 2;
+  }
+  .article__link img {
+    width: 3rem;
+    height: 2rem;
+    position: relative;
+    z-index: 2;
+  }
+  .article__content {
+    display: grid;
+    grid-template-columns: 1fr;
+    -webkit-column-gap: 0;
+       -moz-column-gap: 0;
+            column-gap: 0;
+    row-gap: 8rem;
+    margin-bottom: 10.8rem;
+  }
+  .article__box > img {
+    height: 34.2rem;
+    margin-bottom: 2rem;
+    border-radius: 1.4rem;
+  }
+  .article__box:nth-child(2) > img {
+    height: 34.2rem;
+  }
+  .article__box-info-wrap {
+    margin-bottom: 2rem;
+  }
+  .article__box-sticker {
+    border-radius: 0.4rem;
+    padding: 0.3rem 1.2rem;
+    font-size: 2.8rem;
+  }
+  .article__box-views {
+    font-size: 2.4rem;
+  }
+  .article__box-views img {
+    width: 3rem;
+    height: 2rem;
+  }
+  .article__box-title {
+    font-size: 3.2rem;
+    margin-bottom: 1.8rem;
+  }
+  .article__box-subtitle {
+    font-size: 2.4rem;
+    line-height: 1.66;
+    color: #5E5E5E;
+  }
+  .article__box-link span {
+    font-size: 3.2rem;
+    margin-right: 1.4rem;
+  }
+  .article__box-link img {
+    width: 3rem;
+    height: 2rem;
+  }
+}
 .filter-block {
   background: #FFFFFF;
   -webkit-box-shadow: 0px 0.4rem 2.8rem rgba(36, 64, 117, 0.06);
@@ -3147,6 +3657,16 @@ input[type=number] {
     top: 8rem;
     right: 5.2rem;
     z-index: 100;
+  }
+  .header__log-mobile {
+    width: 3.6rem;
+    height: 3.6rem;
+  }
+  .header__log-mobile img {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
   .profile__inner {
     position: relative;

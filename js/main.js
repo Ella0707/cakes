@@ -40,7 +40,7 @@ if ($('#destroy-1').length) {
 }
 
 
-const baseSlider = new Swiper('.base__slider', {
+const activitySlider2 = new Swiper('#destroy-2', {
   slidesPerView: 2.8,
   spaceBetween: 13,
   speed: 800,
@@ -49,9 +49,14 @@ const baseSlider = new Swiper('.base__slider', {
   navigation: {
     nextEl: '.base__arrow-next',
     // prevEl: '.base__arrow-prev',
-},
-
+  },
 });
+
+if ($('#destroy-2').length) {
+  if ($(window).width() <= 769) {
+    activitySlider2.destroy();
+  }
+}
 
 // табы в профиле
 function openTab(evt, tabsName) {
