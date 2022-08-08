@@ -1,0 +1,365 @@
+.about-confectioners {
+    margin-bottom: 9rem;
+
+    .slider-arrow-next {
+        width: 2.7rem;
+        height: 2.5rem;
+    }
+
+    .slider-arrow-prev {
+        width: 2.7rem;
+        height: 2.5rem;
+    }
+
+    .profile {
+        &__content {
+            width: 100%;
+            position: relative;
+            padding-bottom: 5.9rem;
+            padding-top: 4.8rem;
+        }
+
+        &__portfolio {
+            margin-bottom: 4rem;
+        }
+
+        &__name {
+            font-size: 2.4rem;
+        }
+
+        &__personal-left {
+            padding-left: 0;
+            width: 52.7rem;
+            margin-right: 2.9rem;
+        }
+
+        &__personal {
+            padding: 0 4.1rem 0 3.7rem;
+            margin-bottom: 6rem;
+        }
+
+        &__portfolio-title {
+            padding-left: 3.6rem;
+        }
+
+        &__personal-img {
+            height: 40.5rem;
+            margin-bottom: 2.1rem;
+        }
+
+        &__personal-right {
+            width: 57rem;
+        }
+
+        &__favorites {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            position: absolute;
+            top: 3.5rem;
+            right: 4.5rem;
+
+            width: 5rem;
+            height: 5rem;
+            background: #FFFFFF;
+            box-shadow: 0px 0px 1.2rem rgba(30, 33, 105, 0.13);
+            border-radius: 50%;
+
+            img {
+                width: 2.9rem;
+                height: 2.7rem;
+                object-fit: contain;
+            }
+        }
+
+        &__description {
+            width: 89%;
+        }
+
+        &__name-top {
+            margin-bottom: 1.5rem;
+        }
+
+        &__location {
+            margin-bottom: 2.3rem;
+        }
+
+        &__description-items {
+            width: 89%;
+            padding-bottom: 2.2rem;
+            margin-bottom: 1.9rem;
+        }
+
+        &__price-wrap {
+            width: 89%;
+            padding-bottom: 1.9rem;
+            margin-bottom: 5.4rem;
+        }
+
+
+        &__contact-info {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        &__contact-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            width: 27.6rem;
+            height: 5.8rem;
+
+            background: linear-gradient(92.85deg, #FF8A00 -43.75%, #FF007A 106.98%);
+            box-shadow: 0px 1rem 2.3rem rgba(150, 146, 144, 0.15);
+            border-radius: 4.4rem;
+
+            span {
+                font-size: 1.8rem;
+                font-weight: 500;
+                color: #FFFFFF;
+                margin-right: 1rem;
+            }
+
+            img {
+                width: 1.5rem;
+                height: 1.5rem;
+                object-fit: contain;
+                transition: 0.4s;
+            }
+
+            &:hover {
+                img {
+                    transform: translateX(0.5rem);
+                }
+            }
+        }
+
+        &__portfolio-slide {
+            height: 31.3rem;
+        }
+    }
+
+
+}
+
+
+.reviews {
+    padding-left: 4.2rem;
+
+    &__title {
+        font-size: 2.4rem;
+        font-weight: 500;
+        color: #000000;
+        margin-bottom: 6rem;
+    }
+
+    &__content {
+        display: flex;
+    }
+
+    &__items {
+        margin-right: 14.7rem;
+        width: 60rem;
+    }
+
+    &__item {
+        display: flex;
+
+        &:not(:last-child) {
+            margin-bottom: 3.2rem;
+        }
+    }
+
+    &__item-info {
+        margin-right: 6.5rem;
+    }
+
+    &__item-name {
+        font-size: 1.8rem;
+        font-weight: 500;
+        color: #000000;
+        margin-bottom: 1.2rem;
+    }
+
+    &__item-location {
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: #5E5E5E;
+        margin-bottom: 0.4rem;
+    }
+
+    &__item-date {
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: #5E5E5E;
+        margin-bottom: 0.4rem;
+    }
+
+    &__item-rate {
+        display: flex;
+        align-items: center;
+    }
+
+    &__item-rate-stars {
+        display: flex;
+        align-items: center;
+        margin-right: 1.3rem;
+
+        img {
+            width: 1.5rem;
+            height: 1.5rem;
+
+            &:not(:last-child) {
+                margin-right: 0.2rem;
+            }
+        }
+    }
+
+    &__item-rate-value {
+        font-size: 1.4rem;
+        font-weight: 500;
+        color: #FFB800;
+    }
+
+    &__item-description {}
+
+    &__item-title {
+        font-size: 1.6rem;
+        font-weight: 500;
+        color: #000000;
+        margin-bottom: 1.2rem;
+    }
+
+    &__item-subtitle {
+        font-size: 1.4rem;
+        font-weight: 400;
+        color: #5E5E5E;
+        line-height: 1.42;
+    }
+
+    &__link-more {
+        display: flex;
+        align-items: center;
+        margin-top: 4.6rem;
+
+        span {
+            font-size: 2rem;
+            font-weight: 500;
+            background: linear-gradient(92.85deg, #FF8A00 -43.75%, #FF007A 106.98%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-right: 1rem;
+        }
+
+        img {
+            width: 2rem;
+            height: 1.5rem;
+            object-fit: contain;
+        }
+
+    }
+
+    &__summ {
+        width: 21.3rem;
+
+    }
+
+    &__summ-rated {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 1.8rem;
+        margin-bottom: 2rem;
+        border-bottom: 1px solid rgba(130, 139, 189, 0.38);
+    }
+
+    &__summ-stars {
+        display: flex;
+        align-items: center;
+
+        img {
+            width: 1.7rem;
+            height: 1.7rem;
+            object-fit: contain;
+
+            &:not(:last-child) {
+                margin-right: 0.75rem;
+            }
+        }
+
+    }
+
+    &__summ-value {
+        font-size: 1.4rem;
+        font-weight: 500;
+        color: #000000;
+    }
+
+    &__summ-key {
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: #8D8D8D;
+
+        &:not(:last-child) {
+            margin-bottom: 0.8rem;
+        }
+    }
+
+    &__feedback-btn {
+        width: 100%;
+        height: 4.5rem;
+        background: linear-gradient(92.85deg, #FF8A00 -43.75%, #FF007A 106.98%);
+        box-shadow: 0px 1rem 2.3rem rgba(150, 146, 144, 0.15);
+        border-radius: 4.4rem;
+        font-size: 1.6rem;
+        font-weight: 500;
+        color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 1rem;
+        margin-top: 2rem;
+    }
+}
+
+
+.article.page-about-confectioner {
+
+    .article {
+
+        &__title {
+            font-size: 2.7rem;
+        }
+
+        &__title-wrap {
+            margin-bottom: 3.8rem;
+        }
+
+        &__box-info-wrap {
+            margin-bottom: 1.5rem;
+        }
+
+        &__box-title {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            padding-right: 2rem;
+            line-height: 1.4;
+        }
+
+        &__box-subtitle {
+            font-size: 1.4rem;
+            line-height: 1.42;
+            width: 95%;
+        }
+
+        &__box-link {
+            span {
+                font-size: 1.6rem;
+            }
+        }
+    }
+}
