@@ -1370,21 +1370,25 @@ input[type=number] {
 
 .base {
   position: relative;
-  height: 60rem;
+  margin-bottom: 12rem;
 }
 .base__inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
 }
 .base__text-block {
   width: 33rem;
   padding-right: 4rem;
-  position: relative;
-  z-index: 10;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 .base__title-wrap {
-  margin-bottom: 2.1rem;
+  margin-bottom: 1.2rem;
 }
 .base .title-wrap {
   display: -webkit-box;
@@ -1426,24 +1430,22 @@ input[type=number] {
   font-weight: 400;
   color: #5E5E5E;
 }
-.base__slider {
-  width: 120rem;
-  overflow: hidden;
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 3rem 0 10rem 1rem;
-}
 .base__slider-wrapper {
   position: relative;
-  margin-bottom: 4rem;
+}
+.base__slider-block {
+  width: 86rem;
+  overflow: hidden;
+  padding: 1.5rem 1.5rem 4rem 1.5rem;
 }
 .base__slide {
   background: #FFFFFF;
+  width: 40rem;
   -webkit-box-shadow: 0px 0.4rem 2.4rem rgba(28, 40, 105, 0.1);
           box-shadow: 0px 0.4rem 2.4rem rgba(28, 40, 105, 0.1);
   border-radius: 0.6rem;
   padding: 2rem 2rem 2.7rem 2rem;
+  margin-right: 3rem;
 }
 .base__slide > img {
   height: 26.9rem;
@@ -1515,6 +1517,7 @@ input[type=number] {
   background: #FFFFFF;
   -webkit-box-shadow: 0px 3px 26px rgba(150, 146, 144, 0.44);
           box-shadow: 0px 3px 26px rgba(150, 146, 144, 0.44);
+  border-radius: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1524,6 +1527,11 @@ input[type=number] {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: absolute;
+  top: 35%;
+  left: 2rem;
+  z-index: 10;
+  cursor: pointer;
 }
 .base__arrow-prev img {
   width: 2rem;
@@ -1538,7 +1546,7 @@ input[type=number] {
   border-radius: 4.4rem;
   width: 27.6rem;
   height: 5.8rem;
-  margin: 0 34rem 0 auto;
+  margin: 0 0rem 0 auto;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   display: -webkit-box;
@@ -1585,13 +1593,13 @@ input[type=number] {
 }
 
 .recipes {
-  margin-bottom: 14.7rem;
+  margin-bottom: 11rem;
 }
 .recipes__title {
   font-size: 3.4rem;
   font-weight: 500;
   color: #000000;
-  margin-bottom: 4.3rem;
+  margin-bottom: 3rem;
 }
 .recipes__content {
   display: -webkit-box;
@@ -1617,20 +1625,24 @@ input[type=number] {
   height: 33.7rem;
   margin-right: 2.3rem;
   margin-bottom: 1.2rem;
+  padding: 4rem 5.8rem;
 }
 .recipes__box.two {
   width: 60.8rem;
   height: 21.2rem;
   margin-right: 2.3rem;
+  padding: 2.5rem 5.8rem;
 }
 .recipes__box.three {
   width: 57.2rem;
   height: 27rem;
   margin-bottom: 1.2rem;
+  padding: 4rem 2.8rem;
 }
 .recipes__box.four {
   width: 57.2rem;
   height: 27.9rem;
+  padding: 3rem 2.8rem;
 }
 .recipes__box::before {
   content: "";
@@ -1697,7 +1709,7 @@ input[type=number] {
 }
 
 .vacancies {
-  margin-bottom: 13.4rem;
+  margin-bottom: 14.4rem;
 }
 .vacancies__title-wrap {
   display: -webkit-box;
@@ -1858,7 +1870,7 @@ input[type=number] {
 .vacancies__box-link.btn--more-link::before {
   content: "";
   position: absolute;
-  inset: 2px;
+  inset: 1px;
   background: #fff;
   border-radius: 4.4rem;
   -webkit-transition: 0.6s;
@@ -1880,8 +1892,9 @@ input[type=number] {
   transition: 0.4s;
 }
 .vacancies__box-link.btn--more-link span {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 500;
+  color: #FFFFFF;
   background: linear-gradient(92.85deg, #FF8A00 -43.75%, #FF007A 106.98%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1918,16 +1931,17 @@ input[type=number] {
   opacity: 0;
 }
 .vacancies__box-link.btn--more-link:hover span {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 500;
   color: #FFFFFF;
-  background: #FFFFFF;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  background: none;
+  -webkit-background-clip: #FFFFFF;
+  -webkit-text-fill-color: #FFFFFF;
+  background-clip: none;
 }
 .vacancies__box-link.btn--more-link:hover img.hover {
   display: block;
+  width: 2rem;
 }
 .vacancies__box-link.btn--more-link:hover img.static {
   display: none;
@@ -1937,7 +1951,7 @@ input[type=number] {
 }
 
 .courses {
-  margin-bottom: 12.8rem;
+  margin-bottom: 11.8rem;
 }
 .courses__inner {
   display: -webkit-box;
@@ -1960,7 +1974,7 @@ input[type=number] {
   height: 51.4rem;
 }
 .courses__text-block {
-  margin-bottom: 6rem;
+  margin-bottom: 4rem;
 }
 .courses__title-wrap {
   display: -webkit-box;
@@ -1969,7 +1983,7 @@ input[type=number] {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 3.2rem;
+  margin-bottom: 2rem;
 }
 .courses__title-wrap img {
   width: 3rem;
@@ -2020,7 +2034,7 @@ input[type=number] {
   font-size: 2.6rem;
   font-weight: 500;
   color: #000000;
-  margin-bottom: 2.4rem;
+  margin-bottom: 1.4rem;
 }
 .courses__box-link {
   display: -webkit-box;
@@ -2051,7 +2065,6 @@ input[type=number] {
 }
 .courses__right-block {
   width: 59.2rem;
-  padding-top: 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2128,7 +2141,7 @@ input[type=number] {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 6.8rem;
+  margin-bottom: 5.8rem;
 }
 .article__title {
   font-size: 3.4rem;
@@ -2233,12 +2246,14 @@ input[type=number] {
   font-weight: 500;
   color: #000000;
   margin-bottom: 0.7rem;
+  line-height: 1.4;
 }
 .article__box-subtitle {
   font-size: 1.6rem;
   font-weight: 400;
   color: #5E5E5E;
   margin-bottom: 2rem;
+  width: 90%;
 }
 .article__box-link {
   display: -webkit-box;
@@ -2329,18 +2344,24 @@ input[type=number] {
     font-size: 2.8rem;
     line-height: 1.42;
   }
+  .base__slider-block {
+    width: 100%;
+    padding: 0;
+  }
   .base__slider {
     width: 100%;
     position: static;
-    padding: 2rem 4.8rem 10rem 4.8rem;
+    padding: 2.4rem 4.8rem 5.6rem 4.8rem;
   }
   .base__slider-wrapper {
     position: relative;
-    margin-bottom: 5.6rem;
+    margin-bottom: 0rem;
   }
   .base__slide {
     border-radius: 1.2rem;
     padding: 2.4rem 2.4rem 4rem 2.4rem;
+    width: 100%;
+    margin-right: 0;
   }
   .base__slide > img {
     height: 31.2rem;
@@ -2419,24 +2440,28 @@ input[type=number] {
     height: 38.6rem;
     margin-right: 0rem;
     margin-bottom: 4rem;
+    padding: 2.5rem 4.2rem;
   }
   .recipes__box.two {
     width: 100%;
     height: 38.6rem;
     margin-right: 0rem;
     margin-bottom: 4rem;
+    padding: 2.5rem 4.2rem;
   }
   .recipes__box.three {
     width: 100%;
     height: 38.6rem;
     margin-right: 0rem;
     margin-bottom: 4rem;
+    padding: 2.5rem 4.2rem;
   }
   .recipes__box.four {
     width: 100%;
     height: 38.6rem;
     margin-right: 0rem;
     margin-bottom: 0rem;
+    padding: 2.5rem 4.2rem;
   }
   .recipes__box::before {
     border-radius: inherit;

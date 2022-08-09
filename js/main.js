@@ -41,8 +41,9 @@ if ($('#destroy-1').length) {
 
 
 const activitySlider2 = new Swiper('#destroy-2', {
-  slidesPerView: 2.8,
-  spaceBetween: 13,
+  // slidesPerView: 2,
+  slidesPerView: 'auto',
+  // spaceBetween: 20,
   speed: 800,
   loop: true,
 

@@ -68,22 +68,22 @@
 
 .base {
     position: relative;
-    height: 60rem;
-
+    margin-bottom: 12rem;
 
     &__inner {
         display: flex;
+        justify-content: space-between;
+        position: relative;
     }
 
     &__text-block {
         width: 33rem;
         padding-right: 4rem;
-        position: relative;
-        z-index: 10;
+        flex-shrink: 0;
     }
 
     &__title-wrap {
-        margin-bottom: 2.1rem;
+        margin-bottom: 1.2rem;
 
     }
 
@@ -126,24 +126,24 @@
     }
 
     &__slider {
-        width: 120rem;
-        overflow: hidden;
-        position: absolute;
-        top: 0;
-        right: 0;
-        padding: 3rem 0 10rem 1rem;
     }
 
     &__slider-wrapper {
         position: relative;
-        margin-bottom: 4rem;
+    }
+    &__slider-block {
+        width: 86rem;
+        overflow: hidden;
+        padding: 1.5rem 1.5rem 4rem 1.5rem;
     }
 
     &__slide {
         background: #FFFFFF;
+        width: 40rem;
         box-shadow: 0px 0.4rem 2.4rem rgba(28, 40, 105, 0.1);
         border-radius: 0.6rem;
         padding: 2rem 2rem 2.7rem 2rem;
+        margin-right: 3rem;
 
         &>img {
             height: 26.9rem;
@@ -208,10 +208,17 @@
         height: 5.8rem;
         background: #FFFFFF;
         box-shadow: 0px 3px 26px rgba(150, 146, 144, 0.44);
+        border-radius: 50%;
 
         display: flex;
         align-items: center;
         justify-content: center;
+
+        position: absolute;
+        top: 35%;
+        left: 2rem;
+        z-index: 10;
+        cursor: pointer;
 
         img {
             width: 2rem;
@@ -226,7 +233,7 @@
         border-radius: 4.4rem;
         width: 27.6rem;
         height: 5.8rem;
-        margin: 0 34rem 0 auto;
+        margin: 0 0rem 0 auto;
         transition: 0.5s;
 
         display: flex;
@@ -274,9 +281,7 @@
 
 
 .recipes {
-    margin-bottom: 14.7rem;
-
-
+    margin-bottom: 11rem;
 
     &__inner {}
 
@@ -284,7 +289,7 @@
         font-size: 3.4rem;
         font-weight: 500;
         color: #000000;
-        margin-bottom: 4.3rem;
+        margin-bottom: 3rem;
     }
 
     &__content {
@@ -318,23 +323,27 @@
             height: 33.7rem;
             margin-right: 2.3rem;
             margin-bottom: 1.2rem;
+            padding: 4rem 5.8rem;
         }
 
         &.two {
             width: 60.8rem;
             height: 21.2rem;
             margin-right: 2.3rem;
+            padding: 2.5rem 5.8rem;
         }
 
         &.three {
             width: 57.2rem;
             height: 27rem;
             margin-bottom: 1.2rem;
+            padding: 4rem 2.8rem;
         }
 
         &.four {
             width: 57.2rem;
             height: 27.9rem;
+            padding: 3rem 2.8rem;
         }
 
         &::before {
@@ -409,7 +418,7 @@
 
 
 .vacancies {
-    margin-bottom: 13.4rem;
+    margin-bottom: 14.4rem;
 
     &__title-wrap {
         display: flex;
@@ -548,7 +557,7 @@
             &::before {
                 content: "";
                 position: absolute;
-                inset: 2px;
+                inset: 1px;
                 background: #fff;
                 border-radius: 4.4rem;
                 transition: 0.6s;
@@ -570,8 +579,9 @@
             }
 
             span {
-                font-size: 1.8rem;
+                font-size: 1.6rem;
                 font-weight: 500;
+                color: #FFFFFF;
                 background: linear-gradient(92.85deg, #FF8A00 -43.75%, #FF007A 106.98%);
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
@@ -610,18 +620,19 @@
                 }
 
                 span {
-                    font-size: 1.8rem;
+                    font-size: 1.6rem;
                     font-weight: 500;
                     color: #FFFFFF;
-                    background: #FFFFFF;
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                    background-clip: text;
+                    background: none;
+                    -webkit-background-clip: #FFFFFF;
+                    -webkit-text-fill-color :#FFFFFF;
+                    background-clip: none;
                 }
 
                 img {
                     &.hover {
                         display: block;
+                        width: 2rem;
                     }
 
                     &.static {
@@ -640,7 +651,7 @@
 
 
 .courses {
-    margin-bottom: 12.8rem;
+    margin-bottom: 11.8rem;
     
     &__inner {
         display: flex;
@@ -659,13 +670,13 @@
     }
     
     &__text-block {
-        margin-bottom: 6rem;
+        margin-bottom: 4rem;
     }
     
     &__title-wrap {
         display: flex;
         align-items: center;
-        margin-bottom: 3.2rem;
+        margin-bottom: 2rem;
         
         img {
             width: 3rem;
@@ -722,7 +733,7 @@
         font-size: 2.6rem;
         font-weight: 500;
         color: #000000;
-        margin-bottom: 2.4rem;
+        margin-bottom: 1.4rem;
     }
     
     &__box-link {
@@ -756,7 +767,6 @@
     
     &__right-block {
         width: 59.2rem;
-        padding-top: 3rem;
         display: flex;
         flex-direction: column;
 
@@ -832,7 +842,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin-bottom: 6.8rem;
+        margin-bottom: 5.8rem;
     }
     
     &__title {
@@ -937,6 +947,7 @@
         font-weight: 500;
         color: #000000;
         margin-bottom: 0.7rem;
+        line-height: 1.4;
     
     }
     
@@ -945,6 +956,7 @@
         font-weight: 400;
         color: #5E5E5E;
         margin-bottom: 2rem;
+    width: 90%;
     
     }
     
@@ -1057,21 +1069,28 @@
             font-size: 2.8rem;
             line-height: 1.42;
         }
+
+        &__slider-block {
+            width: 100%;
+            padding: 0;
+        }
     
         &__slider {
             width: 100%;
             position: static;
-            padding: 2rem 4.8rem 10rem 4.8rem;
+            padding: 2.4rem 4.8rem 5.6rem 4.8rem;
         }
     
         &__slider-wrapper {
             position: relative;
-            margin-bottom: 5.6rem;
+            margin-bottom: 0rem;
         }
     
         &__slide {
             border-radius: 1.2rem;
             padding: 2.4rem 2.4rem 4rem 2.4rem;
+            width: 100%;
+            margin-right: 0;
     
             &>img {
                 height: 31.2rem;
@@ -1163,6 +1182,7 @@
                 height: 38.6rem;
                 margin-right: 0rem;
                 margin-bottom: 4rem;
+                padding: 2.5rem 4.2rem;
             }
     
             &.two {
@@ -1170,6 +1190,7 @@
                 height: 38.6rem;
                 margin-right: 0rem;
                 margin-bottom: 4rem;
+                padding: 2.5rem 4.2rem;
             }
     
             &.three {
@@ -1177,6 +1198,7 @@
                 height: 38.6rem;
                 margin-right: 0rem;
                 margin-bottom: 4rem;
+                padding: 2.5rem 4.2rem;
             }
     
             &.four {
@@ -1184,6 +1206,7 @@
                 height: 38.6rem;
                 margin-right: 0rem;
                 margin-bottom: 0rem;
+                padding: 2.5rem 4.2rem;
             }
     
             &::before {
