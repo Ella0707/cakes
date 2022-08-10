@@ -1,4 +1,4 @@
-.about-confectioners {
+.about-confectioner {
     margin-bottom: 9rem;
 
     .slider-arrow-next {
@@ -362,4 +362,403 @@
             }
         }
     }
+}
+
+
+
+
+@media (max-width: 48em) {
+
+
+    .about-confectioner {
+        margin-bottom: 9rem;
+
+        .container {
+            padding: 0;
+        }
+    
+        .profile {
+            &__content {
+                padding-bottom: 0rem;
+                padding-top: 4.8rem;
+            }
+    
+            &__portfolio {
+                margin-bottom: 5.6rem;
+            }
+    
+            &__name {
+                font-size: 4rem;
+            }
+    
+            &__personal-left {
+                padding-left: 0;
+                width: 100%;
+                margin-right: 0rem;
+            }
+    
+            &__personal {
+                padding: 2.8rem 2.8rem 9.6rem 2.8rem;
+                border-radius: 1.6rem;
+                margin: 0 4.8rem 7rem 4.8rem;
+            }
+    
+            &__portfolio-title {
+                padding-left: 4.8rem;
+                font-size: 4rem;
+                margin-bottom: 4.5rem;
+            }
+    
+            &__personal-img {
+                height: 37.2rem;
+                margin-bottom: 3.32rem;
+            }
+    
+            &__personal-right {
+                width: 100%;
+            }
+    
+            &__favorites {
+                top: 10.5rem;
+                right: 9.5rem;
+                width: 5.6rem;
+                height: 5.6rem;
+    
+                img {
+                    width: 3.2rem;
+                    height: 3.2rem;
+                }
+            }
+    
+            &__description {
+                width: 100%;
+                font-size: 2.4rem;
+                padding: 0 0 3.2rem 0;
+            }
+    
+            &__name-top {
+                margin-bottom: 2rem;
+            }
+    
+            &__location {
+                margin-bottom: 4.2rem;
+                font-size: 2.4rem;
+            }
+    
+            &__description-items {
+                width: 100%;
+                padding-bottom: 4.2rem;
+                margin-bottom: 4.6rem;
+
+                ul li {
+                    font-weight: 400;
+                }
+            }
+
+            &__price-key {
+                font-weight: 500;
+            }
+    
+            &__price-wrap {
+                width: 100%;
+                padding-bottom: 4.5rem;
+                margin-bottom: 5rem;
+                padding-left: 0;
+                row-gap: 7rem;
+            }
+
+            &__rate-key:last-child {
+                padding-bottom: 0rem;
+                margin-bottom: 0rem;
+                border-bottom: none;
+            }
+
+            &__rate-wrap {
+                margin-bottom: 10.5rem;
+            }
+    
+    
+            &__contact-info {
+                flex-direction: column-reverse;
+            }
+
+            &__personal-social {
+                padding-left: 0rem; 
+                margin-bottom: 8.6rem;
+            }
+    
+            &__contact-btn {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+    
+                width: 49rem;
+                height: 10.2rem;
+    
+                box-shadow: 0px 2rem 4.6rem rgba(150, 146, 144, 0.15);
+                border-radius: 8.8rem;
+    
+                span {
+                    font-size: 3.2rem;
+                }
+    
+                img {
+                    width: 3rem;
+                    height: 3rem;
+                }
+            }
+    
+            &__portfolio-slide {
+                height: 50rem;
+                border-radius: 0;
+                padding: 0;
+            }
+
+            &__portfolio-slide:not(:last-child) {
+                margin-bottom: 0.6rem;
+            }
+
+            &__portfolio-slide-text {
+                opacity: 1;
+                padding: 2.6rem 0 4rem 3.2rem;
+                background: rgba(0, 0, 0, 0.28);
+                width: 100%;
+            }
+
+            &__portfolio-cake-name {
+                font-size: 2.8rem;
+                margin-bottom: 1rem;
+            }
+
+            &__portfolio-cake-price {
+                font-size: 2.8rem;
+            }
+        }
+    }
+
+
+    .reviews {
+        padding: 0 4.8rem;
+    
+        &__title {
+            font-size: 4rem;
+            margin-bottom: 5.4rem;
+        }
+    
+        &__content {
+            display: flex;
+            flex-direction: column;
+        }
+    
+        &__items {
+            margin-right: 0;
+            width: 100%;
+        }
+    
+        &__item {
+            flex-direction: column;
+    
+            &:not(:last-child) {
+                margin-bottom: 7rem;
+            }
+        }
+    
+        &__item-info {
+            margin-right: 0rem;
+            display: grid;
+            grid-template-areas: 
+            "a b"
+            "c c";
+            margin-bottom: 3.4rem;
+        }
+
+        &__item-title-wrap {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 1.2rem;
+        }
+    
+        &__item-name {
+            font-size: 3.2rem;
+            margin-bottom: 0rem;
+            grid-area: a;
+            padding-right: 2rem;
+        }
+    
+        &__item-location {
+            font-size: 2.8rem;
+            margin-bottom: 0rem;
+            grid-area: c;
+
+        }
+    
+        &__item-date {
+            font-size: 2.8rem;
+            margin-bottom: 0rem;
+            grid-area: b;
+            justify-self: end;
+        }
+    
+        &__item-rate {
+
+            &.mobile {
+                display: flex;
+            }
+        }
+    
+        &__item-rate-stars {
+            display: flex;
+            align-items: center;
+            margin-right: 1.3rem;
+    
+            img {
+                width: 2.8rem;
+                height: 2.8rem;
+    
+                &:not(:last-child) {
+                    margin-right: 1rem;
+                }
+            }
+        }
+    
+        &__item-rate-value {
+            font-size: 2.8rem;
+        }
+    
+        &__item-description {}
+    
+        &__item-title {
+            font-size: 2.8rem;
+            margin-bottom: 0rem;
+            padding-right: 2rem;
+        }
+    
+        &__item-subtitle {
+            font-size: 2.4rem;
+        }
+    
+        &__link-more {
+            display: flex;
+            align-items: center;
+            margin-top: 4.6rem;
+    
+            span {
+                font-size: 2rem;
+                font-weight: 500;
+                background: linear-gradient(92.85deg, #FF8A00 -43.75%, #FF007A 106.98%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                margin-right: 1rem;
+            }
+    
+            img {
+                width: 2rem;
+                height: 1.5rem;
+                object-fit: contain;
+            }
+    
+        }
+    
+        &__summ {
+            width: 100%;
+            align-self: center;
+    
+        }
+    
+        &__summ-rated {
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 3.6rem;
+            margin-bottom: 4rem;
+        }
+    
+        &__summ-stars {
+            margin-right: 2.8rem;
+    
+            img {
+                width: 4rem;
+                height: 4rem;
+    
+                &:not(:last-child) {
+                    margin-right: 1rem;
+                }
+            }
+    
+        }
+    
+        &__summ-value {
+            font-size: 2.8rem;
+        }
+    
+        &__summ-key {
+            font-size: 3.2rem;
+            text-align: center;
+            font-weight: 400;
+    
+            &:not(:last-child) {
+                margin-bottom: 3rem;
+            }
+        }
+    
+        &__feedback-btn {
+            width: 49rem;
+            height: 10rem;
+            box-shadow: 0px 2rem 4.6rem rgba(150, 146, 144, 0.15);
+            border-radius: 8.8rem;
+            font-size: 3.2rem;
+            padding: 0 1rem;
+            margin-top: 4rem;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    .article.page-about-confectioner {
+
+        .article {
+
+            &__content {
+                row-gap: 9rem;
+            }
+    
+            &__title {
+                font-size: 4rem;
+            }
+    
+            &__title-wrap {
+                margin-bottom: 3.8rem;
+            }
+    
+            &__box-info-wrap {
+                margin-bottom: 2.5rem;
+            }
+
+            &__box-sticker {
+                font-size: 2.4rem;
+            }
+    
+            &__box-title {
+                font-size: 3.2rem;
+                margin-bottom: 2rem;
+                padding-right: 2rem;
+                line-height: 1.4;
+            }
+    
+            &__box-subtitle {
+                font-size: 2.4rem;
+                line-height: 1.5;
+                width: 100%;
+            }
+    
+            &__box-link {
+                span {
+                    font-size: 3.2rem;
+                }
+            }
+        }
+    }
+    
+
 }
