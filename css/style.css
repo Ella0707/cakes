@@ -4375,6 +4375,7 @@ input[type=number] {
   top: 0;
   left: 0;
   overflow-y: auto;
+  display: none;
 }
 .popup__body {
   min-height: 100%;
@@ -4578,7 +4579,7 @@ input[type=number] {
 
 @media (max-width: 48em) {
   .popup__body {
-    padding: 6rem 4rem;
+    padding: 6rem 0rem;
   }
   .popup__content {
     width: 100%;

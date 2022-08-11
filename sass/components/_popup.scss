@@ -9,7 +9,7 @@
 
     overflow-y: auto;
 
-    // display: none;
+    display: none;
 
     &__body {
         min-height: 100%;
@@ -233,7 +233,7 @@
     .popup {
     
         &__body {
-            padding: 6rem 4rem;
+            padding: 6rem 0rem;
         }
     
         &__content {
