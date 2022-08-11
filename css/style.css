@@ -4508,6 +4508,11 @@ input[type=number] {
   font-weight: 400;
   color: #808080;
   width: 100%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.popup__form-input:focus-within {
+  border: 1px solid #4285F4;
 }
 .popup__form-message {
   font-size: 1.2rem;
@@ -4523,6 +4528,9 @@ input[type=number] {
   -webkit-box-shadow: none;
           box-shadow: none;
   position: relative;
+}
+.popup .dropdown.active .select {
+  border: 1px solid #4285F4;
 }
 .popup .dropdown .dropdown-menu {
   top: 7rem;

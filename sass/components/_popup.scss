@@ -153,6 +153,11 @@
         font-weight: 400;
         color: #808080;
         width: 100%;
+        transition: 0.3s;
+
+        &:focus-within {
+            border: 1px solid #4285F4;
+        }
     }
 
     &__form-message {
@@ -170,6 +175,10 @@
         border-radius: 0.9rem;
         box-shadow: none;
         position: relative;
+    }
+
+    .dropdown.active .select {
+        border: 1px solid #4285F4;
     }
 
     .dropdown .dropdown-menu {
