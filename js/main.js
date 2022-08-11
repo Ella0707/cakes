@@ -268,3 +268,6 @@ function check() {
   }
 }
 
+
+
+// console.log(document.querySelector('#status-value').value);

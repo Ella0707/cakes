@@ -9,7 +9,7 @@
 
     overflow-y: auto;
 
-    display: none;
+    // display: none;
 
     &__body {
         min-height: 100%;
@@ -101,7 +101,6 @@
             position: absolute;
             right: 1.7rem;
             top: 6rem;
-            // transform: translateY(50%);
             display: inline-block;
             width: 1.5rem;
             height: 1.5rem;
@@ -240,14 +239,118 @@
         &__content {
             width: 100%;
             height: auto;
-            padding: 20.6rem 4rem 12rem 4rem;
-            border-radius: 6rem;
+            padding: 11rem 4rem 11rem 4rem;
+            border-radius: 8rem;
         }
     
         &__close {
+            width: 4rem;
+            height: 4rem;
+    
             right: 5rem;
             top: 5rem;
         }
+    
         
+        &__title {
+            font-size: 4.2rem;
+            margin-bottom: 5rem;
+        }
+        
+        &__form-wrap {
+            display: grid;
+            grid-template-columns: 1fr;
+            row-gap: 4rem;
+            column-gap: 0rem;
+        }
+        
+        &__btn-google {
+            grid-column: 1/3;
+    
+            border-radius: 1.8rem;
+            height: 10rem;
+    
+            font-size: 2.8rem;
+    
+            img {
+                width: 4.2rem;
+                height: 4.2rem;
+                margin-right: 1rem;
+            }
+        }
+        
+        &__form-item {
+            grid-column: 1/3;
+    
+            .password-control,
+            .password-control-two {
+                right: 3rem;
+                top: 10.5rem;
+                width: 3rem;
+                height: 3rem;
+        
+                &.view {
+                    width: 3.2rem;
+                    height: 3.2rem;
+                }
+            }
+        }
+        
+        &__form-item-title {
+            font-size: 3.4rem;
+        }
+        
+        &__form-input {
+            border-radius: 1.8rem;
+            padding: 4rem 2.6rem;
+    
+            font-size: 3.2rem;
+        }
+    
+        &__form-message {
+            font-size: 2.4rem;
+        }
+    
+        .dropdown .select {
+            border-radius: 1.8rem;
+            padding: 4rem 2.6rem;
+        }
+    
+        .dropdown .dropdown-menu {
+            top: 12rem;
+            border-radius: 1.8rem;
+            padding: 4rem 2.6rem;
+        }
+        
+        &__bottom {
+            padding-top: 5rem;
+        }
+    
+        &__form-save {
+            font-size: 2.8rem;
+
+            input {
+                width: 3rem;
+                height: 3rem;
+                border-radius: 0.4rem;
+            }
+    
+        }
+        
+        &__btn {
+            border-radius: 10rem;
+            font-size: 3.6rem;
+            margin-bottom: 5rem;
+            height: 10rem;
+        }
+        
+        &__accaunt-title {
+            font-size: 2.8rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        &__accaunt-link {
+            font-size: 3rem;
+        }
     }
 }

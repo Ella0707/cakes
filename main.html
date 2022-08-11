@@ -588,18 +588,18 @@
     
                     <label class="popup__form-item e-mail" for="">
                         <div class="popup__form-item-title">Введите e-mail<sup> *</sup></div>
-                        <input class="popup__form-input" type="text" placeholder="e-mail">
+                        <input class="popup__form-input" type="email" placeholder="e-mail" name="email">
                     </label>
                     <label class="popup__form-item" for="">
                         <div class="popup__form-item-title">Имя пользователя<sup> *</sup></div>
-                        <input class="popup__form-input" type="text" placeholder="Имя">
+                        <input class="popup__form-input" type="text" placeholder="Имя" name="name">
                     </label>
                     <div class="popup__form-item">
                         <div class="popup__form-item-title">Статус<sup> *</sup></div>
                         <div class="dropdown">
                             <div class="select">
                                 <span id="status">Кондитер</span>
-                                <input type="text" class="input-search">
+                                <input type="text" class="input-search" name="status">
                                 <img src="./img/arrow-down.svg" alt="">
                             </div>
                             <input type="hidden" name="category">
@@ -614,7 +614,7 @@
                         <div class="dropdown">
                             <div class="select">
                                 <span>Беларусь</span>
-                                <input type="text" class="input-search" id="country">
+                                <input type="text" class="input-search" name="contry">
                                 <img src="./img/arrow-down.svg" alt="">
                             </div>
                             <input type="hidden" name="category">
@@ -634,11 +634,11 @@
                         <div class="dropdown">
                             <div class="select">
                                 <span>Минск</span>
-                                <input type="text" class="input-search" id="sity">
+                                <input type="text" class="input-search" name="sity-form">
                                 <img src="./img/arrow-down.svg" alt="">
                             </div>
                             <input type="hidden" name="category">
-                            <ul class="dropdown-menu"  id="by">
+                            <ul class="dropdown-menu">
                                 <li>Пинск</li>
                                 <li>Еще какой-то</li>
                                 <li>Еще какой-то</li>
@@ -653,7 +653,7 @@
                         <div class="popup__form-item-title">Введите пароль<sup> *</sup></div>
                         
                         <input class="popup__form-input" type="password" placeholder="Пароль"
-                        id="password" autocomplete="current-password">
+                        id="password" autocomplete="current-password" name="password">
                         <a href="#" class="password-control" onclick="return show_hide_password(this);"></a>
                     </label>
                     <label class="popup__form-item password" for="">
