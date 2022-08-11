@@ -59,6 +59,20 @@
         grid-template-columns: 21.6rem 21.6rem;
         row-gap: 2.6rem;
         column-gap: 1.9rem;
+
+        &.form-wrap-login {
+            grid-template-columns: 1fr;
+            column-gap: 0;
+            row-gap: 1rem;
+        }
+
+        .popup__form-item.form-login {
+            margin-bottom: 3rem;
+        }
+
+        .popup__bottom {
+            margin-top: 4rem;
+        }
     }
     
     &__btn-google {
@@ -75,6 +89,7 @@
         font-size: 1.4rem;
         font-weight: 500;
         color: #4285F4;
+        margin-bottom: 2.4rem;
 
         img {
             width: 2.6rem;
@@ -86,6 +101,8 @@
     
     &__form-item {
 
+
+
         &.e-mail {
             grid-column: 1/3;
         }
@@ -95,12 +112,11 @@
             position: relative;
         }
 
-
         .password-control,
         .password-control-two {
             position: absolute;
             right: 1.7rem;
-            top: 6rem;
+            top: 5.5rem;
             display: inline-block;
             width: 1.5rem;
             height: 1.5rem;
@@ -167,6 +183,18 @@
     
     &__bottom {
         grid-column: 1/3;
+    }
+
+    &__form-save-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__form-forgot-password {
+        font-size: 1.4rem;
+        font-weight: 500;
+        color: #4285F4;
     }
 
     &__form-save {
@@ -334,7 +362,10 @@
                 height: 3rem;
                 border-radius: 0.4rem;
             }
-    
+        }
+
+        &__form-forgot-password {
+            font-size: 2.4rem;
         }
         
         &__btn {

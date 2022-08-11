@@ -49,7 +49,7 @@
                     </ul>
                 </nav>
                 <div class="header__btns">
-                    <button class="header__log-in desctop">Вход</button>
+                    <button class="header__log-in desctop open-form-login">Вход</button>
                     <button class="header__reg desctop registration-link">Регистрация</button>
                     <button class="header__log-mobile mobile registration-link">
                         <img src="./img/user-color.svg" alt="">
@@ -678,7 +678,7 @@
                             <div class="popup__accaunt-title">
                                 Уже есть аккаунт?
                             </div>
-                            <button class="popup__accaunt-link">Войти</button>
+                            <button class="popup__accaunt-link open-form-login">Войти</button>
                         </div>
                     </div>
                 </form>
@@ -688,7 +688,7 @@
 
 
     <!-- форма входа -->
-    <!-- <div class="popup form-login">
+    <div class="popup form-login">
         <div class="popup__body">
             <div class="popup__content">
                 <button class="popup__close form-login-close">
@@ -696,19 +696,19 @@
                 </button>
                 <div class="popup__title">Вход</div>
 
-                <form class="popup__form-wrap">
+                <form class="popup__form-wrap form-wrap-login">
                     <button class="popup__btn-google">
                         <img src="./img/google.svg" alt="">
                         Войти с помощью Google
                     </button>
-    
-                    <label class="popup__form-item" for="">
-                        <div class="popup__form-item-title">Имя пользователя<sup> *</sup></div>
-                        <input class="popup__form-input" type="text" placeholder="Имя" name="name">
+
+                    <label class="popup__form-item form-login">
+                        <div class="popup__form-item-title">Введите имя пользователя или e-mail</div>
+                        <input class="popup__form-input" type="text" placeholder="Имя пользователя или e-mail" name="name">
                     </label>
 
                     <label class="popup__form-item password" for="">
-                        <div class="popup__form-item-title">Введите пароль<sup> *</sup></div>
+                        <div class="popup__form-item-title">Введите пароль</div>
                         
                         <input class="popup__form-input" type="password" placeholder="Пароль"
                         id="password" autocomplete="current-password" name="password">
@@ -716,31 +716,28 @@
                     </label>
 
                     <div class="popup__form-save-wrap">
-                    
                         <label class="popup__form-save">
                             <input type="checkbox">
                             Запомнить меня?
                         </label>
-
-                        <a href="popup__form-forgot-password">Забыли пароль</a>
-
+                        <a class="popup__form-forgot-password" href="#">Забыли пароль</a>
                     </div>
     
                     <div class="popup__bottom">
                         <button class="popup__btn btn-form">
-                            <span>Зарегистрироваться</span>
+                            <span>Войти</span>
                         </button>
                         <div class="popup__accaunt">
                             <div class="popup__accaunt-title">
                                 Нет аккаунта?
                             </div>
-                            <button class="popup__accaunt-link link-reg">Зарегистрироваться</button>
+                            <button class="popup__accaunt-link registration-link">Зарегистрироваться</button>
                         </div>
                     </div>
                 </form>
             </div>
         </div>
-    </div> -->
+    </div>
 
     <script defer src="js/swiper-bundle.min.js"></script>
     <script defer src="js/jquery-3.5.1.min.js"></script>

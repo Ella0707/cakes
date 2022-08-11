@@ -2,12 +2,26 @@
 $('.registration-link').click(function (e) {
   e.preventDefault();
   $('.form-reg').fadeIn(800);
-  $('body').toggleClass('lock');
+  $('.form-login').fadeOut(800);
+  $('body').addClass('lock');
 });
 
 $('.form-reg-close').click(function () {
   $('.form-reg').fadeOut(800);
-  $('body').toggleClass('lock');
+  $('body').removeClass('lock');
+});
+
+// открытие и закрытие формы входа
+$('.open-form-login').click(function (e) {
+  e.preventDefault();
+  $('.form-login').fadeIn(800);
+  $('.form-reg').fadeOut(800);
+  $('body').addClass('lock');
+});
+
+$('.form-login-close').click(function () {
+  $('.form-login').fadeOut(800);
+  $('body').removeClass('lock');
 });
 
 
