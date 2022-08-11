@@ -1,3 +1,15 @@
+// открытие формы и закрытие
+$('.registration-link').click(function (e) {
+  e.preventDefault();
+  $('.form-reg').fadeIn(800);
+  $('body').toggleClass('lock');
+});
+
+$('.form-reg-close').click(function () {
+  $('.form-reg').fadeOut(800);
+  $('body').toggleClass('lock');
+});
+
 
 
 // мобильное меню
@@ -210,4 +222,49 @@ const filterList = searchTerm => {
         }
     });
 };
+
+
+
+
+
+// ВАЛИДАЦИЯ ФОРМЫ РЕГИСТРАЦИИ
+
+
+// показать/скрыть пароль
+function show_hide_password(target) {
+  let input = document.getElementById('password');
+  if (input.getAttribute('type') == 'password') {
+      target.classList.add('view');
+      input.setAttribute('type', 'text');
+  } else {
+      target.classList.remove('view');
+      input.setAttribute('type', 'password');
+  }
+  return false;
+}
+
+function show_hide_password_two(target) {
+  let input = document.getElementById('confirm_password');
+  if (input.getAttribute('type') == 'password') {
+      target.classList.add('view');
+      input.setAttribute('type', 'text');
+  } else {
+      target.classList.remove('view');
+      input.setAttribute('type', 'password');
+  }
+  return false;
+}
+
+
+
+// проверка совпадают ли введенные пароли
+
+function check() {
+  if(document.getElementById('password').value ===
+          document.getElementById('confirm_password').value) {
+      document.getElementById('message').innerHTML = " ";
+  } else {
+      document.getElementById('message').innerHTML = "Введенные пароли не совпадают";
+  }
+}
 

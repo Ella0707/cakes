@@ -151,3 +151,134 @@
 .search-box input:focus {
     outline: none;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.select-box-status {
+    position: relative;
+    display: flex;
+    width: 20rem;
+    flex-direction: column;
+}
+
+.select-box-status .options-container-status {
+    max-height: 0;
+    width: 100%;
+    opacity: 0;
+    transition: all 0.1s;
+    overflow: hidden;
+
+    position: absolute;
+    top: 4rem;
+    left: 0;
+    z-index: 10;
+
+    background: #FFFFFF;
+    box-shadow: 0px 1px 13px rgba(27, 29, 86, 0.14);
+    border-radius: 5px;
+    color: #616161;
+    font-size: 1.4rem;
+    font-weight: 400;
+    padding: 1rem;
+}
+
+.selected-status {
+    color: #828BBD;
+    position: relative;
+    width: max-content;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem 0 2rem;
+    height: 3rem;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.selected-status::before {
+    content: "";
+    background: url("./../../../cakes/img/location-icon.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    height: 2rem;
+    width: 1.4rem;
+    left: 0rem;
+    top: 0.4rem;
+}
+
+.selected-status::after {
+    content: "";
+    background: url("./../../../cakes/img/arrow-down-grey.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    height: 1rem;
+    width: 1rem;
+    right: -2rem;
+    top: 1rem;
+    transition: all 0.4s;
+}
+
+.select-box-status .options-container-status.active {
+    max-height: 25rem;
+    opacity: 1;
+    display: block;
+
+    // .search-box {
+    //     visibility: visible;
+    // }
+}
+
+.select-box-status .options-container-status.active+.selected-status::after {
+    transform: rotateX(180deg);
+}
+
+.search-list {
+    max-height: 17rem;
+    overflow-y: scroll;
+    min-height: max-content;
+
+    &::-webkit-scrollbar {
+        width: 0.6rem;
+        background: #E8E8E8;
+        border-radius: 2.1rem;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: #818BBD;
+        border-radius: 2.1rem;
+    }
+}
+
+.select-box-status .option-status:hover {
+    font-weight: 500;
+}
+
+
+.select-box-status .option-status {
+    padding: 0.5rem 2rem 0.5rem 0;
+}
+
+.select-box-status label {
+    cursor: pointer;
+}
+
+.select-box-status .option-status .radio {
+    display: none;
+}
+
+
+
