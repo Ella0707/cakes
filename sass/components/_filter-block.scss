@@ -119,6 +119,48 @@
             object-fit: contain;
         }
     }
+
+    &__range {
+        margin-bottom: 2rem;
+    }
+
+    .ui-slider-handle {
+        width: 15px;
+        height: 15px;
+        background: linear-gradient(92.85deg, #FF8A00 -43.75%, #FF007A 106.98%);
+        border-radius: 50%;
+        border: none;
+        outline: none;
+        cursor: pointer;
+
+
+    } 
+
+
+    .ui-state-active,
+    .ui-state-focus {
+        border: 1px solid #FF007A;
+    }
+
+    .ui-slider {
+        height: 2px;
+        background-color: #D9D9D9;
+    }
+
+    .ui-slider-range {
+        background: linear-gradient(92.85deg, #FF8A00 -43.75%, #FF007A 106.98%);
+        height: 2px;
+    }
+
+    &__range-values {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: #5E5E5E;
+    }
 }
 
 

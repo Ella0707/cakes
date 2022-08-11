@@ -26,6 +26,9 @@ $('.form-login-close').click(function () {
 
 
 
+
+
+
 // мобильное меню
 $('.profile-open').on('click', function (e) {
   e.preventDefault();
@@ -195,6 +198,23 @@ $(".pagination__item").click(function (e) {
 })
 
 
+// Ползунок выбора диапазона стоимости (Старница "Доска объявлений")
+
+
+$( "#polzunok" ).slider({
+  animate: "slow",
+  range: true,
+  min: 5,
+  max: 1000,
+  values: [ 10, 125 ],
+        slide : function(event, ui) {    
+            $("#result-polzunok-start").text(ui.values[ 0 ] + " BYN ");        
+            $("#result-polzunok-end").text(ui.values[ 1 ] + " BYN " );        
+        }
+});
+$( "#result-polzunok-start" ).text($("#polzunok").slider("values", 0) + " BYN ");
+$( "#result-polzunok-end" ).text($("#polzunok").slider("values", 1) + " BYN ");
+
 
 // выбор города с поиском на странице "мой профиль"
 const selected = document.querySelector(".selected");
@@ -285,3 +305,5 @@ function check() {
 
 
 // console.log(document.querySelector('#status-value').value);
+
+

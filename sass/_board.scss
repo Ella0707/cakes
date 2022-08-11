@@ -1,0 +1,25 @@
+.board {
+
+    
+    &__inner {
+
+    }
+    
+    &__title {
+        font-size: 2.9rem;
+        font-weight: 500;
+        color: #000000;
+        margin-bottom: 4.3rem;
+    }
+    
+    &__content {
+        display: flex;
+    
+        .filter-block {
+            width: 30.2rem;
+            margin-right: 2.5rem;
+        }
+    }
+
+}
+
