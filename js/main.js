@@ -88,6 +88,26 @@ if ($('#destroy-2').length) {
   }
 }
 
+
+const boardSwiper = new Swiper('.confectioners__item-photo-main', {
+  slidesPerView: 1,
+  spaceBetween: 0,
+  speed: 1200,
+  loop: true,
+
+  navigation: {
+      prevEl: '.board-slider-prev',
+      nextEl: '.board-slider-next',
+  },
+
+  effect: "fade",
+  fadeEffect: {
+      crossFade: true
+  },
+});
+
+
+
 // табы в профиле
 function openTab(evt, tabsName) {
     var i, tabcontent, tablinks;
@@ -128,8 +148,8 @@ btn.on('click', function(e) {
 $('.confectioners__filter-open-btn').on('click', function (e) {
   e.preventDefault();
   document.body.classList.toggle('lock');
-  $('.confectioners__filter-open-btn').toggleClass("active");
-  $('.confectioners__filter-block').toggleClass("active");
+  $('.filter-open-btn').toggleClass("active");
+  $('.filter-block-open').toggleClass("active");
 });
 
 // селект в фильтре

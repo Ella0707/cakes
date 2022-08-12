@@ -1,25 +1,175 @@
 .board {
+    margin-bottom: 10rem;
 
-    
-    &__inner {
-
-    }
-    
     &__title {
         font-size: 2.9rem;
         font-weight: 500;
         color: #000000;
         margin-bottom: 4.3rem;
     }
-    
+
     &__content {
         display: flex;
-    
+
         .filter-block {
             width: 30.2rem;
             margin-right: 2.5rem;
         }
     }
 
+    &__items {
+        margin-bottom: 5rem;
+
+        .confectioners__item-photo {
+            width: 36.4rem;
+            height: 30.9rem;
+        }
+
+        .confectioners__item-photo-main {
+            width: 100%;
+            height: 100%;
+            margin-bottom: 0;
+        }
+
+        .confectioners__name {
+            font-size: 1.8rem;
+        }
+
+        .confectioners__name-top {
+            margin-bottom: 1.5rem;
+        }
+
+        .btn.btn--more {
+            width: 22rem;
+            margin-right: 2rem;
+        }
+
+        .confectioners__item:not(:last-child) {
+            margin-bottom: 2.2rem;
+        }
+    }
 }
 
+
+@media (max-width: 48em) {
+
+    .board {
+        margin-bottom: 15rem;
+
+        &__title {
+            font-size: 4.6rem;
+            font-weight: 500;
+            text-align: center;
+            margin-bottom: 4.2rem;
+        }
+
+        &__content-block {
+            width: 100%;
+        }
+
+        &__content {
+            display: flex;
+
+            .filter-block {
+                width: 55rem;
+                position: absolute;
+                top: 20rem;
+                margin-right: 0rem;
+                border-radius: 1.8rem;
+                padding: 0;
+
+                &__inner {
+                    box-shadow: 0px 8rem 5.6rem rgba(36, 64, 117, 0.06);
+                    position: relative;
+                    z-index: 100;
+                    padding: 7.2rem 6rem 7.2rem;
+                }
+
+                .confectioners__filter-open-btn.close {
+                    position: absolute;
+                    top: 4.4rem;
+                    right: 4.4rem;
+
+                }
+
+                .filter-block__title {
+                    font-size: 4.4rem;
+                }
+
+                .filter-block__item-title {
+                    font-size: 3.2rem;
+                    margin-bottom: 3rem;
+                }
+            }
+        }
+
+        &__items {
+            margin-bottom: 6rem;
+
+            .confectioners__item {
+                padding: 2.6rem 2rem 4rem 2rem;
+            }
+
+            .confectioners__item-photo {
+                width: 100%;
+                height: 38.4rem;
+                margin-bottom: 5.2rem;
+            }
+
+            .confectioners__item-photo-main {
+                margin-bottom: 5.4;
+            }
+
+            .confectioners__name {
+                font-size: 3.6rem;
+            }
+
+            .confectioners__name-top {
+                margin-bottom: 2.4rem;
+            }
+
+            .btn.btn--more {
+                width: 100%;
+                height: 8.8rem;
+                margin-right: 0rem;
+                margin-bottom: 3rem;
+
+                span {
+                    font-size: 3.6rem;
+                    margin-right: 1rem;
+                }
+
+                img {
+                    width: 3rem;
+                    height: 2.5rem;
+                }
+            }
+
+            .confectioners__description {
+                margin-bottom: 3.4rem;
+            }
+
+            .confectioners__item:not(:last-child) {
+                margin-bottom: 5rem;
+            }
+
+            .confectioners__btns {
+                flex-direction: column;
+            }
+
+            .btn.btn--save {
+                margin: 0 auto;
+
+                span {
+                    font-size: 3.2rem;
+                    margin-right: 1rem;
+                }
+
+                img {
+                    width: 3.4rem;
+                    height: 3.4rem;
+                }
+            }
+        }
+    }
+}

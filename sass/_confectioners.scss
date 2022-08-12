@@ -305,6 +305,39 @@
     
     }
 
+    
+    &__info-price-date {
+        padding-top: 2.5rem;
+        border-top: 1px solid rgba(130, 139, 189, 0.38);
+        display: flex;
+        margin-bottom: 2.5rem;
+    }
+    
+    &__info-price {
+        padding-right: 3rem;
+        margin-right: 2.7rem;
+    }
+    
+    &__info-key {
+        font-size: 1.4rem;
+        font-weight: 500;
+        color: #5E5E5E;
+    }
+    
+    &__info-value {
+        font-size: 2rem;
+        font-weight: 500;
+        color: #828BBD;
+
+        span {
+            font-size: 2.2rem;
+        }
+    }
+    
+    &__info-date {
+    
+    }
+
 }
 
 

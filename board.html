@@ -72,155 +72,331 @@
             <div class="container">
                 <div class="board__inner">
                     <h1 class="board__title">Доска обьявлений</h1>
+                    <button class="confectioners__filter-open-btn mobile">
+                        <img src="./img/filter-btn.svg" alt="">
+                        Фильтр
+                    </button>
+                    <div class="confectioners__filter-selected mobile">
+                        <button class="confectioners__filter-selected-item">
+                            <span>5-50 BYN</span>
+                            <img src="./img/close-btn-selected.svg" alt="">
+                        </button>
+                        <button class="confectioners__filter-selected-item">
+                            <span>Минск</span>
+                            <img src="./img/close-btn-selected.svg" alt="">
+                        </button>
+                    </div>
                     <div class="board__content">
-                        <div class="board__filter-block filter-block">
-                            <div class="filter-block__title">Фильтр</div>
-
-                            <div class="filter-block__item">
-                                <div class="filter-block__item-title">Цена</div>
-                                <div class="filter-block__range" id="polzunok"></div>
-                                <div class="filter-block__range-values">
-                                    <span id="result-polzunok-start"></span>
-                                    <span id="result-polzunok-end"></span>
-                                </div>
-                            </div>
-
-                            <div class="filter-block__item">
-                                <div class="filter-block__item-title select-title">Страна</div>
-                                <div class="dropdown">
-                                    <div class="select">
-                                        <span>Беларусь</span>
-                                        <input type="text" class="input-search" id="input-search">
-                                        <img src="./img/arrow-down.svg" alt="">
+                        <div class="board__filter-block filter-block filter-block-open">
+                            <div class="filter-block__inner">
+                                <button class="confectioners__filter-open-btn close mobile">
+                                    <img src="./img/close.svg" alt="">
+                                </button>
+                                <div class="filter-block__title">Фильтр</div>
+                                <div class="filter-block__item">
+                                    <div class="filter-block__item-title">Цена</div>
+                                    <div class="filter-block__range" id="polzunok"></div>
+                                    <div class="filter-block__range-values">
+                                        <span id="result-polzunok-start"></span>
+                                        <span id="result-polzunok-end"></span>
                                     </div>
-                                    <input type="hidden" name="category">
-                                    <ul class="dropdown-menu">
-                                        <li>Беларусь</li>
-                                        <li>Россия</li>
-                                        <li>Казахстан</li>
-                                        <li>Еще какая-то</li>
-                                        <li>Еще какая-то</li>
-                                        <li>Еще какая-то</li>
-                                        <li>Еще какая-то</li>
-                                    </ul>
                                 </div>
-                            </div>
-                            <div class="filter-block__item">
-                                <div class="filter-block__item-title select-title">Город</div>
-                                <div class="dropdown">
-                                    <div class="select">
-                                        <span>Минск</span>
-                                        <input type="text" class="input-search" id="input-search">
-                                        <img src="./img/arrow-down.svg" alt="">
+    
+                                <div class="filter-block__item">
+                                    <div class="filter-block__item-title select-title">Страна</div>
+                                    <div class="dropdown">
+                                        <div class="select">
+                                            <span>Беларусь</span>
+                                            <input type="text" class="input-search" id="input-search">
+                                            <img src="./img/arrow-down.svg" alt="">
+                                        </div>
+                                        <input type="hidden" name="category">
+                                        <ul class="dropdown-menu">
+                                            <li>Беларусь</li>
+                                            <li>Россия</li>
+                                            <li>Казахстан</li>
+                                            <li>Еще какая-то</li>
+                                            <li>Еще какая-то</li>
+                                            <li>Еще какая-то</li>
+                                            <li>Еще какая-то</li>
+                                        </ul>
                                     </div>
-                                    <input type="hidden" name="category">
-                                    <ul class="dropdown-menu">
-                                        <li>Пинск</li>
-                                        <li>Еще какой-то</li>
-                                        <li>Еще какой-то</li>
-                                        <li>Еще какой-то</li>
-                                        <li>Еще какой-то</li>
-                                        <li>Еще какой-то</li>
-                                    </ul>
                                 </div>
+                                <div class="filter-block__item">
+                                    <div class="filter-block__item-title select-title">Город</div>
+                                    <div class="dropdown">
+                                        <div class="select">
+                                            <span>Минск</span>
+                                            <input type="text" class="input-search" id="input-search">
+                                            <img src="./img/arrow-down.svg" alt="">
+                                        </div>
+                                        <input type="hidden" name="category">
+                                        <ul class="dropdown-menu">
+                                            <li>Пинск</li>
+                                            <li>Еще какой-то</li>
+                                            <li>Еще какой-то</li>
+                                            <li>Еще какой-то</li>
+                                            <li>Еще какой-то</li>
+                                            <li>Еще какой-то</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <button class="filter-block__btn btn btn--color">
+                                    Поиск
+                                </button>
+                                <button class="filter-block__btn-reset">
+                                    <span>
+                                        Сбросить все фильтры
+                                    </span>
+                                    <img src="./img/arrow-reset.svg" alt="">
+                                </button>
                             </div>
-                            <button class="filter-block__btn btn btn--color">
-                                Поиск
-                            </button>
-                            <button class="filter-block__btn-reset">
-                                <span>
-                                    Сбросить все фильтры
-                                </span>
-                                <img src="./img/arrow-reset.svg" alt="">
-                            </button>
-
                         </div>
 
-                        <div class="board__items">
-                            <div class="confectioners__item">
-                                <div class="confectioners__item-photo">
-                                    <div class="confectioners__item-photo-main swiper">
-                                        <div class="swiper-wrapper" id="swiper-wrapper-4f27318e87f41a24">
-                                            <div class="swiper-slide">
-                                                <img src="./img/cake-slide4.png" alt="">
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <img src="./img/cake-slide4.png" alt="">
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <img src="./img/cake-slide4.png" alt="">
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <img src="./img/cake-slide4.png" alt="">
-                                            </div>
-                                            <div class="confectioners__arrow-prev">
-                                                <img src="./img/arrow-prev.svg" alt="">
-                                            </div>
-                                            <div class="confectioners__arrow-next">
-                                                <img src="./img/arrow-next.svg" alt="">
+                        <div class="board__content-block">
+                            <div class="board__items">
+                                <div class="confectioners__item">
+                                    <div class="confectioners__item-photo">
+                                        <div class="confectioners__item-photo-main swiper">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <img src="./img/cake-slide4.png" alt="">
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="./img/cake-slide1.jpg" alt="">
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="./img/cake-slide3.png" alt="">
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="./img/cake-slide2.jpg" alt="">
+                                                </div>
+                                                <div class="confectioners__arrow-prev board-slider-prev">
+                                                    <img src="./img/arrow-prev.svg" alt="">
+                                                </div>
+                                                <div class="confectioners__arrow-next board-slider-next">
+                                                    <img src="./img/arrow-next.svg" alt="">
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-
-                                <div class="confectioners__info">
-                                    <div class="confectioners__name-top">
-                                        <div class="confectioners__name-wrap">
-                                            <div class="confectioners__name">Natali134</div>
-                                            <img src="./img/name-icon.svg" alt="">
-                                        </div>
-                                        <div class="confectioners__rate-wrap rating desctop">
-                                            <div class="confectioners__stars-wrap">
-                                                <div class="confectioners__stars">
-                                                    <img src="./img/stars.svg" alt="">
-                                                </div>
-                                                <div class="confectioners__rate-value">4.9</div>
+    
+                                    <div class="confectioners__info">
+                                        <div class="confectioners__name-top">
+                                            <div class="confectioners__name-wrap">
+                                                <div class="confectioners__name">Natali134</div>
+                                                <img src="./img/name-icon.svg" alt="">
+                                            </div>
+                                            <div class="confectioners__location mobile">
+                                                <img src="./img/location-icon.svg" alt="">
+                                                Минск
                                             </div>
                                         </div>
-                                        <div class="confectioners__location mobile">
+                                        <div class="confectioners__location desctop">
                                             <img src="./img/location-icon.svg" alt="">
                                             Минск
                                         </div>
+                                        <div class="confectioners__description">
+                                            Краткое описание можно топить многократно.
+                                            В толстостенном сотейнике топлю изомальт на среднем огне.
+                                            В толстостенном сотейнике топлю изомальт на среднем огне
+                                        </div>
+    
+                                        <div class="confectioners__info-price-date">
+                                            <div class="confectioners__info-price">
+                                                <div class="confectioners__info-key">Цена:</div>
+                                                <div class="confectioners__info-value">до <span>100 BYN</span></div>
+                                            </div>
+                                            <div class="confectioners__info-date">
+                                                <div class="confectioners__info-key">Срок:</div>
+                                                <div class="confectioners__info-value">до <span>11.08</span></div>
+                                            </div>
+                                        </div>
+        
+                                        <div class="confectioners__btns">
+                                            <button class="confectioners__btn-more btn btn--more">
+                                                <span>Связаться</span>
+                                                <img src="./img/arrow-btn.svg" alt="">
+                                            </button>
+                                            <button class="confectioners__btn-save btn btn--save">
+                                                <span>В избранное</span>
+                                                <img src="./img/heart-save.svg" alt="">
+                                            </button>
+                                        </div>
                                     </div>
-                                    <div class="confectioners__location desctop">
-                                        <img src="./img/location-icon.svg" alt="">
-                                        Минск
-                                    </div>
-                                    <div class="confectioners__description">
-                                        Краткое описание можно топить многократно.
-                                        В толстостенном сотейнике топлю изомальт на среднем огне.
-                                        В толстостенном сотейнике топлю изомальт на среднем огне
+                                </div>
+                                <div class="confectioners__item">
+                                    <div class="confectioners__item-photo">
+                                        <div class="confectioners__item-photo-main swiper">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <img src="./img/cake-slide1.jpg" alt="">
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="./img/cake-slide4.png" alt="">
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="./img/cake-slide3.png" alt="">
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="./img/cake-slide2.jpg" alt="">
+                                                </div>
+                                                <div class="confectioners__arrow-prev board-slider-prev">
+                                                    <img src="./img/arrow-prev.svg" alt="">
+                                                </div>
+                                                <div class="confectioners__arrow-next board-slider-next">
+                                                    <img src="./img/arrow-next.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
     
-                                    <div class="confectioners__description-items desctop">
-                                        <ul>
-                                            <li>
-                                                <img src="./img/done-icon.svg" alt="">
-                                                Срок изготовления 1 день
-                                            </li>
-                                            <li>
-                                                <img src="./img/done-icon.svg" alt="">
-                                                Торты любой сложности
-                                            </li>
-                                            <li>
-                                                <img src="./img/done-icon.svg" alt="">
-                                                Бесплатная доставка
-                                            </li>
-                                        </ul>
+                                    <div class="confectioners__info">
+                                        <div class="confectioners__name-top">
+                                            <div class="confectioners__name-wrap">
+                                                <div class="confectioners__name">Natali134</div>
+                                                <img src="./img/name-icon.svg" alt="">
+                                            </div>
+                                            <div class="confectioners__location mobile">
+                                                <img src="./img/location-icon.svg" alt="">
+                                                Минск
+                                            </div>
+                                        </div>
+                                        <div class="confectioners__location desctop">
+                                            <img src="./img/location-icon.svg" alt="">
+                                            Минск
+                                        </div>
+                                        <div class="confectioners__description">
+                                            Краткое описание можно топить многократно.
+                                            В толстостенном сотейнике топлю изомальт на среднем огне.
+                                            В толстостенном сотейнике топлю изомальт на среднем огне
+                                        </div>
+    
+                                        <div class="confectioners__info-price-date">
+                                            <div class="confectioners__info-price">
+                                                <div class="confectioners__info-key">Цена:</div>
+                                                <div class="confectioners__info-value">до <span>100 BYN</span></div>
+                                            </div>
+                                            <div class="confectioners__info-date">
+                                                <div class="confectioners__info-key">Срок:</div>
+                                                <div class="confectioners__info-value">до <span>11.08</span></div>
+                                            </div>
+                                        </div>
+        
+                                        <div class="confectioners__btns">
+                                            <button class="confectioners__btn-more btn btn--more">
+                                                <span>Связаться</span>
+                                                <img src="./img/arrow-btn.svg" alt="">
+                                            </button>
+                                            <button class="confectioners__btn-save btn btn--save">
+                                                <span>В избранное</span>
+                                                <img src="./img/heart-save.svg" alt="">
+                                            </button>
+                                        </div>
                                     </div>
-                                    <div class="confectioners__btns">
-                                        <button class="confectioners__btn-more btn btn--more">
-                                            <span>Подробнее</span>
-                                            <img src="./img/arrow-btn.svg" alt="">
-                                        </button>
-                                        <button class="confectioners__btn-save btn btn--save desctop">
-                                            <span>В избранное</span>
-                                            <img src="./img/heart-save.svg" alt="">
-                                        </button>
+                                </div>
+                                <div class="confectioners__item">
+                                    <div class="confectioners__item-photo">
+                                        <div class="confectioners__item-photo-main swiper">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <img src="./img/cake-slide2.jpg" alt="">
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="./img/cake-slide4.png" alt="">
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="./img/cake-slide1.jpg" alt="">
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="./img/cake-slide3.png" alt="">
+                                                </div>
+                                                <div class="confectioners__arrow-prev board-slider-prev">
+                                                    <img src="./img/arrow-prev.svg" alt="">
+                                                </div>
+                                                <div class="confectioners__arrow-next board-slider-next">
+                                                    <img src="./img/arrow-next.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="confectioners__info">
+                                        <div class="confectioners__name-top">
+                                            <div class="confectioners__name-wrap">
+                                                <div class="confectioners__name">Natali134</div>
+                                                <img src="./img/name-icon.svg" alt="">
+                                            </div>
+                                            <div class="confectioners__location mobile">
+                                                <img src="./img/location-icon.svg" alt="">
+                                                Минск
+                                            </div>
+                                        </div>
+                                        <div class="confectioners__location desctop">
+                                            <img src="./img/location-icon.svg" alt="">
+                                            Минск
+                                        </div>
+                                        <div class="confectioners__description">
+                                            Краткое описание можно топить многократно.
+                                            В толстостенном сотейнике топлю изомальт на среднем огне.
+                                            В толстостенном сотейнике топлю изомальт на среднем огне
+                                        </div>
+    
+                                        <div class="confectioners__info-price-date">
+                                            <div class="confectioners__info-price">
+                                                <div class="confectioners__info-key">Цена:</div>
+                                                <div class="confectioners__info-value">до <span>100 BYN</span></div>
+                                            </div>
+                                            <div class="confectioners__info-date">
+                                                <div class="confectioners__info-key">Срок:</div>
+                                                <div class="confectioners__info-value">до <span>11.08</span></div>
+                                            </div>
+                                        </div>
+        
+                                        <div class="confectioners__btns">
+                                            <button class="confectioners__btn-more btn btn--more">
+                                                <span>Связаться</span>
+                                                <img src="./img/arrow-btn.svg" alt="">
+                                            </button>
+                                            <button class="confectioners__btn-save btn btn--save">
+                                                <span>В избранное</span>
+                                                <img src="./img/heart-save.svg" alt="">
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+                            <div class="confectioners__pagination pagination">
+                                <button class="pagination__btn-prev">
+                                    <svg width="9" height="12" viewBox="0 0 9 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.16016 1.41L3.58016 6L8.16016 10.59L6.75016 12L0.750156 6L6.75016 0L8.16016 1.41Z" fill=""></path>
+                                    </svg>
+                                </button>
+                                <div class="pagination__items">
+                                    <a href="#" class="pagination__item">
+                                        <span>1</span>
+                                    </a>
+                                    <a href="#" class="pagination__item active">
+                                        <span>2</span>
+                                    </a>
+                                    <a href="#" class="pagination__item">
+                                        <span>...</span>
+                                    </a>
+                                    <a href="#" class="pagination__item">
+                                        <span>3</span>
+                                    </a>
+                                    <a href="#" class="pagination__item">
+                                        <span>4</span>
+                                    </a>
+                                </div>
+                                <button class="pagination__btn-next active">
+                                    <svg width="9" height="12" viewBox="0 0 9 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.839844 1.41L5.41984 6L0.839844 10.59L2.24984 12L8.24984 6L2.24984 0L0.839844 1.41Z" fill=""></path>
+                                    </svg>
+                                </button>
+                            </div>
                         </div>
+                        
                     </div>
                 </div>
             </div>
