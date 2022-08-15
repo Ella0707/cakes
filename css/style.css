@@ -1457,13 +1457,15 @@ input[type=number] {
   font-weight: 400;
   color: #5E5E5E;
 }
+.base__slider {
+  width: 50rem;
+  padding: 2rem;
+}
 .base__slider-wrapper {
   position: relative;
 }
 .base__slider-block {
-  width: 86rem;
   overflow: hidden;
-  padding: 1.5rem 1.5rem 4rem 1.5rem;
 }
 .base__slide {
   background: #FFFFFF;
@@ -1472,7 +1474,6 @@ input[type=number] {
           box-shadow: 0px 0.4rem 2.4rem rgba(28, 40, 105, 0.1);
   border-radius: 0.6rem;
   padding: 2rem 2rem 2.7rem 2rem;
-  margin-right: 3rem;
 }
 .base__slide > img {
   height: 26.9rem;
@@ -3741,7 +3742,7 @@ input[type=number] {
   border: 2px solid #FF007A;
 }
 .filter-block__radiobutton:not(:last-child) {
-  margin-bottom: 2.8rem;
+  margin-bottom: 1.8rem;
 }
 .filter-block__btn {
   width: 100%;
@@ -3784,7 +3785,7 @@ input[type=number] {
 }
 .filter-block .ui-slider-horizontal .ui-slider-handle {
   top: -0.7rem;
-  margin-left: -0.6em;
+  margin-left: -0.2rem;
 }
 .filter-block .ui-state-active,
 .filter-block .ui-state-focus {
@@ -3796,7 +3797,9 @@ input[type=number] {
 }
 .filter-block .ui-slider-range {
   background: linear-gradient(92.85deg, #FF8A00 -43.75%, #FF007A 106.98%);
-  height: 0.2rem;
+  height: 0.3rem;
+  bottom: -0.2rem;
+  top: auto;
 }
 .filter-block__range-values {
   display: -webkit-box;

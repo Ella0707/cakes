@@ -26,10 +26,6 @@ $('.form-login-close').click(function () {
 
 
 
-
-
-
-
 // мобильное меню
 $('.profile-open').on('click', function (e) {
   e.preventDefault();
@@ -73,9 +69,15 @@ if ($('#destroy-1').length) {
 const activitySlider2 = new Swiper('#destroy-2', {
   // slidesPerView: 2,
   slidesPerView: 'auto',
-  // spaceBetween: 20,
+  spaceBetween: 20,
   speed: 800,
   loop: true,
+  // slidesPerGroup: 2,
+
+  effect: "fade",
+  fadeEffect: {
+      crossFade: true
+  },
 
   navigation: {
     nextEl: '.base__arrow-next',
@@ -222,9 +224,6 @@ $(".pagination__item").click(function (e) {
 
 
 
-
-
-
 // ВАЛИДАЦИЯ ФОРМЫ РЕГИСТРАЦИИ
 
 
@@ -275,7 +274,7 @@ $( "#polzunok" ).slider({
   range: true,
   min: 5,
   max: 1000,
-  values: [ 10, 125 ],
+  values: [ 5, 125 ],
         slide : function(event, ui) {    
             $("#result-polzunok-start").text(ui.values[ 0 ] + " BYN ");        
             $("#result-polzunok-end").text(ui.values[ 1 ] + " BYN " );        
