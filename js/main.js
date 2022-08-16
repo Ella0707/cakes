@@ -328,3 +328,26 @@ const filterList = searchTerm => {
 
 
 
+document.querySelectorAll(".noclickedlink").forEach(function(el){
+  el.onclick = function(e){
+    if(document.body.clientWidth >= 769){
+        e.preventDefault();
+        return false;
+      }
+  }
+});
+
+
+$(".messages__tooltip-img").click(function (e) {
+  e.preventDefault();
+  // $(this).toggleClass('active');
+  $(this).next(".messages__tooltip-list").toggleClass('active');
+});
+
+
+// переключение класса active  в сообщениях
+$(".messages__chat-item").click(function (e) {
+  e.preventDefault();
+  $(".messages__chat-item").removeClass('active');
+  $(this).addClass('active');
+})

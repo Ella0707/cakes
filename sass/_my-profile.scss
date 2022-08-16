@@ -304,6 +304,7 @@
 
     &__content-inner {
         display: none;
+
         &.my-profile {
             background: #FFFFFF;
             box-shadow: 0px 0.4rem 2.4rem rgba(28, 40, 105, 0.1);
@@ -817,6 +818,7 @@
 
 .order {
     padding: 0;
+
     &__title-wrap {
         display: flex;
         align-items: center;
@@ -829,14 +831,14 @@
         font-weight: 500;
         color: #000000;
     }
-    
+
     &__select-wrap {
         display: flex;
         align-items: center;
         width: max-content;
         transition: 0.3s;
     }
-    
+
     &__select-title {
         font-size: 1.4rem;
         font-weight: 500;
@@ -846,6 +848,7 @@
         transition: 0.3s;
 
     }
+
     .dropdown {
         width: min-content;
         min-width: 10rem;
@@ -867,6 +870,7 @@
         width: max-content;
         transition: 0.3s;
     }
+
     .dropdown .dropdown-menu {
         min-width: 15rem;
         left: auto;
@@ -876,7 +880,7 @@
     &__items {
         margin-bottom: 4rem;
     }
-    
+
     &__item {
         background: #FFFFFF;
         box-shadow: 0px 0.4rem 2.4rem rgba(28, 40, 105, 0.1);
@@ -887,32 +891,32 @@
             margin-bottom: 1.2rem;
         }
     }
-    
+
     &__item-top {
         display: flex;
         align-items: center;
         justify-content: space-between;
         margin-bottom: 2.1rem;
     }
-    
+
     &__item-number {
         font-size: 1.4rem;
         font-weight: 500;
         color: #000;
     }
-    
+
     &__item-status {
         display: flex;
         align-items: center;
     }
-    
+
     &__item-status-key {
         font-size: 1.4rem;
         font-weight: 500;
         color: #5E5E5E;
         margin-right: 1rem;
     }
-    
+
     &__item-status-value {
         font-size: 1.4rem;
         font-weight: 500;
@@ -925,7 +929,7 @@
             color: #FF3131;
         }
     }
-    
+
     &__item-content {
         display: flex;
     }
@@ -933,7 +937,7 @@
     &__info {
         width: 66.5rem;
     }
-    
+
     &__photo {
         width: 11.5rem;
         height: 11.5rem;
@@ -948,56 +952,549 @@
             border-radius: inherit;
         }
     }
-    
+
     &__name-confect {
         font-size: 1.4rem;
         font-weight: 500;
         color: #000;
         margin-bottom: 2.4rem;
     }
-    
+
     &__description-wrap {
         padding: 1.8rem 0 2rem 0;
         border-top: 0.1rem solid rgba(130, 139, 189, 0.38);
         border-bottom: 0.1rem solid rgba(130, 139, 189, 0.38);
         margin-bottom: 2rem;
     }
-    
+
     &__description-title {
         font-size: 1.4rem;
         font-weight: 500;
         color: #000;
         margin-bottom: 0.7rem;
     }
-    
+
     &__description {
         font-size: 1.4rem;
         font-weight: 500;
         color: #5E5E5E;
         line-height: 1.42;
     }
-    
+
     &__about-info {
         display: flex;
     }
-    
+
     &__about-item {
 
         &:not(:last-child) {
             margin-right: 6.9rem;
         }
     }
-    
+
     &__about-item-key {
         font-size: 1.4rem;
         font-weight: 500;
         color: #000;
         margin-bottom: 0.7rem;
     }
-    
+
     &__about-item-value {
         font-size: 1.4rem;
         font-weight: 500;
         color: #5E5E5E;
+    }
+}
+
+
+
+.messages {
+    padding: 0;
+
+    &__title-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 2.7rem;
+        width: 41.3rem;
+    }
+
+    &__title {
+        font-size: 2.2rem;
+        font-weight: 500;
+        color: #000000;
+    }
+
+    &__select-wrap {
+        display: flex;
+        align-items: center;
+        width: max-content;
+        transition: 0.3s;
+    }
+
+    &__select-title {
+        font-size: 1.4rem;
+        font-weight: 400;
+        color: #5E5E5E;
+        margin-right: 0.4rem;
+        white-space: nowrap;
+        transition: 0.3s;
+
+    }
+
+    .dropdown {
+        width: min-content;
+        min-width: 10rem;
+        transition: 0.3s;
+
+
+        img {
+            right: -1rem;
+        }
+    }
+
+    .dropdown .select {
+        font-size: 1.4rem;
+        font-weight: 400;
+        color: #5E5E5E;
+        padding: 0 0.5rem;
+        box-shadow: none;
+        border-radius: 0;
+        width: max-content;
+        transition: 0.3s;
+    }
+
+    .dropdown .dropdown-menu {
+        left: -2rem;
+        top: 2rem;
+
+        &::-webkit-scrollbar {
+            width: 0.3rem;
+            background: #E8E8E8;
+            border-radius: 2.1rem;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: #818BBD;
+            border-radius: 2.1rem;
+        }
+
+        // для firefox
+        scrollbar-color: #818BBD rgba(232, 232, 232, 1);
+        /* «цвет ползунка» «цвет полосы скроллбара» */
+        scrollbar-width: thin;
+        /* толщина */
+    }
+
+    &__chat {
+        height: 59rem;
+        display: flex;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 2.4rem rgba(0, 0, 0, 0.08);
+        border-radius: 0.8rem;
+    }
+
+    &__chat-left-block {
+        width: 41.3rem;
+        flex-shrink: 0;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        border-radius: 0.8rem 0 0 0.8rem;
+
+        // &::-webkit-scrollbar {
+        //     width: 0.6rem;
+        //     background: #E8E8E8;
+        //     border-radius: 2.1rem;
+        // }
+
+        // &::-webkit-scrollbar-thumb {
+        //     background: #818BBD;
+        //     border-radius: 2.1rem;
+        // }
+
+        // // для firefox
+        // scrollbar-color: #818BBD rgba(232, 232, 232, 1);
+        // /* «цвет ползунка» «цвет полосы скроллбара» */
+        // scrollbar-width: thin;
+        // /* толщина */
+        &::-webkit-scrollbar {
+            width: 0rem;
+            background: #E8E8E8;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: #ffffff;
+        }
+
+        // для firefox
+        scrollbar-color: #ffffff;
+        /* «цвет ползунка» «цвет полосы скроллбара» */
+        scrollbar-width: 0;
+        /* толщина */
+    }
+
+    &__chat-item {
+        display: flex;
+        padding: 1.8rem 1.3rem 1.5rem 2.5rem;
+        border-radius: inherit 0 0 0 0;
+
+        &.active {
+            background: rgba(70, 82, 148, 0.11);
+        }
+
+        &:not(:first-child) {
+            border-top: 1px solid rgba(130, 139, 189, 0.38);
+        }
+
+    }
+
+    &__chat-item-user {
+        width: 7.3rem;
+        height: 7.3rem;
+        border-radius: 50%;
+        margin-right: 1.3rem;
+        flex-shrink: 0;
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            border-radius: inherit;
+        }
+    }
+
+    &__text {
+        padding-right: 1rem;
+    }
+
+    &__chat-item-title {
+        font-size: 1.6rem;
+        font-weight: 500;
+        color: #000000;
+        margin-bottom: 1.3rem;
+
+    }
+
+    &__chat-item-subtitle {
+        font-size: 1.4rem;
+        font-weight: 400;
+        color: #5E5E5E;
+
+    }
+
+    &__chat-item-date {
+        font-size: 1.4rem;
+        font-weight: 400;
+        color: #828BBD;
+        white-space: nowrap;
+    }
+
+
+
+    &__chat-right-block {
+        // width: 52.5rem;
+        border-left: 0.1rem solid rgba(130, 139, 189, 0.38);
+    }
+
+    &__chat-top {
+        padding: 1.3rem 2rem 1.3rem 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 0.1rem solid rgba(130, 139, 189, 0.38);
+    }
+
+    &__user-about {
+        display: flex;
+    }
+
+    &__user-img {
+        width: 4.4rem;
+        height: 4.4rem;
+        border-radius: 50%;
+        margin-right: 1.3rem;
+
+        img {
+            height: 100%;
+            width: 100%;
+            border-radius: inherit;
+            object-fit: cover;
+        }
+    }
+
+    &__user-info {}
+
+    &__user-name-wrap {
+        display: flex;
+        align-items: center;
+    }
+
+    &__user-name {
+        font-size: 1.6rem;
+        font-weight: 500;
+        color: #000000;
+        margin-right: 1rem;
+
+        img {
+            width: 1.8rem;
+            height: 1.8rem;
+            object-fit: contain;
+        }
+    }
+
+    &__user-status {
+        font-size: 1.4rem;
+        font-weight: 400;
+        color: #828BBD;
+    }
+
+    &__actions {
+        display: flex;
+        align-items: center;
+    }
+
+    &__order-btn {
+        background: linear-gradient(92.85deg, #FF8A00 -43.75%, #FF007A 106.98%);
+        border-radius: 4.5rem;
+        padding: 1rem 3.5rem 1rem 2.8rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        font-size: 1.6rem;
+        font-weight: 500;
+        color: #FFFFFF;
+        margin-right: 1.8rem;
+    }
+
+    &__tooltip {
+        position: relative;
+    }
+
+    &__tooltip-img {
+        width: 0.4rem;
+        height: 2rem;
+        cursor: pointer;
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+
+    &__tooltip-list {
+        height: 0;
+        opacity: 0;
+        transition: 0.3s;
+        pointer-events: none;
+
+        position: absolute;
+        top: 4rem;
+        right: 0;
+        z-index: 10;
+
+        box-shadow: -1rem 0.5rem 3rem rgba(0, 0, 0, 0.07);
+        background: #ffffff;
+        padding: 2rem;
+        border-radius: 8px;
+
+        li {
+            font-size: 1.8rem;
+            color: #828BBD;
+            opacity: 0;
+            cursor: pointer;
+            transition: 0.3s;
+
+            &:not(:last-child) {
+                margin-bottom: 1rem;
+            }
+
+            &:hover {
+                text-shadow: 0 1px rgba(0, 0, 0, 0.2);
+            }
+        }
+
+        &.active {
+            height: auto;
+            opacity: 1;
+            pointer-events: auto;
+
+            li {
+                opacity: 1;
+            }
+        }
+
+    }
+
+
+
+    &__chat-window {
+        height: 46rem;
+        padding: 0rem 0rem 0rem 2.3rem;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        overflow: hidden;
+        border-radius: inherit;
+    }
+
+    &__chat-window-scroll {
+        overflow-y: auto;
+        overflow-x: hidden;
+        padding-right: 2rem;
+        
+        // &::-webkit-scrollbar {
+        //     width: 0.6rem;
+        //     background: #E8E8E8;
+        //     border-radius: 2.1rem;
+        // }
+
+        // &::-webkit-scrollbar-thumb {
+        //     background: #818BBD;
+        //     border-radius: 2.1rem;
+        // }
+
+        // // для firefox
+        // scrollbar-color: #818BBD rgba(232, 232, 232, 1);
+        // /* «цвет ползунка» «цвет полосы скроллбара» */
+        // scrollbar-width: thin;
+        // /* толщина */
+        &::-webkit-scrollbar {
+            width: 0rem;
+            background: #E8E8E8;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: #ffffff;
+        }
+
+        // для firefox
+        scrollbar-color: #ffffff;
+        /* «цвет ползунка» «цвет полосы скроллбара» */
+        scrollbar-width: 0;
+        /* толщина */
+    }
+
+    &__chat-msg {
+        display: flex;
+        justify-self: end;
+        margin-bottom: 3rem;
+
+        &:first-child {
+            padding-top: 2rem;
+        }
+    }
+
+    &__msg-user-photo {
+        width: 4.9rem;
+        height: 4.9rem;
+        border-radius: 50%;
+        margin-right: 1rem;
+        flex-shrink: 0;
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            border-radius: inherit;
+        }
+    }
+
+    &__msg-text-wrap {
+        padding-right: 3rem;
+    }
+
+    &__msg-text-author {
+        font-size: 1.4rem;
+        font-weight: 500;
+        color: #000000;
+        margin-bottom: 0.6rem;
+    }
+
+    &__msg-text {
+        font-size: 1.4rem;
+        line-height: 1.3;
+        font-weight: 400;
+        color: #5E5E5E;
+    }
+
+    &__msg-date {
+        font-size: 1.4rem;
+        font-weight: 400;
+        color: #828BBD;
+        margin-left: auto;
+    }
+    
+    &__chat-area {
+        display: flex;
+        align-items: center;
+        border: 1px solid rgba(130, 139, 189, 0.38);
+        border-left: none;
+    }
+    
+    &__chat-area-inner {
+        padding: 1.4rem 2rem 1.4rem 1.4rem;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    &__chat-area-label {
+        width: 2rem;
+        height: 2rem;
+        margin-right: 1.8rem;
+        cursor: pointer;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    
+    }
+    
+    &__chat-area-entry {
+        width: auto;
+        height: 3rem;
+        flex-grow: 1;
+        padding-top: 1rem;
+        font-size: 1.4rem;
+        color: #B3B3B3;
+        resize: none;
+
+        &::-webkit-scrollbar {
+            width: 0rem;
+            background: #E8E8E8;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: #ffffff;
+        }
+
+        // для firefox
+        scrollbar-color: #ffffff;
+        /* «цвет ползунка» «цвет полосы скроллбара» */
+        scrollbar-width: 0;
+        /* толщина */
+    
+    }
+    
+    &__chat-area-submit {
+        width: 2.4rem;
+        height: 2.4rem;
+        margin-left: 2.2rem;
+
+        img {
+            height: 100%;
+            object-fit: contain;
+        }
+    
     }
 }

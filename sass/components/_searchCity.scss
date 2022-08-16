@@ -94,6 +94,12 @@
         background: #818BBD;
         border-radius: 2.1rem;
     }
+
+        // для firefox
+        scrollbar-color: #818BBD rgba(232, 232, 232, 1);
+        /* «цвет ползунка» «цвет полосы скроллбара» */
+        scrollbar-width: thin;
+        /* толщина */
 }
 
 .select-box .option:hover {
@@ -151,18 +157,6 @@
 .search-box input:focus {
     outline: none;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 .select-box-status {
