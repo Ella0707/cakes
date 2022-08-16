@@ -126,7 +126,7 @@
 
                     </div>
                     <div class="profile__content">
-                        <div class="profile__my-profile  tabcontent" id="tab-1" style="display: block;">
+                        <div class="profile__content-inner my-profile  tabcontent" id="tab-1" style="display: block;">
                             <button class="profile__edit mobile">
                                 Редактировать профиль
                                 <img src="./img/edit-icon.svg" alt="">
@@ -173,16 +173,7 @@
                                             Редактировать профиль
                                             <img src="./img/edit-icon.svg" alt="">
                                         </button>
-                                        <!-- <div class="profile__location mobile">
-                                            <img src="./img/location-icon.svg" alt="">
-                                            Минск
-                                        </div> -->
-                                       
                                     </div>
-                                    <!-- <div class="profile__location desctop">
-                                        <img src="./img/location-icon.svg" alt="">
-                                        Минск
-                                    </div> -->
                                     <div class="profile__location">
                                         <div class="select-box">
                                             <div class="options-container">
@@ -562,17 +553,182 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="profile__my-profile  tabcontent" id="tab-2">
+                        <div class="profile__content-inner  tabcontent" id="tab-2">
                             <div class="profile__wrapper"> Контент 2</div>
                         </div>
-                        <div class="profile__my-profile  tabcontent" id="tab-3">
+                        <div class="profile__content-inner  tabcontent" id="tab-3">
                             <div class="profile__wrapper"> Контент 3</div>
                         </div>
-                        <div class="profile__my-profile  tabcontent" id="tab-4">
+                        <div class="profile__content-inner  tabcontent" id="tab-4">
                             <div class="profile__wrapper"> Контент 4</div>
                         </div>
-                        <div class="profile__my-profile  tabcontent" id="tab-5">
-                            <div class="profile__wrapper"> Контент 5 заказы</div>
+                        <div class="profile__content-inner  tabcontent" id="tab-5">
+                            <div class="profile__wrapper order">
+                                <a href="" class="order__breadcrumbs mobile">
+                                    <img src="./img/arrow-breadcrumbs.svg" alt="">
+                                    <span>Мой профиль</span>
+                                </a>
+                                <div class="order__title-wrap">
+                                    <h1 class="order__title">Мои заказы</h1>
+                                    <div class="order__select-wrap">
+                                        <div class="order__select-title">Сортировать по:</div>
+                                        <div class="dropdown">
+                                            <div class="select">
+                                                <span>Дате</span>
+                                                <input type="text" class="input-search" id="input-search">
+                                                <img src="./img/arrow-down.svg" alt="">
+                                            </div>
+                                            <input type="hidden" name="category">
+                                            <ul class="dropdown-menu">
+                                                <li>Дате</li>
+                                                <li>Пункт 1</li>
+                                                <li>Пункт 3</li>
+                                                <li>Пункт 4</li>
+                                                <li>Пункт 5</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="order__items">
+                                    <div class="order__item">
+                                        <div class="order__item-top">
+                                            <h3 class="order__item-number">Заказ № 1233</h3>
+                                            <h3 class="order__item-status">
+                                                <div class="order__item-status-key">Стасус:</div>
+                                                <div class="order__item-status-value done">Готово</div>
+                                            </h3>
+                                        </div>
+                                        <div class="order__item-content">
+                                            <div class="order__photo-block">
+                                                <div class="order__photo">
+                                                    <img src="./img/cake-img.jpg" alt="">
+                                                </div>
+                                                <h3 class="order__name-confect mobile">Natali134</h3>
+                                            </div>
+                                            <div class="order__info">
+                                                <h3 class="order__name-confect desctop">Natali134</h3>
+                                                <div class="order__description-wrap">
+                                                    <h4 class="order__description-title">Описание:</h4>
+                                                    <p class="order__description">Краткое описание можно топить многократно. В толстостенном сотейнике топлю изомальт на среднем огне. 
+                                                        В толстостенном сотейнике топлю изомальт на среднем огне 
+                                                    </p>
+                                                </div>
+                                                <div class="order__about-info">
+                                                    <div class="order__about-item">
+                                                        <div class="order__about-item-key">Цена:</div>
+                                                        <div class="order__about-item-value">140 BYN</div>
+                                                    </div>
+                                                    <div class="order__about-item">
+                                                        <div class="order__about-item-key">Срок:</div>
+                                                        <div class="order__about-item-value">12.12.2022</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="order__item">
+                                        <div class="order__item-top">
+                                            <h3 class="order__item-number">Заказ № 1233</h3>
+                                            <h3 class="order__item-status">
+                                                <div class="order__item-status-key">Стасус:</div>
+                                                <div class="order__item-status-value in-work">В работе</div>
+                                            </h3>
+                                        </div>
+                                        <div class="order__item-content">
+                                            <div class="order__photo-block">
+                                                <div class="order__photo">
+                                                    <img src="./img/cake-img.jpg" alt="">
+                                                </div>
+                                                <h3 class="order__name-confect mobile">Natali134</h3>
+                                            </div>
+                                            <div class="order__info">
+                                                <h3 class="order__name-confect desctop">Natali134</h3>
+                                                <div class="order__description-wrap">
+                                                    <h4 class="order__description-title">Описание:</h4>
+                                                    <p class="order__description">Краткое описание можно топить многократно. В толстостенном сотейнике топлю изомальт на среднем огне. 
+                                                        В толстостенном сотейнике топлю изомальт на среднем огне 
+                                                    </p>
+                                                </div>
+                                                <div class="order__about-info">
+                                                    <div class="order__about-item">
+                                                        <div class="order__about-item-key">Цена:</div>
+                                                        <div class="order__about-item-value">140 BYN</div>
+                                                    </div>
+                                                    <div class="order__about-item">
+                                                        <div class="order__about-item-key">Срок:</div>
+                                                        <div class="order__about-item-value">12.12.2022</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="order__item">
+                                        <div class="order__item-top">
+                                            <h3 class="order__item-number">Заказ № 1233</h3>
+                                            <h3 class="order__item-status">
+                                                <div class="order__item-status-key">Стасус:</div>
+                                                <div class="order__item-status-value done">Готово</div>
+                                            </h3>
+                                        </div>
+                                        <div class="order__item-content">
+                                            <div class="order__photo-block">
+                                                <div class="order__photo">
+                                                    <img src="./img/cake-img.jpg" alt="">
+                                                </div>
+                                                <h3 class="order__name-confect mobile">Natali134</h3>
+                                            </div>
+                                            <div class="order__info">
+                                                <h3 class="order__name-confect desctop">Natali134</h3>
+                                                <div class="order__description-wrap">
+                                                    <h4 class="order__description-title">Описание:</h4>
+                                                    <p class="order__description">Краткое описание можно топить многократно. В толстостенном сотейнике топлю изомальт на среднем огне. 
+                                                        В толстостенном сотейнике топлю изомальт на среднем огне 
+                                                    </p>
+                                                </div>
+                                                <div class="order__about-info">
+                                                    <div class="order__about-item">
+                                                        <div class="order__about-item-key">Цена:</div>
+                                                        <div class="order__about-item-value">140 BYN</div>
+                                                    </div>
+                                                    <div class="order__about-item">
+                                                        <div class="order__about-item-key">Срок:</div>
+                                                        <div class="order__about-item-value">12.12.2022</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="order__pagination pagination">
+                                    <button class="pagination__btn-prev">
+                                        <svg width="9" height="12" viewBox="0 0 9 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.16016 1.41L3.58016 6L8.16016 10.59L6.75016 12L0.750156 6L6.75016 0L8.16016 1.41Z" fill=""></path>
+                                        </svg>
+                                    </button>
+                                    <div class="pagination__items">
+                                        <a href="#" class="pagination__item">
+                                            <span>1</span>
+                                        </a>
+                                        <a href="#" class="pagination__item active">
+                                            <span>2</span>
+                                        </a>
+                                        <a href="#" class="pagination__item">
+                                            <span>...</span>
+                                        </a>
+                                        <a href="#" class="pagination__item">
+                                            <span>3</span>
+                                        </a>
+                                        <a href="#" class="pagination__item">
+                                            <span>4</span>
+                                        </a>
+                                    </div>
+                                    <button class="pagination__btn-next active">
+                                        <svg width="9" height="12" viewBox="0 0 9 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.839844 1.41L5.41984 6L0.839844 10.59L2.24984 12L8.24984 6L2.24984 0L0.839844 1.41Z" fill=""></path>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
