@@ -1309,6 +1309,14 @@ input[type=number] {
   overflow-y: scroll;
   overflow-x: hidden;
   border-radius: 0.8rem 0 0 0.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: auto;
   scrollbar-color: #ffffff;
   /* «цвет ползунка» «цвет полосы скроллбара» */
   scrollbar-width: 0;
@@ -1371,6 +1379,14 @@ input[type=number] {
 }
 .messages__chat-right-block {
   border-left: 0.1rem solid rgba(130, 139, 189, 0.38);
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .messages__chat-top {
   padding: 1.3rem 2rem 1.3rem 2rem;

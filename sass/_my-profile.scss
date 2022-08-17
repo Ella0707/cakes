@@ -1100,6 +1100,9 @@
         overflow-y: scroll;
         overflow-x: hidden;
         border-radius: 0.8rem 0 0 0.8rem;
+        display: flex;
+        flex-direction: column;
+        height: auto;
 
         // &::-webkit-scrollbar {
         //     width: 0.6rem;
@@ -1192,8 +1195,10 @@
 
 
     &__chat-right-block {
-        // width: 52.5rem;
         border-left: 0.1rem solid rgba(130, 139, 189, 0.38);
+        height: auto;
+        display: flex;
+        flex-direction: column;
     }
 
     &__chat-top {
