@@ -1178,4 +1178,237 @@
             font-size: 3rem;
         }
     }
+
+
+    .messages {
+        padding: 0;
+
+        &.chat-detail {
+            margin-bottom: 7.2rem;
+        }
+
+        &__breadcrumbs {
+            &.mobile {
+                display: flex;
+                align-items: center;
+                margin-bottom: 5rem;
+
+                img {
+                    width: 2rem;
+                    height: 2rem;
+                    object-fit: contain;
+                    margin-right: 1rem;
+                }
+
+                span {
+                    font-size: 2.8rem;
+                    font-weight: 400;
+                    color: #828282;
+                }
+            }
+        }
+    
+        &__title-wrap {
+            flex-direction: column;
+            align-items: start;
+            margin-bottom: 2.6rem;
+            width: 100%;
+        }
+    
+        &__title {
+            font-size: 4rem;
+            margin-bottom: 1.5rem;
+        }
+    
+        &__select-wrap {
+            display: flex;
+            align-items: center;
+            width: max-content;
+            transition: 0.3s;
+        }
+        
+        &__select-title {
+            font-size: 2.8rem;
+            margin-right: 1.4rem;
+    
+        }
+        .dropdown {
+            min-width: 30rem;
+            img {
+                right: -2rem;
+            }
+
+            .dropdown-menu {
+                min-width: 100%;
+                top: 5rem;
+            }
+        }
+    
+        .dropdown .select {
+            font-size: 2.8rem;
+            padding: 1rem 1.5rem;
+        }
+    
+        &__chat {
+            height: 99.2rem;
+            box-shadow: 0px 0px 4.8rem rgba(0, 0, 0, 0.08);
+            border-radius: 1.6rem;
+
+            &.chat-detail {
+                height: 77.6rem;
+            }
+        }
+    
+        &__chat-left-block {
+            width: 100%;
+            border-radius: 1.6rem;
+        }
+    
+        &__chat-item {
+            padding: 2.8rem 2.4rem 2.8rem 2.8rem;
+        }
+    
+        &__chat-item-user {
+            width: 9.2rem;
+            height: 9.2rem;
+            margin-right: 2rem;
+        }
+    
+        &__text {
+            padding-right: 2rem;
+        }
+    
+        &__chat-item-title {
+            font-size: 2.8rem;
+            margin-bottom: 1rem;
+        }
+    
+        &__chat-item-subtitle {
+            font-size: 2rem;
+        }
+    
+        &__chat-item-date {
+            font-size: 2.4rem;
+        }
+    
+    
+    // ЧАТ на другой странице
+        &__chat-right-block {
+            &.desctop {
+                display: none;
+            }
+            border-left: none;
+        }
+    
+        &__chat-top {
+            padding: 2rem 2.2rem 2rem 2.6rem;
+        }
+    
+        &__user-img {
+            width: 5.4rem;
+            height: 5.4rem;
+            margin-right: 1.1rem;
+        }
+    
+        &__user-name {
+            font-size: 2.8rem;
+            margin-right: 1rem;
+    
+            img {
+                width: 1.2rem;
+                height: 1.2rem;
+            }
+        }
+    
+        &__user-status {
+            font-size: 2rem;
+        }
+    
+        &__order-btn {
+            border-radius: 9rem;
+            padding: 2rem 4rem 2rem 4rem;
+    
+            font-size: 2.4rem;
+            margin-right: 2.6rem;
+        }
+    
+        &__tooltip-img {
+            width: 0.5rem;
+            height: 2.8rem;
+        }
+    
+        &__tooltip-list {
+            top: 6rem;
+            right: 0;
+            z-index: 10;
+        }
+    
+    
+        &__chat-window {
+            height: 100%;
+            padding: 0rem 0rem 0rem 2.3rem;
+        }
+    
+        &__chat-window-scroll {
+            padding-right: 2rem;
+        }
+    
+        &__msg-user-photo {
+            width: 6rem;
+            height: 6rem;
+        }
+    
+        &__msg-text-author {
+            font-size: 2.4rem;
+        }
+    
+        &__msg-text {
+            font-size: 2rem;
+        }
+    
+        &__msg-date {
+            font-size: 2rem;
+        }
+        
+        &__chat-area {
+            border: 1px solid rgba(130, 139, 189, 0.38);
+            border-left: 1px solid rgba(130, 139, 189, 0.38);
+            border-radius: 0 0 1.8rem 1.8rem;
+        }
+        
+        &__chat-area-inner {
+            padding: 2rem 2rem 2rem 2rem;
+        }
+        
+        &__chat-area-label {
+            width: 4rem;
+            height: 4rem;
+
+            img {
+                width: 2.6rem;
+                height: 3rem;
+            }
+        }
+        
+        &__chat-area-entry {
+            height: 4rem;
+            padding-top: 1rem;
+            font-size: 2.4rem;
+        }
+        
+        &__chat-area-submit {
+            width: 4rem;
+            height: 4rem;
+            margin-left: 3rem;
+        }
+    }
+    
+
+
+
 }
+
+
+
+
+

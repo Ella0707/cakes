@@ -221,6 +221,13 @@ $(".pagination__item").click(function (e) {
 })
 
 
+// переключение класса active для tooltip в сообщениях
+$(".messages__tooltip-img").click(function (e) {
+  e.preventDefault();
+  // $(this).toggleClass('active');
+  $(this).next(".messages__tooltip-list").toggleClass('active');
+});
+
 
 
 
@@ -338,16 +345,18 @@ document.querySelectorAll(".noclickedlink").forEach(function(el){
 });
 
 
-$(".messages__tooltip-img").click(function (e) {
-  e.preventDefault();
-  // $(this).toggleClass('active');
-  $(this).next(".messages__tooltip-list").toggleClass('active');
-});
+// $(".messages__tooltip-img").click(function (e) {
+//   e.preventDefault();
+//   // $(this).toggleClass('active');
+//   $(this).next(".messages__tooltip-list").toggleClass('active');
+// });
+
+
 
 
 // переключение класса active  в сообщениях
-$(".messages__chat-item").click(function (e) {
-  e.preventDefault();
-  $(".messages__chat-item").removeClass('active');
-  $(this).addClass('active');
-})
+// $(".messages__chat-item").click(function (e) {
+//   e.preventDefault();
+//   $(".messages__chat-item").removeClass('active');
+//   $(this).addClass('active');
+// })

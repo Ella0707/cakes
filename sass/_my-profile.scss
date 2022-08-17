@@ -1198,6 +1198,7 @@
         border-left: 0.1rem solid rgba(130, 139, 189, 0.38);
         height: auto;
         display: flex;
+        flex-grow: 1;
         flex-direction: column;
     }
 
@@ -1500,6 +1501,5 @@
             height: 100%;
             object-fit: contain;
         }
-    
     }
 }

@@ -1383,6 +1383,9 @@ input[type=number] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -6714,5 +6717,198 @@ input[type=number] {
   }
   .order__about-item-value {
     font-size: 3rem;
+  }
+  .messages {
+    padding: 0;
+  }
+  .messages.chat-detail {
+    margin-bottom: 7.2rem;
+  }
+  .messages__breadcrumbs.mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 5rem;
+  }
+  .messages__breadcrumbs.mobile img {
+    width: 2rem;
+    height: 2rem;
+    -o-object-fit: contain;
+       object-fit: contain;
+    margin-right: 1rem;
+  }
+  .messages__breadcrumbs.mobile span {
+    font-size: 2.8rem;
+    font-weight: 400;
+    color: #828282;
+  }
+  .messages__title-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    margin-bottom: 2.6rem;
+    width: 100%;
+  }
+  .messages__title {
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+  }
+  .messages__select-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .messages__select-title {
+    font-size: 2.8rem;
+    margin-right: 1.4rem;
+  }
+  .messages .dropdown {
+    min-width: 30rem;
+  }
+  .messages .dropdown img {
+    right: -2rem;
+  }
+  .messages .dropdown .dropdown-menu {
+    min-width: 100%;
+    top: 5rem;
+  }
+  .messages .dropdown .select {
+    font-size: 2.8rem;
+    padding: 1rem 1.5rem;
+  }
+  .messages__chat {
+    height: 99.2rem;
+    -webkit-box-shadow: 0px 0px 4.8rem rgba(0, 0, 0, 0.08);
+            box-shadow: 0px 0px 4.8rem rgba(0, 0, 0, 0.08);
+    border-radius: 1.6rem;
+  }
+  .messages__chat.chat-detail {
+    height: 77.6rem;
+  }
+  .messages__chat-left-block {
+    width: 100%;
+    border-radius: 1.6rem;
+  }
+  .messages__chat-item {
+    padding: 2.8rem 2.4rem 2.8rem 2.8rem;
+  }
+  .messages__chat-item-user {
+    width: 9.2rem;
+    height: 9.2rem;
+    margin-right: 2rem;
+  }
+  .messages__text {
+    padding-right: 2rem;
+  }
+  .messages__chat-item-title {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+  }
+  .messages__chat-item-subtitle {
+    font-size: 2rem;
+  }
+  .messages__chat-item-date {
+    font-size: 2.4rem;
+  }
+  .messages__chat-right-block {
+    border-left: none;
+  }
+  .messages__chat-right-block.desctop {
+    display: none;
+  }
+  .messages__chat-top {
+    padding: 2rem 2.2rem 2rem 2.6rem;
+  }
+  .messages__user-img {
+    width: 5.4rem;
+    height: 5.4rem;
+    margin-right: 1.1rem;
+  }
+  .messages__user-name {
+    font-size: 2.8rem;
+    margin-right: 1rem;
+  }
+  .messages__user-name img {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+  .messages__user-status {
+    font-size: 2rem;
+  }
+  .messages__order-btn {
+    border-radius: 9rem;
+    padding: 2rem 4rem 2rem 4rem;
+    font-size: 2.4rem;
+    margin-right: 2.6rem;
+  }
+  .messages__tooltip-img {
+    width: 0.5rem;
+    height: 2.8rem;
+  }
+  .messages__tooltip-list {
+    top: 6rem;
+    right: 0;
+    z-index: 10;
+  }
+  .messages__chat-window {
+    height: 100%;
+    padding: 0rem 0rem 0rem 2.3rem;
+  }
+  .messages__chat-window-scroll {
+    padding-right: 2rem;
+  }
+  .messages__msg-user-photo {
+    width: 6rem;
+    height: 6rem;
+  }
+  .messages__msg-text-author {
+    font-size: 2.4rem;
+  }
+  .messages__msg-text {
+    font-size: 2rem;
+  }
+  .messages__msg-date {
+    font-size: 2rem;
+  }
+  .messages__chat-area {
+    border: 1px solid rgba(130, 139, 189, 0.38);
+    border-left: 1px solid rgba(130, 139, 189, 0.38);
+    border-radius: 0 0 1.8rem 1.8rem;
+  }
+  .messages__chat-area-inner {
+    padding: 2rem 2rem 2rem 2rem;
+  }
+  .messages__chat-area-label {
+    width: 4rem;
+    height: 4rem;
+  }
+  .messages__chat-area-label img {
+    width: 2.6rem;
+    height: 3rem;
+  }
+  .messages__chat-area-entry {
+    height: 4rem;
+    padding-top: 1rem;
+    font-size: 2.4rem;
+  }
+  .messages__chat-area-submit {
+    width: 4rem;
+    height: 4rem;
+    margin-left: 3rem;
   }
 }/*# sourceMappingURL=style.css.map */
