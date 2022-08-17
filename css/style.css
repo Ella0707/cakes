@@ -1612,6 +1612,7 @@ input[type=number] {
           align-items: center;
   border: 1px solid rgba(130, 139, 189, 0.38);
   border-left: none;
+  border-radius: 0 0 0.8rem 0;
 }
 .messages__chat-area-inner {
   padding: 1.4rem 2rem 1.4rem 1.4rem;
