@@ -338,6 +338,11 @@ function uploadFile(file) {
     return;
   }
 
+  imgPreview.addEventListener("click", function deleteFile() {
+    imgPreview.classList.remove('active');
+    imgPreview.innerHTML = " ";
+  });
+
   var reader = new FileReader();
   reader.onload = function(e) {
     imgPreview.innerHTML = `<img src="${e.target.result}" alt="Фото">`;
@@ -349,6 +354,13 @@ function uploadFile(file) {
   };
   reader.readAsDataURL(file);
 };
+
+
+// удаление блока с предосмотром при нажатии на картинку
+
+
+    
+
 
 
 // Ползунок выбора диапазона стоимости (Старница "Доска объявлений")
