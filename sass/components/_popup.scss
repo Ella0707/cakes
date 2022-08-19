@@ -1,6 +1,6 @@
 .popup {
     position: fixed;
-    z-index: 999999;
+    z-index: 100;
     height: 100%;
     width: 100%;
     background-color: rgba(31, 31, 31, 0.4);
@@ -264,6 +264,155 @@
 }
 
 
+.popup.create-ad {
+    .dropdown .input-search {
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: #5E5E5E;
+    }
+
+    .select.select-date {
+        position: relative;
+
+      
+
+        img {
+            width: 2rem;
+            height: 2rem;
+            object-fit: contain;
+            position: absolute;
+            bottom: 50%;
+            right: 2rem;
+            // z-index: -1;
+        }
+    }
+
+    .add-file {
+        align-self: center;
+
+        &__btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+    
+            align-self: center;
+    
+            font-size: 1.9rem;
+            font-weight: 500;
+            color: #0089ED;
+    
+            input {
+                position: absolute;
+                inset: 0;
+                width: 100%;
+                height: 100%;
+                font-size: 0;
+                opacity: 0;
+            }
+    
+            img {
+                width: 1.7rem;
+                height: 1.7rem;
+                object-fit: contain;
+                flex-shrink: 0;
+                margin-left: 1rem;
+            }
+        }
+        
+
+       &__file-preview {
+        width: 0;
+        height: 0;
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.3s;
+
+        &.active {
+            width: 20rem;
+            height: 20rem;
+            visibility: visible;
+            opacity: 1;
+
+            grid-column-start: 1;
+            grid-column-end: 3;
+            justify-self: center;
+        }
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+    .form__selectes-wrap {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 5.9rem;
+        row-gap: 2.6rem;
+        margin-top: 2.9rem;
+        margin-bottom: 4.1rem;
+    }
+
+    .popup{
+
+        &__content {
+            width: 73rem;
+            padding: 10.4rem 8.8rem 7.5rem 5.3rem;
+        }
+
+        &__title {
+            font-size: 4.2rem;
+            text-align: center;
+        }
+    
+        &__form-input.select-date {
+            background: url(./../../img/arrow-down.svg);
+            background-repeat: no-repeat;
+            background-position: right 1.5rem center;
+            background-size: 0.7rem;
+            padding-right: 2rem;
+        }
+
+        &__form-wrap {
+            display: block;
+        }
+
+        &__textarea {
+            border: 1px solid #ADADAD;
+            border-radius: 0.9rem;
+            resize: none;
+            width: 100%;
+            height: 14.4rem;
+            overflow-y: auto;
+            padding: 1.9rem 2.5rem;
+
+            font-size: 1.6rem;
+            font-weight: 400;
+            color: #808080;
+            line-height: 1.4;
+        }
+
+        &__btn {
+            width: 45rem;
+            height: 6.4rem;
+            margin: 0 auto;
+        }
+
+       
+
+
+        
+    
+    }
+    
+}
+
+
+
+
 
 @media (max-width: 48em) {
 
@@ -391,6 +540,95 @@
         
         &__accaunt-link {
             font-size: 3rem;
+        }
+    }
+
+
+
+
+    .popup.create-ad {
+    
+        .add-file {
+            align-self: center;
+    
+            &__btn {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+        
+                align-self: center;
+        
+                font-size: 1.9rem;
+                font-weight: 500;
+                color: #0089ED;
+        
+                input {
+                    position: absolute;
+                    inset: 0;
+                    width: 100%;
+                    height: 100%;
+                    font-size: 0;
+                    opacity: 0;
+                }
+        
+                img {
+                    width: 1.7rem;
+                    height: 1.7rem;
+                    object-fit: contain;
+                    flex-shrink: 0;
+                    margin-left: 1rem;
+                }
+            }
+            
+            &__file-preview {
+            width: 0;
+            height: 0;
+            visibility: hidden;
+            opacity: 0;
+            transition: 0.3s;
+    
+            &.active {
+                width: 20rem;
+                height: 20rem;
+                visibility: visible;
+                opacity: 1;
+    
+                grid-column-start: 1;
+                grid-column-end: 3;
+                justify-self: center;
+            }
+    
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    
+        .popup{
+    
+            &__textarea {
+                border: 1px solid #ADADAD;
+                border-radius: 0.9rem;
+                resize: none;
+                width: 100%;
+                height: 14.4rem;
+                overflow-y: auto;
+                padding: 1.9rem 2.5rem;
+    
+                font-size: 1.6rem;
+                font-weight: 400;
+                color: #808080;
+                line-height: 1.4;
+            }
+    
+            &__btn {
+                width: 45rem;
+                height: 6.4rem;
+                margin: 0 auto;
+            }
         }
     }
 }

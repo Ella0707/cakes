@@ -24,6 +24,20 @@ $('.form-login-close').click(function () {
   $('body').removeClass('lock');
 });
 
+// открытие и закрытие формы добавления обяъвления на странице "Доска объявлений"
+$('.create-ad-open').click(function (e) {
+  e.preventDefault();
+  $('.create-ad').fadeIn(800);
+  $('body').addClass('lock');
+});
+
+$('.create-ad-close').click(function () {
+  $('.create-ad').fadeOut(800);
+  $('body').removeClass('lock');
+});
+
+
+
 
 
 // мобильное меню
@@ -274,6 +288,69 @@ function check() {
 
 
 
+
+
+// календарь с выбором дат при подаче объявлений
+
+function AirDatepickerOpen() {
+  let tomorrowDate = new Date();
+  tomorrowDate.setDate(tomorrowDate.getDate());
+
+new AirDatepicker('#select-date', {
+    minDate: tomorrowDate,
+    // autoClose: true,
+});
+
+  // if(document.body.clientWidth <= 769){
+  //   new AirDatepicker('#select-date', {
+  //     isMobile: true,
+  //     autoClose: true,
+  // });
+  // }
+}
+
+AirDatepickerOpen();
+
+
+// превью у фото при добавлении заказа
+const imgOrder = document.getElementById("addFile");
+const imgPreview = document.getElementById("filePreview");
+
+imgOrder.addEventListener("change", () => {
+  uploadFile(imgOrder.files[0]);
+});
+
+function uploadFile(file) {
+
+  // проверка на тип файла
+  if (!['image/jpeg', 'image/png', 'image/gif'].includes(file.type)) {
+    alert('Разрешены только изображения');
+    imgOrder.value = " ";
+    imgPreview.classList.remove('active');
+    return;
+  }
+
+  // проверка на размер файла
+  if (file.size > 2 * 1024 * 1024) {
+    alert('Файл должен быть не более 2Mb');
+    imgOrder.value = " ";
+    imgPreview.classList.remove('active');
+    return;
+  }
+
+  var reader = new FileReader();
+  reader.onload = function(e) {
+    imgPreview.innerHTML = `<img src="${e.target.result}" alt="Фото">`;
+    imgPreview.classList.add('active');
+  };
+  reader.onerror = function(e) {
+    alert("Ошибка");
+    imgPreview.classList.remove('active');
+  };
+  reader.readAsDataURL(file);
+};
+
+
 // Ползунок выбора диапазона стоимости (Старница "Доска объявлений")
 
 $( "#polzunok" ).slider({
@@ -334,7 +411,7 @@ const filterList = searchTerm => {
 };
 
 
-
+// отключение работы ссылок в декстопной версии на странице чата
 document.querySelectorAll(".noclickedlink").forEach(function(el){
   el.onclick = function(e){
     if(document.body.clientWidth >= 769){
@@ -360,3 +437,5 @@ document.querySelectorAll(".noclickedlink").forEach(function(el){
 //   $(".messages__chat-item").removeClass('active');
 //   $(this).addClass('active');
 // })
+
+
