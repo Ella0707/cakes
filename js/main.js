@@ -298,7 +298,7 @@ function AirDatepickerOpen() {
 
 new AirDatepicker('#select-date', {
     minDate: tomorrowDate,
-    // autoClose: true,
+    autoClose: true,
 });
 
   // if(document.body.clientWidth <= 769){
