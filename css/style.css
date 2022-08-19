@@ -1696,6 +1696,130 @@ input[type=number] {
      object-fit: contain;
 }
 
+.edit-profile {
+  width: 60.2rem;
+}
+
+.edit-info {
+  padding: 3.3rem 5.4rem 4.5rem 5.4rem;
+}
+.edit-info__ava {
+  width: 13.5rem;
+  height: 13.5rem;
+  border-radius: 50%;
+  margin: 0 auto 3.5rem auto;
+  background: rgba(130, 139, 189, 0.38);
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.edit-info__btn {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: auto;
+  width: 100%;
+  padding: 2.5rem 1rem;
+}
+.edit-info__btn img {
+  width: 3.3rem;
+  height: 3.3rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin: 0 auto 0.6rem auto;
+}
+.edit-info__btn input {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  font-size: 0;
+  opacity: 0;
+}
+.edit-info__btn span {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #FFFFFF;
+  text-align: center;
+}
+.edit-info__file-preview {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: inherit;
+  opacity: 0;
+  z-index: -2;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.edit-info__file-preview img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: inherit;
+}
+.edit-info__file-preview.active {
+  opacity: 1;
+  z-index: 10;
+}
+.edit-info__selectes-wrap {
+  display: grid;
+  grid-template-columns: 21.6rem 21.6rem;
+  -webkit-column-gap: 7.2rem;
+     -moz-column-gap: 7.2rem;
+          column-gap: 7.2rem;
+  row-gap: 2.6rem;
+  margin-bottom: 2.7rem;
+}
+.edit-info__form-item-title {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #000000;
+  margin-bottom: 1rem;
+}
+.edit-info__form-input {
+  background: #FFFFFF;
+  border: 1px solid #ADADAD;
+  border-radius: 0.9rem;
+  padding: 2rem 1.3rem;
+  width: 100%;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #808080;
+}
+.edit-info .dropdown .select {
+  border: 1px solid #ADADAD;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-radius: 0.9rem;
+  padding: 2rem 1.3rem;
+}
+.edit-info__bottom {
+  margin-top: 4.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
 .confectioners-banner {
   margin-bottom: 5.4rem;
 }

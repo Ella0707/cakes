@@ -338,11 +338,13 @@ function uploadFile(file) {
     return;
   }
 
+  // удаление блока с предосмотром при нажатии на картинку
   imgPreview.addEventListener("click", function deleteFile() {
     imgPreview.classList.remove('active');
     imgPreview.innerHTML = " ";
   });
 
+  // загрузка
   var reader = new FileReader();
   reader.onload = function(e) {
     imgPreview.innerHTML = `<img src="${e.target.result}" alt="Фото">`;
@@ -356,7 +358,52 @@ function uploadFile(file) {
 };
 
 
-// удаление блока с предосмотром при нажатии на картинку
+
+// аватарка
+// const addAva = document.getElementById("addAva");
+// const avaPreview = document.getElementById("AvaPreview");
+
+// addAva.addEventListener("change", () => {
+//   uploadAva(addAva.files[0]);
+// });
+
+// function uploadAva(file) {
+
+//   // проверка на тип файла
+//   if (!['image/jpeg', 'image/png', 'image/gif'].includes(file.type)) {
+//     alert('Разрешены только изображения');
+//     addAva.value = " ";
+//     avaPreview.classList.remove('active');
+//     return;
+//   }
+
+//   // проверка на размер файла
+//   if (file.size > 2 * 1024 * 1024) {
+//     alert('Файл должен быть не более 2Mb');
+//     addAva.value = " ";
+//     avaPreview.classList.remove('active');
+//     return;
+//   }
+
+//   // удаление блока с предосмотром при нажатии на картинку
+//   avaPreview.addEventListener("click", function deleteAva() {
+//     avaPreview.classList.remove('active');
+//     avaPreview.innerHTML = " ";
+//   });
+
+//   // загрузка
+//   var readerava = new FileReader();
+//   readerava.onload = function(e) {
+//     avaPreview.innerHTML = `<img src="${e.target.result}" alt="Фото">`;
+//     avaPreview.classList.add('active');
+//   };
+//   readerava.onerror = function(e) {
+//     alert("Ошибка");
+//     avaPreview.classList.remove('active');
+//   };
+//   readerava.readAsDataURL(file);
+// };
+
 
 
     

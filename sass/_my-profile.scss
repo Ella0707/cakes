@@ -1522,3 +1522,148 @@
         }
     }
 }
+
+
+.edit-profile {
+    width: 60.2rem;
+}
+
+
+.edit-info {
+    padding: 3.3rem 5.4rem 4.5rem 5.4rem;
+
+    
+    &__ava {
+        width: 13.5rem;
+        height: 13.5rem;
+        border-radius: 50%;
+        margin: 0 auto 3.5rem auto;
+        background: rgba(130, 139, 189, 0.38);
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    &__btn {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+        padding: 2.5rem 1rem;
+
+        img {
+            width: 3.3rem;
+            height: 3.3rem;
+            object-fit: contain;
+            margin: 0 auto 0.6rem auto;
+        }
+
+        input {
+            position: absolute;
+            inset: 0;
+            height: 100%;
+            width: 100%;
+            font-size: 0;
+            opacity: 0;
+        }
+
+        span {
+            font-size: 1.4rem;
+            font-weight: 400;
+            color: #FFFFFF;
+            text-align: center;
+        }
+    }
+    
+    &__file-preview {
+        position: absolute;
+        inset: 0;
+        height: 100%;
+        width: 100%;
+        border-radius: inherit;
+        opacity: 0;
+        z-index: -2;
+        transition: 0.4s;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: inherit;
+        }
+
+        &.active {
+            opacity: 1;
+            z-index: 10;
+        }
+    }
+    
+    &__selectes-wrap {
+        display: grid;
+        grid-template-columns: 21.6rem 21.6rem;
+        column-gap: 7.2rem;
+        row-gap: 2.6rem;
+        margin-bottom: 2.7rem;
+    }
+    
+    &__form-item {
+    
+    }
+    
+    &__form-item-title {
+        font-size: 1.8rem;
+        font-weight: 500;
+        color: #000000;
+        margin-bottom: 1rem;
+    }
+    
+    &__form-input {
+        background: #FFFFFF;
+        border: 1px solid #ADADAD;
+        border-radius: 0.9rem;
+        padding: 2rem 1.3rem;
+        width: 100%;
+
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: #808080;
+    }
+
+    .dropdown {
+        .select {
+            border: 1px solid #ADADAD;
+            box-shadow: none;
+            border-radius: 0.9rem;
+            padding: 2rem 1.3rem;
+        }
+    }
+   
+    .input-search {
+    }
+    .dropdown-menu {
+    }
+    
+    &__item {
+    
+    }
+    
+    &__item-title {
+    
+    }
+    
+    &__bottom {
+        margin-top: 4.4rem;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    &__btn {
+    
+    }
+    
+}
