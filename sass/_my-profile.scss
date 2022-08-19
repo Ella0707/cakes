@@ -1600,13 +1600,41 @@
         &.active {
             opacity: 1;
             z-index: 10;
+
+            &::before {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 0;
+                background-image: url(./../../img/delete.svg);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 2rem;
+                background-color: rgba(0, 0, 0, 0.6);
+                opacity: 0;
+                transition: 0.4s;
+                pointer-events: none;
+                z-index: 11;
+            }
+
+            &:hover {
+
+                &::before {
+                    height: 40%;
+                    opacity: 1;
+                    pointer-events: visible;
+                }
+                
+            }
         }
     }
     
     &__selectes-wrap {
         display: grid;
-        grid-template-columns: 21.6rem 21.6rem;
-        column-gap: 7.2rem;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 5.9rem;
         row-gap: 2.6rem;
         margin-bottom: 2.7rem;
     }
@@ -1641,12 +1669,15 @@
             border-radius: 0.9rem;
             padding: 2rem 1.3rem;
         }
+
+        .dropdown-menu {
+            top: 7rem;
+        }
     }
    
     .input-search {
     }
-    .dropdown-menu {
-    }
+   
     
     &__item {
     
