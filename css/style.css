@@ -1810,6 +1810,9 @@ input[type=number] {
   row-gap: 2.6rem;
   margin-bottom: 2.7rem;
 }
+.edit-info__form-item {
+  position: relative;
+}
 .edit-info__form-item-title {
   font-size: 1.8rem;
   font-weight: 500;
@@ -1825,6 +1828,22 @@ input[type=number] {
   font-size: 1.6rem;
   font-weight: 400;
   color: #808080;
+}
+.edit-info .password-control {
+  position: absolute;
+  right: 1.7rem;
+  top: 5.5rem;
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: url(./../img/eye.svg) 0 0 no-repeat;
+  background-size: contain;
+}
+.edit-info .password-control.view {
+  background: url(./../img/eye-2.svg) 0 0 no-repeat;
+  background-size: contain;
+  width: 1.7rem;
+  height: 1.7rem;
 }
 .edit-info .dropdown .select {
   border: 1px solid #ADADAD;
@@ -1846,6 +1865,28 @@ input[type=number] {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+.edit-info__btn-save {
+  margin: 0 auto;
+  background: linear-gradient(92.85deg, #FF8A00 -43.75%, #FF007A 106.98%);
+  -webkit-box-shadow: 0px 1rem 2.3rem rgba(150, 146, 144, 0.15);
+          box-shadow: 0px 1rem 2.3rem rgba(150, 146, 144, 0.15);
+  border-radius: 4.4rem;
+  padding: 1.9rem 8.5rem 1.9rem 8.5rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #FFFFFF;
+  margin-bottom: 2.3rem;
+}
+.edit-info__btn-sign-out {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin: 0 auto;
+  background: linear-gradient(92.85deg, #FF8A00 -43.75%, #FF007A 106.98%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
 .confectioners-banner {
   margin-bottom: 5.4rem;
 }
