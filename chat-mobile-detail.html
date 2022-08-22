@@ -341,7 +341,7 @@
     </footer>
 
 
-    <!-- POPUPS -->
+     <!-- POPUPS -->
 
     <!-- форма регистрации -->
     <div class="popup form-reg">
@@ -432,8 +432,8 @@
                     </label>
                     <label class="popup__form-item password" for="">
                         <div class="popup__form-item-title">Повторите пароль<sup></sup></div>
-                        <input class="popup__form-input" type="password" placeholder="Пароль" name="confirm_password" id="confirm_password" onchange="check()">
-                        <a href="#" class="password-control-two" onclick="return show_hide_password_two(this);"></a>
+                        <input class="popup__form-input input-password-2" type="password" placeholder="Пароль" name="confirm_password" id="confirm_password" onchange="check()">
+                        <a href="#" class="password-control-two password-control-2"></a>
                         <span class="popup__form-message" id='message'></span>
                     </label>
 
@@ -482,9 +482,9 @@
                     <label class="popup__form-item password" for="">
                         <div class="popup__form-item-title">Введите пароль</div>
                         
-                        <input class="popup__form-input input-password" type="password" placeholder="Пароль"
+                        <input class="popup__form-input input-password-3" type="password" placeholder="Пароль"
                         id="password" autocomplete="current-password" name="password">
-                        <a href="#" class="password-control"></a>
+                        <a href="#" class="password-control password-control-3"></a>
                     </label>
 
                     <div class="popup__form-save-wrap">
@@ -505,6 +505,103 @@
                             </div>
                             <button class="popup__accaunt-link registration-link">Зарегистрироваться</button>
                         </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- форма создания объявления нас странице "Доска объявлений" -->
+    <div class="popup create-ad">
+        <div class="popup__body">
+            <div class="popup__content">
+                <button class="popup__close create-ad-close">
+                    <img class="popup__close-img" src="./img/close-popup.svg" alt="">
+                </button>
+                <div class="popup__title">Создать обьявление</div>
+    
+                <form class="popup__form-wrap">
+                    <label class="popup__form-item">
+                        <input class="popup__form-input" type="text" placeholder="Название обьявления">
+                    </label>
+                    <div class="form__selectes-wrap">
+                        <label class="popup__form-item">
+                            <div class="popup__form-item-title">Количество</div>
+                            <input class="popup__form-input" type="number" placeholder="1 шт">
+                        </label>
+                        <label class="popup__form-item">
+                            <div class="popup__form-item-title">Цена</div>
+                            <input class="popup__form-input" type="number" placeholder="1 - 10000 BYN">
+                        </label>
+                        <div class="popup__form-item">
+                            <div class="popup__form-item-title">Срок изготовления</div>
+                            <div class="select">
+                                <input class="popup__form-input  select-date" id="select-date" type="text" readonly=""
+                                    placeholder="Выберите дату" value="">
+                            </div>
+                        </div>
+    
+                        <div class="popup__form-item">
+                            <div class="popup__form-item-title">Категория</div>
+                            <div class="dropdown">
+                                <div class="select">
+                                    <span>Торты </span>
+                                    <input type="text" class="input-search">
+                                    <img src="./img/arrow-down.svg" alt="">
+                                </div>
+                                <input type="hidden" name="category">
+                                <ul class="dropdown-menu">
+                                    <li>Торты </li>
+                                    <li>Пироженные</li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <div class="popup__form-item">
+                            <div class="popup__form-item-title">Город<sup>*</sup></div>
+                            <div class="dropdown">
+                                <div class="select">
+                                    <span>Минск</span>
+                                    <input type="text" class="input-search" name="sity-form">
+                                    <img src="./img/arrow-down.svg" alt="">
+                                </div>
+                                <input type="hidden" name="category">
+                                <ul class="dropdown-menu">
+                                    <li>Пинск</li>
+                                    <li>Еще какой-то</li>
+                                    <li>Еще какой-то</li>
+                                    <li>Еще какой-то</li>
+                                    <li>Еще какой-то</li>
+                                    <li>Еще какой-то</li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <div class="add-file">
+                            <div class="add-file__btn">
+                                <span>
+                                    Добавить фото
+                                    <input type="file" id="addFile">
+                                </span>
+                                <img src="./img/add-file.svg" alt="">
+                            </div>
+                        </div>
+                        
+                        <div class="add-file__file-preview" id="filePreview">
+                            <img src="" alt="">
+                        </div>
+                    </div>
+    
+                    <div class="popup__form-item">
+                        <div class="popup__form-item-title">Описание задачи</div>
+                        <textarea class="popup__textarea" placeholder="Краткое описание"></textarea>
+                    </div>
+    
+                    <div class="popup__bottom">
+                        <button class="popup__btn">
+                            <span>Подать обьявление</span>
+                        </button>
                     </div>
                 </form>
             </div>

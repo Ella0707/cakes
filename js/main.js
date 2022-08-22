@@ -160,14 +160,17 @@ btn.on('click', function(e) {
   $('html, body').animate({scrollTop:0}, '100');
 });
 
-// класс active для фильтра (открыть фильтр в мобильной версии)
 
+
+// класс active для фильтра (открыть фильтр в мобильной версии)
 $('.confectioners__filter-open-btn').on('click', function (e) {
   e.preventDefault();
   document.body.classList.toggle('lock');
   $('.filter-open-btn').toggleClass("active");
   $('.filter-block-open').toggleClass("active");
 });
+
+
 
 // селект в фильтре
 $('.dropdown').click(function () {
@@ -194,6 +197,7 @@ $('.msg').html(msg + input + '</span>');
 
 
 
+// несколько слайдеров с предпросмотром на одной странице
 const myCustomSlider = document.querySelectorAll('.gallery-top');
 const myCustomGalleryThumbs = document.querySelectorAll('.thumbs-class');
 
@@ -248,31 +252,7 @@ $(".messages__tooltip-img").click(function (e) {
 // ВАЛИДАЦИЯ ФОРМЫ РЕГИСТРАЦИИ
 
 
-// показать/скрыть пароль
-function show_hide_password(target) {
-  let input = document.getElementById('password');
-  if (input.getAttribute('type') == 'password') {
-      target.classList.add('view');
-      input.setAttribute('type', 'text');
-  } else {
-      target.classList.remove('view');
-      input.setAttribute('type', 'password');
-  }
-  return false;
-}
-
-function show_hide_password_two(target) {
-  let input = document.getElementById('confirm_password');
-  if (input.getAttribute('type') == 'password') {
-      target.classList.add('view');
-      input.setAttribute('type', 'text');
-  } else {
-      target.classList.remove('view');
-      input.setAttribute('type', 'password');
-  }
-  return false;
-}
-
+// показать/скрыть пароль в форме регистрации
 const passField = document.querySelector(".input-password");
 const showBtn = document.querySelector(".password-control");
 showBtn.onclick = (() => {
@@ -284,6 +264,33 @@ showBtn.onclick = (() => {
     showBtn.classList.remove("view");
   }
 });
+
+// показать/скрыть пароль в форме регистрации (повторить пароль)
+const passField2 = document.querySelector(".input-password-2");
+const showBtn2 = document.querySelector(".password-control-2");
+showBtn2.onclick = (() => {
+  if (passField2.type === "password") {
+    passField2.type = "text";
+    showBtn2.classList.add("view");
+  } else {
+    passField2.type = "password";
+    showBtn2.classList.remove("view");
+  }
+});
+
+// показать/скрыть пароль в форме входа
+const passField3 = document.querySelector(".input-password-3");
+const showBtn3 = document.querySelector(".password-control-3");
+showBtn3.onclick = (() => {
+  if (passField3.type === "password") {
+    passField3.type = "text";
+    showBtn3.classList.add("view");
+  } else {
+    passField3.type = "password";
+    showBtn3.classList.remove("view");
+  }
+});
+
 
 
 
@@ -300,8 +307,6 @@ function check() {
 
 
 
-
-
 // календарь с выбором дат при подаче объявлений
 
 function AirDatepickerOpen() {
@@ -312,6 +317,8 @@ new AirDatepicker('#select-date', {
     minDate: tomorrowDate,
     autoClose: true,
 });
+
+
 
   // if(document.body.clientWidth <= 769){
   //   new AirDatepicker('#select-date', {

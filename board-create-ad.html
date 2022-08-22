@@ -463,16 +463,16 @@
                 <button class="popup__close form-reg-close">
                     <img class="popup__close-img" src="./img/close-popup.svg" alt="">
                 </button>
-
+    
                 <div class="popup__title">Регистрация</div>
-
+    
                 <form class="popup__form-wrap">
-
+    
                     <button class="popup__btn-google">
                         <img src="./img/google.svg" alt="">
                         Войти с помощью Google
                     </button>
-
+    
                     <label class="popup__form-item e-mail" for="">
                         <div class="popup__form-item-title">Введите e-mail<sup> *</sup></div>
                         <input class="popup__form-input" type="email" placeholder="e-mail" name="email">
@@ -509,10 +509,10 @@
                                 <li>Беларусь</li>
                                 <li>Россия</li>
                                 <li>Казахстан</li>
+                                <li>Еще какая-то</li> 
                                 <li>Еще какая-то</li>
                                 <li>Еще какая-то</li>
-                                <li>Еще какая-то</li>
-                                <li>Еще какая-то</li>
+                                <li>Еще какая-то</li> 
                             </ul>
                         </div>
                     </div>
@@ -538,16 +538,15 @@
 
                     <label class="popup__form-item password" for="">
                         <div class="popup__form-item-title">Введите пароль<sup> *</sup></div>
-
-                        <input class="popup__form-input input-password" type="password" placeholder="Пароль" id="password"
-                            autocomplete="current-password" name="password">
+                        
+                        <input class="popup__form-input input-password" type="password" placeholder="Пароль"
+                        id="password" autocomplete="current-password" name="password">
                         <a href="#" class="password-control"></a>
                     </label>
                     <label class="popup__form-item password" for="">
                         <div class="popup__form-item-title">Повторите пароль<sup></sup></div>
-                        <input class="popup__form-input" type="password" placeholder="Пароль" name="confirm_password"
-                            id="confirm_password" onchange="check()">
-                        <a href="#" class="password-control-two" onclick="return show_hide_password_two(this);"></a>
+                        <input class="popup__form-input input-password-2" type="password" placeholder="Пароль" name="confirm_password" id="confirm_password" onchange="check()">
+                        <a href="#" class="password-control-two password-control-2"></a>
                         <span class="popup__form-message" id='message'></span>
                     </label>
 
@@ -555,7 +554,7 @@
                         <input type="checkbox">
                         Запомнить меня?
                     </label>
-
+    
                     <div class="popup__bottom">
                         <button class="popup__btn btn-form">
                             <span>Зарегистрироваться</span>
@@ -590,16 +589,15 @@
 
                     <label class="popup__form-item form-login">
                         <div class="popup__form-item-title">Введите имя пользователя или e-mail</div>
-                        <input class="popup__form-input" type="text" placeholder="Имя пользователя или e-mail"
-                            name="name">
+                        <input class="popup__form-input" type="text" placeholder="Имя пользователя или e-mail" name="name">
                     </label>
 
                     <label class="popup__form-item password" for="">
                         <div class="popup__form-item-title">Введите пароль</div>
-
-                        <input class="popup__form-input input-password" type="password" placeholder="Пароль" id="password-2"
-                            autocomplete="current-password" name="password">
-                        <a href="#" class="password-control"></a>
+                        
+                        <input class="popup__form-input input-password-3" type="password" placeholder="Пароль"
+                        id="password" autocomplete="current-password" name="password">
+                        <a href="#" class="password-control password-control-3"></a>
                     </label>
 
                     <div class="popup__form-save-wrap">
@@ -609,7 +607,7 @@
                         </label>
                         <a class="popup__form-forgot-password" href="#">Забыли пароль</a>
                     </div>
-
+    
                     <div class="popup__bottom">
                         <button class="popup__btn btn-form">
                             <span>Войти</span>
@@ -625,6 +623,7 @@
             </div>
         </div>
     </div>
+
 
     <!-- форма создания объявления нас странице "Доска объявлений" -->
     <div class="popup create-ad">
