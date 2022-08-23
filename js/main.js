@@ -313,19 +313,10 @@ function AirDatepickerOpen() {
   let tomorrowDate = new Date();
   tomorrowDate.setDate(tomorrowDate.getDate());
 
-new AirDatepicker('#select-date', {
+  new AirDatepicker('#select-date', {
     minDate: tomorrowDate,
     autoClose: true,
-});
-
-
-
-  // if(document.body.clientWidth <= 769){
-  //   new AirDatepicker('#select-date', {
-  //     isMobile: true,
-  //     autoClose: true,
-  // });
-  // }
+  });
 }
 
 AirDatepickerOpen();
