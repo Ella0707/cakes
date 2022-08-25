@@ -6134,84 +6134,78 @@ input[type=number] {
   .popup__accaunt-link {
     font-size: 3rem;
   }
+  .popup.create-ad .dropdown .select {
+    border-radius: 1.2rem;
+    padding: 2rem 2.6rem;
+  }
+  .popup.create-ad .dropdown img {
+    width: 3rem;
+    height: 2rem;
+    right: 4rem;
+  }
+  .popup.create-ad .form__selectes-wrap {
+    grid-template-columns: 1fr;
+    -webkit-column-gap: 5.9rem;
+       -moz-column-gap: 5.9rem;
+            column-gap: 5.9rem;
+    row-gap: 3.5rem;
+    margin-top: 2.9rem;
+    margin-bottom: 2rem;
+  }
   .popup.create-ad .add-file {
-    -ms-flex-item-align: center;
-        align-self: center;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
   }
   .popup.create-ad .add-file__btn {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    position: relative;
-    -ms-flex-item-align: center;
-        align-self: center;
-    font-size: 1.9rem;
-    font-weight: 500;
-    color: #0089ED;
-  }
-  .popup.create-ad .add-file__btn input {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    font-size: 0;
-    opacity: 0;
+    font-size: 3.5rem;
   }
   .popup.create-ad .add-file__btn img {
-    width: 1.7rem;
-    height: 1.7rem;
-    -o-object-fit: contain;
-       object-fit: contain;
-    -ms-flex-negative: 0;
-        flex-shrink: 0;
-    margin-left: 1rem;
-  }
-  .popup.create-ad .add-file__file-preview {
-    width: 0;
-    height: 0;
-    visibility: hidden;
-    opacity: 0;
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
-    position: relative;
+    width: 2.8rem;
+    height: 2.8rem;
+    margin-left: 1.5rem;
   }
   .popup.create-ad .add-file__file-preview.active {
-    width: 20rem;
-    height: 20rem;
-    visibility: visible;
-    opacity: 1;
-    grid-column-start: 1;
-    grid-column-end: 3;
-    justify-self: center;
-  }
-  .popup.create-ad .add-file__file-preview img {
     width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
+    height: 40rem;
+  }
+  .popup.create-ad .add-file__file-preview.active::before {
+    background-size: 5rem;
+  }
+  .popup.create-ad .popup__body {
+    padding: 6rem 4.8rem;
+  }
+  .popup.create-ad .popup__content {
+    padding: 11rem 4rem 7.5rem 4rem;
+    border-radius: 1.6rem;
+  }
+  .popup.create-ad .popup__title {
+    text-align: left;
+    letter-spacing: 0.2px;
+    margin-bottom: 3.5rem;
+  }
+  .popup.create-ad .popup__form-input {
+    border-radius: 1.2rem;
+    padding: 2.4rem 2.6rem;
+    font-size: 2.8rem;
+  }
+  .popup.create-ad .popup__form-input.select-date {
+    background-position: right 4rem center;
+    background-size: 2.7rem;
+    padding-right: 2rem;
   }
   .popup.create-ad .popup__textarea {
-    border: 1px solid #ADADAD;
-    border-radius: 0.9rem;
-    resize: none;
-    width: 100%;
-    height: 14.4rem;
-    overflow-y: auto;
-    padding: 1.9rem 2.5rem;
-    font-size: 1.6rem;
-    font-weight: 400;
-    color: #808080;
-    line-height: 1.4;
+    border-radius: 1.2rem;
+    height: 32.4rem;
+    padding: 2rem 3rem;
+    font-size: 2.8rem;
+  }
+  .popup.create-ad .popup__bottom {
+    margin-top: 0;
   }
   .popup.create-ad .popup__btn {
-    width: 45rem;
-    height: 6.4rem;
+    width: 100%;
+    height: 10rem;
+    border-radius: 10rem;
     margin: 0 auto;
   }
 }
@@ -6515,6 +6509,7 @@ input[type=number] {
             box-shadow: none;
     padding: 0;
     border-radius: 0;
+    margin: 0;
   }
   .profile__personal {
     background: #FFFFFF;
@@ -7504,5 +7499,84 @@ input[type=number] {
     width: 4rem;
     height: 4rem;
     margin-left: 3rem;
+  }
+  .profile__content-inner.my-profile.edit-profile {
+    -webkit-box-shadow: 0px 0.8rem 4.8rem rgba(28, 40, 105, 0.1);
+            box-shadow: 0px 0.8rem 4.8rem rgba(28, 40, 105, 0.1);
+    border-radius: 1.6rem;
+    width: 100%;
+  }
+  .edit-info {
+    padding: 4rem 6.6rem 7rem 4.6rem;
+  }
+  .edit-info .dropdown .select {
+    border-radius: 1.8rem;
+    padding: 2.4rem 2.3rem;
+    font-size: 2.8rem;
+  }
+  .edit-info .dropdown .dropdown-menu {
+    top: 9rem;
+  }
+  .edit-info .password-control {
+    right: 3rem;
+    top: 8.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  .edit-info .password-control.view {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  .edit-info__ava {
+    width: 19rem;
+    height: 19rem;
+    margin-bottom: 4.6rem;
+  }
+  .edit-info__btn img {
+    width: 5rem;
+    height: 5rem;
+    -o-object-fit: contain;
+    object-fit: contain;
+    margin: 0 auto 0.6rem auto;
+  }
+  .edit-info__btn span {
+    font-size: 2rem;
+  }
+  .edit-info__selectes-wrap {
+    grid-template-columns: 1fr;
+    -webkit-column-gap: 0rem;
+       -moz-column-gap: 0rem;
+            column-gap: 0rem;
+    row-gap: 2.5rem;
+    margin-bottom: 5rem;
+  }
+  .edit-info__form-item-title {
+    font-size: 3.2rem;
+    margin-bottom: 2rem;
+  }
+  .edit-info__form-input {
+    border-radius: 1.8rem;
+    padding: 2.4rem 2.3rem;
+    font-size: 2.8rem;
+  }
+  .edit-info__btn-save {
+    border-radius: 8.8rem;
+    padding: 1.9rem;
+    width: 100%;
+    height: 9rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 3.2rem;
+    margin-bottom: 3.3rem;
+  }
+  .edit-info__btn-sign-out {
+    font-size: 2.8rem;
   }
 }/*# sourceMappingURL=style.css.map */

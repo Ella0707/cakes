@@ -424,14 +424,7 @@
             height: 6.4rem;
             margin: 0 auto;
         }
-
-       
-
-
-        
-    
     }
-    
 }
 
 
@@ -571,91 +564,103 @@
 
 
     .popup.create-ad {
+
+        .dropdown .select {
+            border-radius: 1.2rem;
+            padding: 2rem 2.6rem;
+        }
+
+        .dropdown img {
+            width: 3rem;
+            height: 2rem;
+            right: 4rem;
+        }
+
+        .form__selectes-wrap {
+            grid-template-columns: 1fr;
+            column-gap: 5.9rem;
+            row-gap: 3.5rem;
+            margin-top: 2.9rem;
+            margin-bottom: 2rem;
+        }
     
         .add-file {
-            align-self: center;
+            margin-top: 2rem;
+            margin-bottom: 4rem;
 
             &__btn {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                position: relative;
-
-                align-self: center;
-
-                font-size: 1.9rem;
-                font-weight: 500;
-                color: #0089ED;
-
-                input {
-                    position: absolute;
-                    inset: 0;
-                    width: 100%;
-                    height: 100%;
-                    font-size: 0;
-                    opacity: 0;
-                }
+                font-size: 3.5rem;
 
                 img {
-                    width: 1.7rem;
-                    height: 1.7rem;
-                    object-fit: contain;
-                    flex-shrink: 0;
-                    margin-left: 1rem;
+                    width: 2.8rem;
+                    height: 2.8rem;
+                    margin-left: 1.5rem;
                 }
             }
 
             &__file-preview {
-                width: 0;
-                height: 0;
-                visibility: hidden;
-                opacity: 0;
-                transition: 0.3s;
-                position: relative;
 
                 &.active {
-                    width: 20rem;
-                    height: 20rem;
-                    visibility: visible;
-                    opacity: 1;
-
-                    grid-column-start: 1;
-                    grid-column-end: 3;
-                    justify-self: center;
-                }
-
-               
-
-                img {
                     width: 100%;
-                    height: 100%;
-                    object-fit: cover;
+                    height: 40rem;
+
+                    &::before {
+                        background-size: 5rem;
+                    }
                 }
             }
         }
     
         .popup{
+
+            &__body {
+                padding: 6rem 4.8rem;
+            }
+
+            &__content {
+                padding: 11rem 4rem 7.5rem 4rem;
+                border-radius: 1.6rem;
+            }
+
+            &__title {
+                text-align: left;
+                letter-spacing: 0.2px;
+                margin-bottom: 3.5rem;
+            }
+
+            &__form-input {
+                border-radius: 1.2rem;
+                padding: 2.4rem 2.6rem;
+                font-size: 2.8rem;
+            }
+
+            &__form-input.select-date {
+                background-position: right 4rem center;
+                background-size: 2.7rem;
+                padding-right: 2rem;
+            }
     
             &__textarea {
-                border: 1px solid #ADADAD;
-                border-radius: 0.9rem;
-                resize: none;
-                width: 100%;
-                height: 14.4rem;
-                overflow-y: auto;
-                padding: 1.9rem 2.5rem;
+                border-radius: 1.2rem;
+                height: 32.4rem;
+                padding: 2rem 3rem;
     
-                font-size: 1.6rem;
-                font-weight: 400;
-                color: #808080;
-                line-height: 1.4;
+                font-size: 2.8rem;
+            }
+
+            &__bottom {
+                margin-top: 0;
             }
     
             &__btn {
-                width: 45rem;
-                height: 6.4rem;
+                width: 100%;
+                height: 10rem;
+                border-radius: 10rem;
                 margin: 0 auto;
             }
+
+          
         }
+
     }
 }
