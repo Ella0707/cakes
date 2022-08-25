@@ -8,7 +8,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        border-radius: 2rem;
+        border-radius: 1rem;
 
         &>img {
             position: absolute;
@@ -71,11 +71,13 @@
         display: flex;
         justify-content: space-between;
         position: relative;
+        margin-bottom: 4rem;
     }
 
     &__text-block {
-        width: 33rem;
+        width: 33.8rem;
         padding-right: 4rem;
+        margin-right: 4rem;
         flex-shrink: 0;
     }
 
@@ -122,28 +124,26 @@
     }
 
     &__slider {
-        // width: 87rem;
-        width: 50rem;
-        // overflow: hidden;
-        padding: 2rem;
+        width: 82rem;
+        overflow: hidden;
+        // padding: 0.4rem;
     }
 
     &__slider-wrapper {
         position: relative;
     }
     &__slider-block {
-        // width: 86rem;
-        overflow: hidden;
-        // padding: 1.5rem 1.5rem 4rem 1.5rem;
+        box-shadow: rgb(28 40 105 / 10%) 0px 0rem 4rem;
+        border-radius: 0.6rem;
+        background: rgba(237, 237, 240, 0.6);
+        border-radius: 0.6rem;
     }
 
     &__slide {
         background: #FFFFFF;
-        width: 40rem;
-        box-shadow: 0px 0.4rem 2.4rem rgba(28, 40, 105, 0.1);
+        // box-shadow: 0 0 4.5rem 0rem rgba(28, 40, 105, 0.1);
         border-radius: 0.6rem;
         padding: 2rem 2rem 2.7rem 2rem;
-        // margin-right: 3rem;
 
         &>img {
             height: 26.9rem;
@@ -151,15 +151,6 @@
             object-fit: cover;
             margin-bottom: 1rem;
         }
-
-        // &.swiper-slide-active {
-        //     margin-left: 4rem;
-        //     margin-right: 1.5rem;
-        // }
-
-        // &.swiper-slide-next {
-        //     margin-right: 4rem;
-        // }
     }
 
     &__slide-rating {
@@ -172,6 +163,10 @@
             width: 1.5rem;
             height: 1.5rem;
             object-fit: contain;
+
+            &:not(:last-child) {
+                margin-right: 0.5rem;
+            }
         }
     }
 
@@ -200,8 +195,8 @@
         justify-content: center;
 
         position: absolute;
-        top: 35%;
-        right: -2rem;
+        top: 15.6rem;
+        right: 0;
         z-index: 10;
         cursor: pointer;
 
@@ -244,7 +239,6 @@
         height: 5.8rem;
         margin: 0 0rem 0 auto;
         transition: 0.5s;
-        margin-right: 1.5rem;
 
         display: flex;
         align-items: center;
@@ -997,6 +991,34 @@
             }
         }
     }
+
+
+    &.page-about-confectioner {
+        .article__box-sticker {
+            font-size: 1.4rem;
+            font-weight: 500;
+            line-height: 1;
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+        }
+
+        .article__box-views {
+            font-size: 1.4rem;
+            font-weight: 500;
+            line-height: 0;
+        }
+
+        .article__box-views img {
+            width: 1.4rem;
+            height: 1.4rem;
+            object-fit: contain;
+            margin-right: 1rem;
+        }
+
+        .article__link span {
+            font-weight: 600;
+        }
+    }
 }
 
 
@@ -1083,6 +1105,8 @@
         &__slider-block {
             width: 100%;
             padding: 0;
+            box-shadow: none;
+            background: #ffffff;
         }
     
         &__slider {
@@ -1101,6 +1125,7 @@
             padding: 2.4rem 2.4rem 4rem 2.4rem;
             width: 100%;
             margin-right: 0;
+            box-shadow: rgb(28 40 105 / 10%) 0px 0rem 4rem;
     
             &>img {
                 height: 31.2rem;

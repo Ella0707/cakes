@@ -14,6 +14,19 @@
         .filter-block {
             width: 30.2rem;
             margin-right: 2.5rem;
+            padding: 2.9rem 3rem 5rem 3.3rem;
+        }
+
+        .filter-block__title {
+            font-weight: 600;
+        }
+
+        .filter-block__item-title {
+            font-weight: 600;
+        }
+
+        .filter-block__btn.btn {
+            height: 4.5rem;
         }
     }
 
@@ -31,21 +44,54 @@
             margin-bottom: 0;
         }
 
+        .confectioners__name-wrap {
+            line-height: 1;
+            align-items: center;
+        }
+
+        .confectioners__name-wrap img {
+            width: 2rem;
+            height: 100%;
+            padding-bottom: 0.5rem;
+        }
+
         .confectioners__name {
-            font-size: 1.8rem;
+            font-size: 1.9rem;
         }
 
         .confectioners__name-top {
             margin-bottom: 1.5rem;
         }
 
+        .confectioners__btns {
+            justify-content: space-between;
+        }
+
         .btn.btn--more {
-            width: 22rem;
-            margin-right: 2rem;
+            width: 20rem;
+            // margin-right: 5rem;
         }
 
         .confectioners__item:not(:last-child) {
             margin-bottom: 2.2rem;
+        }
+
+        .confectioners__description {
+            font-size: 1.5rem;
+            font-weight: 400;
+        }
+
+        .confectioners__info-value span {
+            font-size: 2rem;
+        }
+
+        .btn.btn--more::before {
+            inset: 1px;
+        }
+
+        .btn.btn--save span {
+            font-size: 1.6rem;
+            font-weight: 600;
         }
     }
 }

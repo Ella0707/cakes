@@ -81,17 +81,17 @@ if ($('#destroy-1').length) {
 
 
 const activitySlider2 = new Swiper('#destroy-2', {
-  // slidesPerView: 2,
-  slidesPerView: 'auto',
-  spaceBetween: 20,
+  slidesPerView: 2,
+  // slidesPerView: 'auto',
+  spaceBetween: 15,
   speed: 800,
   loop: true,
   // slidesPerGroup: 2,
 
-  effect: "fade",
-  fadeEffect: {
-      crossFade: true
-  },
+  // effect: "fade",
+  // fadeEffect: {
+  //     crossFade: true
+  // },
 
   navigation: {
     nextEl: '.base__arrow-next',

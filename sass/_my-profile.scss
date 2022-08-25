@@ -127,8 +127,8 @@
     }
 
     &__log-in {
-        font-size: 1.4rem;
-        font-weight: 500;
+        font-size: 1.6rem;
+        font-weight: 600;
         background-color: #FF007A;
         background: linear-gradient(92.85deg, #FF8A00 -43.75%, #FF007A 106.98%);
         -webkit-background-clip: text;
@@ -145,11 +145,10 @@
         height: 3.7rem;
 
         background: linear-gradient(92.85deg, #FF8A00 -43.75%, #FF007A 106.98%);
-        box-shadow: 0px 1rem 2.3rem rgba(150, 146, 144, 0.15);
         border-radius: 4.4rem;
 
         font-size: 1.4rem;
-        font-weight: 500;
+        font-weight: 400;
         color: rgba(255, 255, 255, 1);
     }
 }
@@ -169,7 +168,6 @@
         border-radius: 1.2rem;
         margin-right: 2.8rem;
         height: 48.8rem;
-
     }
 
     &__name-wrap {
@@ -309,7 +307,8 @@
             background: #FFFFFF;
             box-shadow: 0px 0.4rem 2.4rem rgba(28, 40, 105, 0.1);
             border-radius: 0.8rem;
-            padding-top: 2.8rem;
+            margin-top: 1.6rem;
+            margin-left: 1rem;
         }
     }
 
@@ -658,7 +657,7 @@
 
 
 .footer {
-    padding-top: 5.1rem;
+    padding-top: 6rem;
     box-shadow: 0.8rem -0.2rem 4.8rem rgba(0, 0, 0, 0.03);
 
     &__inner {}
@@ -672,7 +671,7 @@
     &__logo {
         width: 14.5rem;
         height: 2rem;
-        margin-right: 5.8rem;
+        margin-right: 5rem;
 
         svg {
             width: 100%;
@@ -684,11 +683,12 @@
 
     &__info-wrap {
         display: flex;
+        padding-top: 1rem;
 
     }
 
     &__info-block {
-        margin-right: 6rem;
+        margin-right: 9rem;
         font-size: 1.4rem;
         font-weight: 500;
 
@@ -696,21 +696,22 @@
             color: #0A142F;
             display: block;
             transition: 0.4s;
+            letter-spacing: 1.1px;
 
             &:hover {
                 color: rgba(255, 0, 122, 1);
             }
 
             &:not(:last-child) {
-                margin-bottom: 2.9rem;
+                margin-bottom: 3.4rem;
             }
         }
     }
 
     &__nav-block {
-        margin-right: 6.4rem;
+        margin-right: 9.4rem;
         font-size: 1.4rem;
-        font-weight: 500;
+        font-weight: 600;
         color: #0A142F;
 
         ul {
@@ -723,7 +724,7 @@
             }
 
             li:not(:last-child) {
-                margin-bottom: 2rem;
+                margin-bottom: 2.3rem;
             }
         }
 
@@ -733,10 +734,11 @@
         display: flex;
         align-items: center;
         align-self: start;
+        padding-top: 2rem;
 
         a {
-            width: 3.3rem;
-            height: 3.3rem;
+            width: 2rem;
+            height: 2rem;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -750,7 +752,7 @@
             }
 
             &:not(:last-child) {
-                margin-right: 1rem;
+                margin-right: 2.5rem;
             }
 
             &:hover {
@@ -954,21 +956,21 @@
     }
 
     &__name-confect {
-        font-size: 1.4rem;
-        font-weight: 500;
+        font-size: 1.6rem;
+        font-weight: 600;
         color: #000;
         margin-bottom: 2.4rem;
     }
 
     &__description-wrap {
-        padding: 1.8rem 0 2rem 0;
+        padding: 1rem 0 1rem 0;
         border-top: 0.1rem solid rgba(130, 139, 189, 0.38);
         border-bottom: 0.1rem solid rgba(130, 139, 189, 0.38);
         margin-bottom: 2rem;
     }
 
     &__description-title {
-        font-size: 1.4rem;
+        font-size: 1.6rem;
         font-weight: 500;
         color: #000;
         margin-bottom: 0.7rem;
@@ -1530,7 +1532,7 @@
 
 
 .edit-info {
-    padding: 3.3rem 5.4rem 4.5rem 5.4rem;
+    padding: 1.9rem 5.4rem 4.5rem 5.4rem;
 
     
     &__ava {

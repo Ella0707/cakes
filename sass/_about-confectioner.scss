@@ -102,6 +102,7 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
+            width: 89%;
         }
 
         &__contact-btn {
@@ -109,8 +110,8 @@
             align-items: center;
             justify-content: center;
 
-            width: 27.6rem;
-            height: 5.8rem;
+            width: 24rem;
+            height: 5rem;
 
             background: linear-gradient(92.85deg, #FF8A00 -43.75%, #FF007A 106.98%);
             box-shadow: 0px 1rem 2.3rem rgba(150, 146, 144, 0.15);
