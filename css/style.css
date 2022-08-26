@@ -4420,6 +4420,378 @@ input[type=number] {
     font-size: 3.2rem;
   }
 }
+.recipes-page {
+  margin-bottom: 4.8rem;
+}
+.recipes-page__top-info {
+  margin-bottom: 3.3rem;
+}
+.recipes-page__title {
+  font-size: 2.9rem;
+  font-weight: 500;
+  color: #000000;
+  margin-bottom: 6rem;
+}
+.recipes-page__sort-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.recipes-page__filter-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.recipes-page__filter-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: rgba(130, 139, 189, 0.11);
+  border-radius: 0.2rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+.recipes-page__filter-item:not(:last-child) {
+  margin-right: 2rem;
+}
+.recipes-page__filter-item span {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #828BBD;
+  margin-right: 1rem;
+}
+.recipes-page__filter-item img {
+  width: 1rem;
+  height: 1rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.recipes-page__select-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.recipes-page__select-wrap .dropdown {
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  min-width: 10rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.recipes-page__select-wrap .dropdown img {
+  right: -1rem;
+}
+.recipes-page__select-wrap .dropdown .select {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #8D8D8D;
+  padding: 0 0.5rem;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-radius: 0;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.recipes-page__select-wrap .dropdown .dropdown-menu {
+  left: -2rem;
+  top: 2rem;
+  scrollbar-color: #818BBD rgb(232, 232, 232);
+  /* «цвет ползунка» «цвет полосы скроллбара» */
+  scrollbar-width: thin;
+  /* толщина */
+}
+.recipes-page__select-wrap .dropdown .dropdown-menu::-webkit-scrollbar {
+  width: 0.3rem;
+  background: #E8E8E8;
+  border-radius: 2.1rem;
+}
+.recipes-page__select-wrap .dropdown .dropdown-menu::-webkit-scrollbar-thumb {
+  background: #818BBD;
+  border-radius: 2.1rem;
+}
+.recipes-page__select-title {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #5E5E5E;
+  margin-right: 0.4rem;
+  white-space: nowrap;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.recipes-page__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.recipes-page__category {
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 0.4rem 2.8rem rgba(36, 64, 117, 0.06);
+          box-shadow: 0px 0.4rem 2.8rem rgba(36, 64, 117, 0.06);
+  border-radius: 0.9rem;
+  padding: 2rem 2.8rem 3.8rem 2rem;
+}
+.recipes-page__recipes {
+  width: 85.6rem;
+}
+.recipes-page__recipes-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  -webkit-column-gap: 4rem;
+     -moz-column-gap: 4rem;
+          column-gap: 4rem;
+  row-gap: 5rem;
+  margin-bottom: 7.8rem;
+}
+
+.category {
+  width: 30.2rem;
+  margin-right: 4.5rem;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+.category__title {
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: #FF007A;
+  background: linear-gradient(92.85deg, #FF8A00 -43.75%, #FF007A 106.98%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 3.2rem;
+}
+.category__select-wrap {
+  margin-bottom: 3.9rem;
+}
+.category__popular-title {
+  font-size: 2.2rem;
+  font-weight: 500;
+  color: #000000;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+.category__popular-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+.category__popular-item:not(:last-child) {
+  padding-bottom: 2.1rem;
+  margin-bottom: 1.8rem;
+}
+.category__popular-item:not(:last-child)::before {
+  content: "";
+  width: 100%;
+  height: 0.1rem;
+  background: -webkit-gradient(linear, right top, left top, from(rgba(155, 155, 155, 0)), color-stop(52.6%, #969696), to(rgba(194, 194, 194, 0)));
+  background: linear-gradient(270deg, rgba(155, 155, 155, 0) 0%, #969696 52.6%, rgba(194, 194, 194, 0) 100%);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.category__popular-item-img {
+  width: 8.2rem;
+  height: 6.2rem;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  border-radius: 0.7rem;
+  margin-right: 1.3rem;
+}
+.category__popular-item-img img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: inherit;
+}
+.category__popular-item-title {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #000000;
+}
+
+.recipe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: auto;
+  position: relative;
+}
+.recipe__btn-save {
+  width: 3.8rem;
+  height: 3.8rem;
+  border-radius: 50%;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 0.4rem 1.2rem rgba(0, 0, 0, 0.13);
+          box-shadow: 0px 0.4rem 1.2rem rgba(0, 0, 0, 0.13);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  position: absolute;
+  top: 2rem;
+  right: 2.6rem;
+  z-index: 1;
+}
+.recipe__btn-save img {
+  width: 2.6rem;
+  height: 2.6rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.recipe__img {
+  width: 100%;
+  height: 31.2rem;
+  border-radius: 0.7rem;
+  margin-bottom: 2rem;
+}
+.recipe__img img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: inherit;
+}
+.recipe__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 1.6rem;
+}
+.recipe__info-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.recipe__sticker {
+  background: rgba(130, 139, 189, 0.11);
+  border-radius: 0.2rem;
+  padding: 0.6rem 1.9rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #828BBD;
+  text-transform: uppercase;
+  margin-right: 2.1rem;
+}
+.recipe__views {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.recipe__views img {
+  width: 2rem;
+  height: 2rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-right: 0.7rem;
+}
+.recipe__views span {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #828BBD;
+}
+.recipe__date {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #8D8D8D;
+}
+.recipe__title {
+  font-size: 2.2rem;
+  font-weight: 500;
+  color: #000000;
+  margin-bottom: 1rem;
+}
+.recipe__text {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #5E5E5E;
+  margin-bottom: 1.5rem;
+  margin-top: auto;
+}
+.recipe__link-more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: auto;
+}
+.recipe__link-more span {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #FF007A;
+  background: linear-gradient(92.85deg, #FF8A00 -43.75%, #FF007A 106.98%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-right: 1rem;
+}
+.recipe__link-more img {
+  width: 2rem;
+  height: 1.5rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.recipe__link-more:hover img {
+  -webkit-transform: translateX(0.5rem);
+          transform: translateX(0.5rem);
+}
+
 .board {
   margin-bottom: 10rem;
 }
