@@ -1,0 +1,425 @@
+.recipe-page {
+    margin-bottom: 21.5rem;
+
+    &__banner {
+        position: relative;
+        width: 100%;
+        height: 43.7rem;
+        border-radius: 0.7rem;
+        margin-bottom: 3.2rem;
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            border-radius: inherit;
+        }
+    }
+
+    &__btn-save {
+        position: absolute;
+        top: 2.8rem;
+        right: 2.8rem;
+        background: #ffffff;
+        width: 3.8rem;
+        height: 3.8rem;
+        border-radius: 50%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        box-shadow: 0px 0.4rem 1.2rem rgba(0, 0, 0, 0.13);
+
+        img {
+            width: 2.2rem;
+            height: 2.2rem;
+            object-fit: contain;
+        }
+    }
+
+    &__recipe-info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 8.4rem;
+    }
+
+    &__title {
+        font-size: 2.9rem;
+        font-weight: 500;
+        color: #000000;
+        padding-right: 4rem;
+    }
+
+    &__another-info {
+        display: flex;
+        align-items: center;
+    }
+
+    &__sticker {
+        background: rgba(130, 139, 189, 0.11);
+        border-radius: 0.2rem;
+        padding: 0.3rem 1rem;
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: #828BBD;
+        margin-right: 2.4rem;
+    }
+
+    &__views {
+        display: flex;
+        align-items: center;
+        margin-right: 2rem;
+
+        img {
+            width: 2rem;
+            height: 1.5rem;
+            object-fit: contain;
+            margin-right: 0.7rem;
+        }
+
+        span {
+            font-size: 1.6rem;
+            font-weight: 400;
+            color: #828BBD;
+        }
+    }
+
+    &__date {
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: #8D8D8D;
+    }
+
+    &__energy {
+        margin-bottom: 9.5rem;
+    }
+
+    &__energy-title {
+        font-size: 2.2rem;
+        font-weight: 500;
+        color: #000000;
+        text-align: center;
+        margin-bottom: 5.2rem;
+        padding-left: 5rem;
+    }
+
+    &__energy-info {
+        display: flex;
+        justify-content: space-between;
+        width: 75%;
+        margin: 0 auto;
+    }
+
+    &__energy-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__energy-item-title {
+        font-size: 2.2rem;
+        font-weight: 500;
+        color: #000000;
+        margin-bottom: 2.5rem;
+    }
+
+    &__energy-item-value {
+        font-size: 3.2rem;
+        font-weight: 400;
+        color: #5E5E5E;
+        margin-bottom: 0.5rem;
+    }
+
+    &__energy-item-key {
+        font-size: 1.8rem;
+        font-weight: 400;
+        color: #5E5E5E;
+        text-transform: capitalize;
+    }
+}
+
+
+.ingredients {
+    margin-bottom: 11rem;
+
+    &__title {
+        font-size: 2.2rem;
+        font-weight: 500;
+        color: #000000;
+        margin-bottom: 4.6rem;
+        text-align: center;
+    }
+
+    &__list {
+        margin: 0 auto;
+        width: 71%;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &:not(:last-child) {
+            margin-bottom: 2.8rem;
+        }
+    }
+
+    &__key {
+        margin-right: 2rem;
+        font-size: 2rem;
+        font-weight: 500;
+        color: #000000;
+        max-width: 45%;
+    }
+
+    span {
+        border-bottom: 1px solid rgba(130, 139, 189, 0.28);
+        flex-grow: 1;
+    }
+
+    &__value {
+        padding-left: 2rem;
+        white-space: nowrap;
+        min-width: 10rem;
+        font-size: 2rem;
+        font-weight: 400;
+        color: #525252;
+    }
+}
+
+
+.instructions {
+
+    &__title {
+        font-size: 2.9rem;
+        font-weight: 500;
+        color: #000000;
+        text-align: center;
+        margin-bottom: 7.2rem;
+    }
+
+    &__item {
+        display: flex;
+
+        &:not(:last-child) {
+            margin-bottom: 4.6rem;
+        }
+    }
+
+    &__item-img {
+        width: 40.8rem;
+        height: 31.2rem;
+        border-radius: 0.7rem;
+        margin-right: 4.4rem;
+        flex-shrink: 0;
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            border-radius: inherit;
+        }
+    }
+
+    &__item-number {
+        font-size: 2.7rem;
+        font-weight: 500;
+        color: #5E5E5E;
+        margin-bottom: 0.3rem;
+    }
+
+    &__item-text {
+        font-size: 1.8rem;
+        font-weight: 400;
+        color: #5E5E5E;
+        line-height: 1.5;
+        width: 97%;
+    }
+}
+
+
+@media (max-width: 48em) { 
+
+    .recipe-page {
+        margin-bottom: 12rem;
+
+        .container {
+            padding: 0;
+        }
+    
+        &__banner {
+            height: 68.6rem;
+            border-radius: 0;
+            margin-bottom: 3rem;
+        }
+    
+        &__btn-save {
+            top: 4rem;
+            right: 4rem;
+            width: 6rem;
+            height: 6rem;
+    
+            img {
+                width: 4rem;
+                height: 4rem;
+            }
+        }
+    
+        &__recipe-info {
+            padding: 0 4.8rem;
+            flex-direction: column-reverse;
+            margin-bottom: 5.4rem;
+        }
+    
+        &__title {
+            font-size: 4.2rem;
+            padding-right: 0rem;
+        }
+    
+        &__another-info {
+            justify-content: space-between;
+            width: 100%;
+            margin-bottom: 6rem;
+        }
+    
+        &__sticker {
+            border-radius: 0.4rem;
+            padding: 0.6rem 2rem;
+            font-size: 2.4rem;
+            margin-right: auto;
+        }
+    
+        &__views {
+            margin-right: 4rem;
+    
+            img {
+                width: 3.5rem;
+                height: 3rem;
+            }
+    
+            span {
+                font-size: 2.4rem;
+            }
+        }
+    
+        &__date {
+            font-size: 2.4rem;
+        }
+    
+        &__energy {
+            padding: 0 4.8rem;
+            margin-bottom: 13rem;
+        }
+    
+        &__energy-title {
+            font-size: 3.6rem;
+            text-align: left;
+            margin-bottom: 4.2rem;
+            padding-left: 0rem;
+        }
+    
+        &__energy-info {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            row-gap: 4rem;
+            column-gap: 6rem;
+        }
+    
+        &__energy-item {
+            align-items: start;
+        }
+    
+        &__energy-item-title {
+            font-size: 3.6rem;
+            margin-bottom: 2.5rem;
+        }
+    
+        &__energy-item-value {
+            font-size: 6.4rem;
+        }
+    
+        &__energy-item-key {
+            font-size: 3.6rem;
+        }
+    }
+    
+    
+    .ingredients {
+        padding: 0 4.8rem;
+
+        margin-bottom: 11rem;
+    
+        &__title {
+            font-size: 4.4rem;
+            margin-bottom: 7rem;
+            text-align: left;
+        }
+    
+        &__list {
+            margin: 0 auto;
+            width: 100%;
+        }
+    
+        &__item {
+            &:not(:last-child) {
+                margin-bottom: 6.3rem;
+            }
+        }
+    
+        &__key {
+            font-size: 3.2rem;
+            max-width: 65%;
+        }
+    
+        &__value {
+            padding-left: 2rem;
+            min-width: 10rem;
+            font-size: 3.2rem;
+        }
+    }
+    
+    
+    .instructions {
+        padding: 0 4.8rem;
+
+    
+        &__title {
+            font-size: 4.2rem;
+            margin-bottom: 5.6rem;
+            text-align: left;
+        }
+    
+        &__item {
+            flex-direction: column;
+    
+            &:not(:last-child) {
+                margin-bottom: 7.6rem;
+            }
+        }
+    
+        &__item-img {
+            width: 100%;
+            height: 39.6rem;
+            border-radius: 1.4rem;
+            margin-right: 0rem;
+            margin-bottom: 3.5rem;
+        }
+    
+        &__item-number {
+            font-size: 5.4rem;
+            margin-bottom: 0.3rem;
+        }
+    
+        &__item-text {
+            font-size: 2.4rem;
+            width: 100%;
+        }
+    }
+
+}

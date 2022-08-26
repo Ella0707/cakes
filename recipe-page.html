@@ -67,379 +67,130 @@
     </header>
 
     <main>
-        <section class="recipes-page">
+        <section class="recipe-page">
             <div class="container">
-                <div class="recipes-page__inner">
-                    <div class="recipes-page__top-info">
-                        <h1 class="recipes-page__title">Рецепты</h1>
-                        <button class="category__filter-open-btn mobile">
-                            <img src="./img/filter-btn.svg" alt="">
-                            Фильтр
+                <div class="recipe-page__inner">
+                    <div class="recipe-page__banner">
+                        <button class="recipe-page__btn-save">
+                            <img src="./img/heart-save.svg" alt="">
                         </button>
-                        <div class="recipes-page__sort-block">
-                            <div class="recipes-page__filter-items">
-                                <div class="recipes-page__filter-item">
-                                    <span>Торты</span>
-                                    <img src="./img/close-btn-selected.svg" alt="">
-                                </div>
-                                <div class="recipes-page__filter-item">
-                                    <span>Выпечка</span>
-                                    <img src="./img/close-btn-selected.svg" alt="">
-                                </div>
-                                <div class="recipes-page__filter-item">
-                                    <span>Десерты</span>
-                                    <img src="./img/close-btn-selected.svg" alt="">
-                                </div>
-                                <div class="recipes-page__filter-item">
-                                    <span>Круассаны</span>
-                                    <img src="./img/close-btn-selected.svg" alt="">
-                                </div>
-
+                        <img src="./img/article3.png" alt="">
+                    </div>
+                    <div class="recipe-page__recipe-info">
+                        <h1 class="recipe-page__title">Декор из изомальта советы</h1>
+                        <div class="recipe-page__another-info">
+                            <div class="recipe-page__sticker">Выпечка</div>
+                            <div class="recipe-page__views">
+                                <img src="./img/eye-2.svg" alt="">
+                                <span>1220</span>
                             </div>
-                            <div class="recipes-page__select-wrap desctop">
-                                <div class="recipes-page__select-title">Сортировать по:</div>
-                                <div class="dropdown">
-                                    <div class="select">
-                                        <span>Дате</span>
-                                        <input type="text" class="input-search">
-                                        <img src="./img/arrow-light-grey.svg" alt="">
-                                    </div>
-                                    <input type="hidden" name="category">
-                                    <ul class="dropdown-menu">
-                                        <li>Дате</li>
-                                        <li>Пункт 1</li>
-                                        <li>Пункт 3</li>
-                                        <li>Пункт 4</li>
-                                        <li>Пункт 5</li>
-                                    </ul>
-                                </div>
+                            <div class="recipe-page__date">16.08.22</div>
+                        </div>
+                    </div>
+                    <div class="recipe-page__energy">
+                        <h2 class="recipe-page__energy-title">
+                            Энергетическая ценность на порцию</h2>
+                        <div class="recipe-page__energy-info">
+                            <div class="recipe-page__energy-item">
+                                <div class="recipe-page__energy-item-title">Калорийность</div>
+                                <div class="recipe-page__energy-item-value">676</div>
+                                <div class="recipe-page__energy-item-key">ККАЛ</div>
+                            </div>
+                            <div class="recipe-page__energy-item">
+                                <div class="recipe-page__energy-item-title">Белки</div>
+                                <div class="recipe-page__energy-item-value">676</div>
+                                <div class="recipe-page__energy-item-key">ККАЛ</div>
+                            </div>
+                            <div class="recipe-page__energy-item">
+                                <div class="recipe-page__energy-item-title">Жиры</div>
+                                <div class="recipe-page__energy-item-value">676</div>
+                                <div class="recipe-page__energy-item-key">ККАЛ</div>
+                            </div>
+                            <div class="recipe-page__energy-item">
+                                <div class="recipe-page__energy-item-title">Углеводы</div>
+                                <div class="recipe-page__energy-item-value">676</div>
+                                <div class="recipe-page__energy-item-key">ККАЛ</div>
                             </div>
                         </div>
                     </div>
-                    <div class="recipes-page__content">
-                        <div class="recipes-page__category category category-open">
-                            <button class="category__filter-open-btn close mobile">
-                                <img src="./img/close.svg" alt="">
-                            </button>
-                            <h2 class="category__filter-title">Фильтр</h2>
-                            <h3 class="category__title">
-                                Категория рецептов
-                            </h3>
-                            <div class="category__select-wrap">
-                                <div class="dropdown">
-                                    <div class="select">
-                                        <span>Торты</span>
-                                        <input type="text" class="input-search">
-                                        <img src="./img/arrow-down.svg" alt="">
-                                    </div>
-                                    <input type="hidden" name="category">
-                                    <ul class="dropdown-menu">
-                                        <li>Торты</li>
-                                        <li>Пункт 1</li>
-                                        <li>Пункт 3</li>
-                                        <li>Пункт 4</li>
-                                        <li>Пункт 5</li>
-                                    </ul>
+                    <div class="recipe-page__ingredients ingredients">
+                        <div class="ingredients__title">Ингредиенты</div>
+                        <ul class="ingredients__list">
+                            <li class="ingredients__item">
+                                <div class="ingredients__key">Темный шоколад</div>
+                                <span></span>
+                                <div class="ingredients__value">100 г</div>
+                            </li>
+                            <li class="ingredients__item">
+                                <div class="ingredients__key">Сливочное масло</div>
+                                <span></span>
+                                <div class="ingredients__value">2 ст л</div>
+                            </li>
+                            <li class="ingredients__item">
+                                <div class="ingredients__key">Коричневый сахар</div>
+                                <span></span>
+                                <div class="ingredients__value">200 г</div>
+                            </li>
+                            <li class="ingredients__item">
+                                <div class="ingredients__key">Куриное яйцо</div>
+                                <span></span>
+                                <div class="ingredients__value">100 г</div>
+                            </li>
+                            <li class="ingredients__item">
+                                <div class="ingredients__key">Пшеничная мука</div>
+                                <span></span>
+                                <div class="ingredients__value">200 г</div>
+                            </li>
+                            <li class="ingredients__item">
+                                <div class="ingredients__key">Грецкие орехи</div>
+                                <span></span>
+                                <div class="ingredients__value">300 г</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="recipe-page__instructions instructions">
+                        <h2 class="instructions__title">Инструкция приготовления</h2>
+                        <ul class="instructions__list">
+                            <li class="instructions__item">
+                                <div class="instructions__item-img">
+                                    <img src="./img/article1.png" alt="">
                                 </div>
-                            </div>
-
-                            <button class="category__btn btn btn--color mobile">
-                                Поиск
-                            </button>
-                            <button class="category__btn-reset mobile">
-                                <span>
-                                    Сбросить все фильтры
-                                </span>
-                                <img src="./img/arrow-reset.svg" alt="">
-                            </button>
-
-                            <div class="category__popular desctop">
-                                <div class="category__popular-title">Популярные рецепты </div>
-                                <div class="category__popular-items">
-                                    <div class="category__popular-item">
-                                        <div class="category__popular-item-img">
-                                            <img src="./img/article3.png" alt="">
-                                        </div>
-                                        <h4 class="category__popular-item-title">Декор из изомальта советы</h4>
-                                    </div>
-                                    <div class="category__popular-item">
-                                        <div class="category__popular-item-img">
-                                            <img src="./img/article2.png" alt="">
-                                        </div>
-                                        <h4 class="category__popular-item-title">Декор из изомальта советы</h4>
-                                    </div>
-                                    <div class="category__popular-item">
-                                        <div class="category__popular-item-img">
-                                            <img src="./img/article3.png" alt="">
-                                        </div>
-                                        <h4 class="category__popular-item-title">Советы по сборке ровного и стабильного
-                                            торта</h4>
-                                    </div>
-                                    <div class="category__popular-item">
-                                        <div class="category__popular-item-img">
-                                            <img src="./img/article1.png" alt="">
-                                        </div>
-                                        <h4 class="category__popular-item-title">Декор из изомальта советы</h4>
-                                    </div>
-                                    <div class="category__popular-item">
-                                        <div class="category__popular-item-img">
-                                            <img src="./img/article2.png" alt="">
-                                        </div>
-                                        <h4 class="category__popular-item-title">Декор из изомальта советы</h4>
+                                <div class="instructions__item-description">
+                                    <div class="instructions__item-number">1</div>
+                                    <div class="instructions__item-text">
+                                        Изомальт можно топить многократно. 
+                                        В толстостенном сотейнике топлю изомальт на среднем огне. После образования пузырей...Советы по сборке ровного и стабильного торта. В первую очередь, у Вас должен быть проверенный рецепт; стабильный крем ...Советы по сборке ровного и стабильного торта. 
+                                        В первую очередь, у Вас должен быть проверенный рецепт; стабильный крем.
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="recipes-page__recipes">
-                            <div class="recipes-page__recipes-content">
-                                <div class="recipe">
-                                    <button class="recipe__btn-save">
-                                        <img src="./img/heart-save.svg" alt="">
-                                    </button>
-                                    <div class="recipe__img">
-                                        <img src="./img/article1.png" alt="">
-                                    </div>
-                                    <div class="recipe__info">
-                                        <div class="recipe__info-left">
-                                            <div class="recipe__sticker">ДЕКОР</div>
-                                            <div class="recipe__views">
-                                                <img src="./img/eye-2.svg" alt="">
-                                                <span>1220</span>
-                                            </div>
-                                        </div>
-                                        <div class="recipe__date">16.08.22</div>
-                                    </div>
-                                    <h4 class="recipe__title">Декор из изомальта советы</h4>
-                                    <p class="recipe__text">Изомальт можно топить многократно.
-                                        В толстостенном сотейнике топлю изомальт на среднем огне.
-                                    </p>
-                                    <a href="" class="recipe__link-more">
-                                        <span>Подробнее</span>
-                                        <img src="./img/arrow-link.svg" alt="">
-                                    </a>
+                            </li>
+                            <li class="instructions__item">
+                                <div class="instructions__item-img">
+                                    <img src="./img/article2.png" alt="">
                                 </div>
-                                <div class="recipe">
-                                    <button class="recipe__btn-save">
-                                        <img src="./img/heart-save.svg" alt="">
-                                    </button>
-                                    <div class="recipe__img">
-                                        <img src="./img/article2.png" alt="">
+                                <div class="instructions__item-description">
+                                    <div class="instructions__item-number">2</div>
+                                    <div class="instructions__item-text">
+                                        Изомальт можно топить многократно. 
+                                        В толстостенном сотейнике топлю изомальт на среднем огне. После образования пузырей...Советы по сборке ровного и стабильного торта. В первую очередь, у Вас должен быть проверенный рецепт; стабильный крем ...Советы по сборке ровного и стабильного торта. 
+                                        В первую очередь, у Вас должен быть проверенный рецепт; стабильный крем.
                                     </div>
-                                    <div class="recipe__info">
-                                        <div class="recipe__info-left">
-                                            <div class="recipe__sticker">ТОРТЫ</div>
-                                            <div class="recipe__views">
-                                                <img src="./img/eye-2.svg" alt="">
-                                                <span>1220</span>
-                                            </div>
-                                        </div>
-                                        <div class="recipe__date">16.08.22</div>
-                                    </div>
-                                    <h4 class="recipe__title">Советы по сборке ровного и стабильного торта</h4>
-                                    <p class="recipe__text">Советы по сборке ровного и стабильного торта. В первую
-                                        очередь, у Вас должен быть...
-                                    </p>
-                                    <a href="" class="recipe__link-more">
-                                        <span>Подробнее</span>
-                                        <img src="./img/arrow-link.svg" alt="">
-                                    </a>
                                 </div>
-                                <div class="recipe">
-                                    <button class="recipe__btn-save">
-                                        <img src="./img/heart-save.svg" alt="">
-                                    </button>
-                                    <div class="recipe__img">
-                                        <img src="./img/article3.png" alt="">
-                                    </div>
-                                    <div class="recipe__info">
-                                        <div class="recipe__info-left">
-                                            <div class="recipe__sticker">ДЕКОР</div>
-                                            <div class="recipe__views">
-                                                <img src="./img/eye-2.svg" alt="">
-                                                <span>1220</span>
-                                            </div>
-                                        </div>
-                                        <div class="recipe__date">16.08.22</div>
-                                    </div>
-                                    <h4 class="recipe__title">Декор из изомальта советы</h4>
-                                    <p class="recipe__text">Изомальт можно топить многократно. В толстостенном сотейнике
-                                        топлю изомальт на среднем огне. После образования пузырей...
-                                    </p>
-                                    <a href="" class="recipe__link-more">
-                                        <span>Подробнее</span>
-                                        <img src="./img/arrow-link.svg" alt="">
-                                    </a>
+                            </li>
+                            <li class="instructions__item">
+                                <div class="instructions__item-img">
+                                    <img src="./img/article3.png" alt="">
                                 </div>
-                                <div class="recipe">
-                                    <button class="recipe__btn-save">
-                                        <img src="./img/heart-save.svg" alt="">
-                                    </button>
-                                    <div class="recipe__img">
-                                        <img src="./img/article1.png" alt="">
+                                <div class="instructions__item-description">
+                                    <div class="instructions__item-number">3</div>
+                                    <div class="instructions__item-text">
+                                        Изомальт можно топить многократно. 
+                                        В толстостенном сотейнике топлю изомальт на среднем огне. После образования пузырей...Советы по сборке ровного и стабильного торта. В первую очередь, у Вас должен быть проверенный рецепт; стабильный крем ...Советы по сборке ровного и стабильного торта. 
+                                        В первую очередь, у Вас должен быть проверенный рецепт; стабильный крем.
                                     </div>
-                                    <div class="recipe__info">
-                                        <div class="recipe__info-left">
-                                            <div class="recipe__sticker">ДЕКОР</div>
-                                            <div class="recipe__views">
-                                                <img src="./img/eye-2.svg" alt="">
-                                                <span>1220</span>
-                                            </div>
-                                        </div>
-                                        <div class="recipe__date">16.08.22</div>
-                                    </div>
-                                    <h4 class="recipe__title">Советы по сборке ровного и стабильного торта</h4>
-                                    <p class="recipe__text">Советы по сборке ровного и стабильного торта. В первую
-                                        очередь, у Вас должен быть ..
-                                    </p>
-                                    <a href="" class="recipe__link-more">
-                                        <span>Подробнее</span>
-                                        <img src="./img/arrow-link.svg" alt="">
-                                    </a>
                                 </div>
-                                <div class="recipe">
-                                    <button class="recipe__btn-save">
-                                        <img src="./img/heart-save.svg" alt="">
-                                    </button>
-                                    <div class="recipe__img">
-                                        <img src="./img/article3.png" alt="">
-                                    </div>
-                                    <div class="recipe__info">
-                                        <div class="recipe__info-left">
-                                            <div class="recipe__sticker">ДЕКОР</div>
-                                            <div class="recipe__views">
-                                                <img src="./img/eye-2.svg" alt="">
-                                                <span>1220</span>
-                                            </div>
-                                        </div>
-                                        <div class="recipe__date">16.08.22</div>
-                                    </div>
-                                    <h4 class="recipe__title">Декор из изомальта советы</h4>
-                                    <p class="recipe__text">Изомальт можно топить многократно.
-                                        В толстостенном сотейнике топлю изомальт на среднем огне.
-                                    </p>
-                                    <a href="" class="recipe__link-more">
-                                        <span>Подробнее</span>
-                                        <img src="./img/arrow-link.svg" alt="">
-                                    </a>
-                                </div>
-                                <div class="recipe">
-                                    <button class="recipe__btn-save">
-                                        <img src="./img/heart-save.svg" alt="">
-                                    </button>
-                                    <div class="recipe__img">
-                                        <img src="./img/article2.png" alt="">
-                                    </div>
-                                    <div class="recipe__info">
-                                        <div class="recipe__info-left">
-                                            <div class="recipe__sticker">ТОРТЫ</div>
-                                            <div class="recipe__views">
-                                                <img src="./img/eye-2.svg" alt="">
-                                                <span>1220</span>
-                                            </div>
-                                        </div>
-                                        <div class="recipe__date">16.08.22</div>
-                                    </div>
-                                    <h4 class="recipe__title">Советы по сборке ровного и стабильного торта</h4>
-                                    <p class="recipe__text">Советы по сборке ровного и стабильного торта. В первую
-                                        очередь, у Вас должен быть...
-                                    </p>
-                                    <a href="" class="recipe__link-more">
-                                        <span>Подробнее</span>
-                                        <img src="./img/arrow-link.svg" alt="">
-                                    </a>
-                                </div>
-                                <div class="recipe">
-                                    <button class="recipe__btn-save">
-                                        <img src="./img/heart-save.svg" alt="">
-                                    </button>
-                                    <div class="recipe__img">
-                                        <img src="./img/article3.png" alt="">
-                                    </div>
-                                    <div class="recipe__info">
-                                        <div class="recipe__info-left">
-                                            <div class="recipe__sticker">ДЕКОР</div>
-                                            <div class="recipe__views">
-                                                <img src="./img/eye-2.svg" alt="">
-                                                <span>1220</span>
-                                            </div>
-                                        </div>
-                                        <div class="recipe__date">16.08.22</div>
-                                    </div>
-                                    <h4 class="recipe__title">Декор из изомальта советы</h4>
-                                    <p class="recipe__text">Изомальт можно топить многократно.
-                                        В толстостенном сотейнике топлю изомальт на среднем огне.
-                                    </p>
-                                    <a href="" class="recipe__link-more">
-                                        <span>Подробнее</span>
-                                        <img src="./img/arrow-link.svg" alt="">
-                                    </a>
-                                </div>
-                                <div class="recipe">
-                                    <button class="recipe__btn-save">
-                                        <img src="./img/heart-save.svg" alt="">
-                                    </button>
-                                    <div class="recipe__img">
-                                        <img src="./img/article1.png" alt="">
-                                    </div>
-                                    <div class="recipe__info">
-                                        <div class="recipe__info-left">
-                                            <div class="recipe__sticker">ТОРТЫ</div>
-                                            <div class="recipe__views">
-                                                <img src="./img/eye-2.svg" alt="">
-                                                <span>1220</span>
-                                            </div>
-                                        </div>
-                                        <div class="recipe__date">16.08.22</div>
-                                    </div>
-                                    <h4 class="recipe__title">Советы по сборке ровного и стабильного торта</h4>
-                                    <p class="recipe__text">Советы по сборке ровного и стабильного торта. В первую
-                                        очередь, у Вас должен быть...
-                                    </p>
-                                    <a href="" class="recipe__link-more">
-                                        <span>Подробнее</span>
-                                        <img src="./img/arrow-link.svg" alt="">
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="recipes-page__pagination pagination">
-                                <button class="pagination__btn-prev">
-                                    <!-- <img src="./img/arrow-pagin-prev.svg" alt=""> -->
-                                    <svg width="9" height="12" viewBox="0 0 9 12" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M8.16016 1.41L3.58016 6L8.16016 10.59L6.75016 12L0.750156 6L6.75016 0L8.16016 1.41Z"
-                                            fill="" />
-                                    </svg>
-                                </button>
-                                <div class="pagination__items">
-                                    <a href="#" class="pagination__item active">
-                                        <span>1</span>
-                                    </a>
-                                    <a href="#" class="pagination__item">
-                                        <span>2</span>
-                                    </a>
-                                    <a href="#" class="pagination__item">
-                                        <span>...</span>
-                                    </a>
-                                    <a href="#" class="pagination__item">
-                                        <span>3</span>
-                                    </a>
-                                    <a href="#" class="pagination__item">
-                                        <span>4</span>
-                                    </a>
-                                </div>
-                                <button class="pagination__btn-next active">
-                                    <!-- <img src="./img/arrow-pagin-next.svg" alt=""> -->
-                                    <svg width="9" height="12" viewBox="0 0 9 12" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M0.839844 1.41L5.41984 6L0.839844 10.59L2.24984 12L8.24984 6L2.24984 0L0.839844 1.41Z"
-                                            fill="" />
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
