@@ -72,6 +72,10 @@
                 <div class="recipes-page__inner">
                     <div class="recipes-page__top-info">
                         <h1 class="recipes-page__title">Рецепты</h1>
+                        <button class="category__filter-open-btn mobile">
+                            <img src="./img/filter-btn.svg" alt="">
+                            Фильтр
+                        </button>
                         <div class="recipes-page__sort-block">
                             <div class="recipes-page__filter-items">
                                 <div class="recipes-page__filter-item">
@@ -92,7 +96,7 @@
                                 </div>
 
                             </div>
-                            <div class="recipes-page__select-wrap">
+                            <div class="recipes-page__select-wrap desctop">
                                 <div class="recipes-page__select-title">Сортировать по:</div>
                                 <div class="dropdown">
                                     <div class="select">
@@ -113,7 +117,11 @@
                         </div>
                     </div>
                     <div class="recipes-page__content">
-                        <div class="recipes-page__category category">
+                        <div class="recipes-page__category category category-open">
+                            <button class="category__filter-open-btn close mobile">
+                                <img src="./img/close.svg" alt="">
+                            </button>
+                            <h2 class="category__filter-title">Фильтр</h2>
                             <h3 class="category__title">
                                 Категория рецептов
                             </h3>
@@ -135,7 +143,17 @@
                                 </div>
                             </div>
 
-                            <div class="category__popular">
+                            <button class="category__btn btn btn--color mobile">
+                                Поиск
+                            </button>
+                            <button class="category__btn-reset mobile">
+                                <span>
+                                    Сбросить все фильтры
+                                </span>
+                                <img src="./img/arrow-reset.svg" alt="">
+                            </button>
+
+                            <div class="category__popular desctop">
                                 <div class="category__popular-title">Популярные рецепты </div>
                                 <div class="category__popular-items">
                                     <div class="category__popular-item">

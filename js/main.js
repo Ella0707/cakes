@@ -171,6 +171,14 @@ $('.confectioners__filter-open-btn').on('click', function (e) {
 });
 
 
+// класс active для фильтра на странице рецептов (открыть фильтр в мобильной версии)
+$('.category__filter-open-btn').on('click', function (e) {
+  e.preventDefault();
+  document.body.classList.toggle('lock');
+  $('.category-open').toggleClass("active");
+  $('.category__filter-open-btn').toggleClass("active");
+});
+
 
 // селект в фильтре
 $('.dropdown').click(function () {
