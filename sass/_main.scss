@@ -284,7 +284,7 @@
 }
 
 
-recipies {
+.recipes-block {
     margin-bottom: 11rem;
 
     &__inner {}
@@ -370,7 +370,7 @@ recipies {
                 opacity: 1;
             }
 
-            recipies__btn {
+            .recipes-block__btn {
                 opacity: 1;
             }
         }
