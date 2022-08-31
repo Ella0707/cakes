@@ -566,6 +566,21 @@
             }
         }
 
+        &__portfolio-slide.add-photo {
+            .add-photo-inner {
+                img {
+                    width: 7rem;
+                    height: 7rem;
+                    margin-bottom: 2rem;
+                }
+
+                span {
+                    font-size: 4rem;
+                }
+            } 
+
+        } 
+
         &__portfolio-slider-wrapper {
             flex-direction: column;
         }

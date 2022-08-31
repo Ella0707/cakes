@@ -37,7 +37,18 @@ $('.create-ad-close').click(function () {
 });
 
 
+// модальное окно добавления фотографии работы кондитера на странице "Мой профиль"
 
+$('.add-photo').click(function (e) {
+  e.preventDefault();
+  $('.add-photo-popup').fadeIn(800);
+  $('body').addClass('lock');
+});
+
+$('.add-photo-close').click(function () {
+  $('.add-photo-popup').fadeOut(800);
+  $('body').removeClass('lock');
+});
 
 
 // мобильное меню
@@ -300,8 +311,6 @@ showBtn3.onclick = (() => {
 });
 
 
-
-
 // проверка совпадают ли введенные пароли
 
 function check() {
@@ -312,7 +321,6 @@ function check() {
       document.getElementById('message').innerHTML = "Введенные пароли не совпадают";
   }
 }
-
 
 
 // календарь с выбором дат при подаче объявлений
@@ -330,7 +338,7 @@ function AirDatepickerOpen() {
 AirDatepickerOpen();
 
 
-// превью у фото при добавлении заказа
+// превью у фотографий
 const imgOrder = document.getElementById("addFile");
 const imgPreview = document.getElementById("filePreview");
 
@@ -356,14 +364,8 @@ function uploadFile(file) {
     return;
   }
 
-  // удаление блока с предосмотром при нажатии на картинку
-  imgPreview.addEventListener("click", function deleteFile() {
-    imgPreview.classList.remove('active');
-    imgPreview.innerHTML = " ";
-  });
-
   // загрузка
-  var reader = new FileReader();
+  var reader = new FileReader(this);
   reader.onload = function(e) {
     imgPreview.innerHTML = `<img src="${e.target.result}" alt="Фото">`;
     imgPreview.classList.add('active');
@@ -373,7 +375,15 @@ function uploadFile(file) {
     imgPreview.classList.remove('active');
   };
   reader.readAsDataURL(file);
+  
+  // удаление блока с предосмотром при нажатии на картинку
+  imgPreview.addEventListener("click", function deleteFile(e) {
+    imgPreview.classList.remove('active');
+    imgPreview.innerHTML = `<img src="" alt=" ">`;
+  });
 };
+
+
 
 
 // Ползунок выбора диапазона стоимости (Старница "Доска объявлений")

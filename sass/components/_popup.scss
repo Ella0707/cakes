@@ -46,14 +46,14 @@
         }
     }
 
-    
+
     &__title {
         font-size: 2.7rem;
         font-weight: 500;
         color: #000000;
         margin-bottom: 6.4rem;
     }
-    
+
     &__form-wrap {
         display: grid;
         grid-template-columns: 21.6rem 21.6rem;
@@ -74,7 +74,7 @@
             margin-top: 4rem;
         }
     }
-    
+
     &__btn-google {
         grid-column: 1/3;
 
@@ -98,7 +98,7 @@
             margin-right: 1rem;
         }
     }
-    
+
     &__form-item {
 
 
@@ -122,7 +122,7 @@
             height: 1.5rem;
             background: url(./../img/eye.svg) 0 0 no-repeat;
             background-size: contain;
-    
+
             &.view {
                 background: url(./../img/eye-2.svg) 0 0 no-repeat;
                 background-size: contain;
@@ -131,7 +131,7 @@
             }
         }
     }
-    
+
     &__form-item-title {
         font-size: 1.8rem;
         font-weight: 500;
@@ -142,7 +142,7 @@
             color: #FF0000;
         }
     }
-    
+
     &__form-input {
         background: #FFFFFF;
         border: 1px solid #ADADAD;
@@ -189,7 +189,7 @@
         border-radius: 0.9rem;
         padding: 2rem 1.3rem;
     }
-    
+
     &__bottom {
         grid-column: 1/3;
     }
@@ -225,7 +225,7 @@
         }
 
     }
-    
+
     &__btn {
         background: linear-gradient(92.85deg, #FF8A00 -43.75%, #FF007A 106.98%);
         box-shadow: 0px 0.4rem 1.9rem rgba(119, 147, 65, 0.3);
@@ -247,15 +247,15 @@
 
     &__accaunt {
         text-align: center;
-    
+
     }
-    
+
     &__accaunt-title {
         font-size: 1.4rem;
         font-weight: 500;
         color: #8D8D8D;
     }
-    
+
     &__accaunt-link {
         font-size: 1.4rem;
         font-weight: 500;
@@ -274,7 +274,7 @@
     .select.select-date {
         position: relative;
 
-      
+
 
         img {
             width: 2rem;
@@ -295,13 +295,13 @@
             align-items: center;
             justify-content: center;
             position: relative;
-    
+
             align-self: center;
-    
+
             font-size: 1.9rem;
             font-weight: 500;
             color: #0089ED;
-    
+
             input {
                 position: absolute;
                 inset: 0;
@@ -310,7 +310,7 @@
                 font-size: 0;
                 opacity: 0;
             }
-    
+
             img {
                 width: 1.7rem;
                 height: 1.7rem;
@@ -319,48 +319,48 @@
                 margin-left: 1rem;
             }
         }
-        
 
-       &__file-preview {
-        width: 0;
-        height: 0;
-        visibility: hidden;
-        opacity: 0;
-        transition: 0.4s;
-        position: relative;
-        cursor: pointer;
 
-        &.active {
-            width: 20rem;
-            height: 20rem;
-            visibility: visible;
-            opacity: 1;
+        &__file-preview {
+            width: 0;
+            height: 0;
+            visibility: hidden;
+            opacity: 0;
+            transition: 0.4s;
+            position: relative;
+            cursor: pointer;
 
-            grid-column-start: 1;
-            grid-column-end: 3;
-            justify-self: center;
+            &.active {
+                width: 20rem;
+                height: 20rem;
+                visibility: visible;
+                opacity: 1;
 
-            &::before {
-                content: "";
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                inset: 0;
-                background-image: url(./../../img/delete.svg);
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: 3rem;
-                background-color: rgba(0, 0, 0, 0.2);
-                opacity: 0;
-                transition: 0.4s;
-            }
+                grid-column-start: 1;
+                grid-column-end: 3;
+                justify-self: center;
 
-            &:hover {
                 &::before {
-                    opacity: 1;
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    inset: 0;
+                    background-image: url(./../../img/delete.svg);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: 3rem;
+                    background-color: rgba(0, 0, 0, 0.2);
+                    opacity: 0;
+                    transition: 0.4s;
+                }
+
+                &:hover {
+                    &::before {
+                        opacity: 1;
+                    }
                 }
             }
-        }
 
             img {
                 width: 100%;
@@ -379,7 +379,7 @@
         margin-bottom: 2rem;
     }
 
-    .popup{
+    .popup {
 
         &__content {
             width: 73rem;
@@ -391,7 +391,7 @@
             text-align: center;
             margin-bottom: 4.5rem;
         }
-    
+
         &__form-input.select-date {
             background: url(./../../img/arrow-down.svg);
             background-repeat: no-repeat;
@@ -428,107 +428,230 @@
 }
 
 
+.popup.add-photo-popup {
+    .add-file {
+        margin-bottom: 2.9rem;
+
+        &__btn {
+            display: flex;
+            align-items: center;
+            position: relative;
+
+            font-size: 1.9rem;
+            font-weight: 500;
+            color: #0089ED;
+
+            input {
+                position: absolute;
+                inset: 0;
+                width: 100%;
+                height: 100%;
+                font-size: 0;
+                opacity: 0;
+            }
+
+            img {
+                width: 1.7rem;
+                height: 1.7rem;
+                object-fit: contain;
+                flex-shrink: 0;
+                margin-left: 1rem;
+            }
+        }
+
+
+        &__file-preview {
+            width: 0;
+            height: 0;
+            visibility: hidden;
+            opacity: 0;
+            transition: 0.4s;
+            position: relative;
+            cursor: pointer;
+
+
+            &.active {
+                width: 20rem;
+                height: 20rem;
+                visibility: visible;
+                opacity: 1;
+                justify-self: center;
+                margin: 0 auto 2.9rem auto;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    inset: 0;
+                    background-image: url(./../../img/delete.svg);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: 3rem;
+                    background-color: rgba(0, 0, 0, 0.2);
+                    opacity: 0;
+                    transition: 0.4s;
+                }
+
+                &:hover {
+                    &::before {
+                        opacity: 1;
+                    }
+                }
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+
+    .popup {
+        &__content {
+            border-radius: 0.5rem;
+            width: 50.4rem;
+            padding: 6.3rem 9.9rem 4.6rem 8.8rem;
+        }
+
+        &__close {
+            width: 2rem;
+            height: 2rem;
+            right: 3.6rem;
+            top: 3.6rem;
+        }
+
+        &__form-wrap {
+            display: block;
+        }
+
+
+        &__form-item {
+            width: 100%;
+        }
+
+        &__form-input {
+            margin-bottom: 2.9rem;
+        }
+
+        &__bottom {
+            grid-column: auto;
+            margin-top: 0;
+        }
+
+        &__btn {
+            margin-bottom: 0;
+        }
+
+    }
+
+
+}
+
+
 
 
 
 @media (max-width: 48em) {
 
     .popup {
-    
+
         &__body {
             padding: 6rem 0rem;
         }
-    
+
         &__content {
             width: 100%;
             height: auto;
             padding: 11rem 4rem 11rem 4rem;
             border-radius: 8rem;
         }
-    
+
         &__close {
             width: 4rem;
             height: 4rem;
-    
+
             right: 5rem;
             top: 5rem;
         }
-    
-        
+
+
         &__title {
             font-size: 4.2rem;
             margin-bottom: 5rem;
         }
-        
+
         &__form-wrap {
             display: grid;
             grid-template-columns: 1fr;
             row-gap: 4rem;
             column-gap: 0rem;
         }
-        
+
         &__btn-google {
             grid-column: 1/3;
-    
+
             border-radius: 1.8rem;
             height: 10rem;
-    
+
             font-size: 2.8rem;
-    
+
             img {
                 width: 4.2rem;
                 height: 4.2rem;
                 margin-right: 1rem;
             }
         }
-        
+
         &__form-item {
             grid-column: 1/3;
-    
+
             .password-control,
             .password-control-two {
                 right: 3rem;
                 top: 10.5rem;
                 width: 3rem;
                 height: 3rem;
-        
+
                 &.view {
                     width: 3.2rem;
                     height: 3.2rem;
                 }
             }
         }
-        
+
         &__form-item-title {
             font-size: 3.4rem;
         }
-        
+
         &__form-input {
             border-radius: 1.8rem;
             padding: 4rem 2.6rem;
-    
+
             font-size: 3.2rem;
         }
-    
+
         &__form-message {
             font-size: 2.4rem;
         }
-    
+
         .dropdown .select {
             border-radius: 1.8rem;
             padding: 4rem 2.6rem;
         }
-    
+
         .dropdown .dropdown-menu {
             top: 12rem;
             border-radius: 1.8rem;
             padding: 4rem 2.6rem;
         }
-        
+
         &__bottom {
             padding-top: 5rem;
         }
-    
+
         &__form-save {
             font-size: 2.8rem;
 
@@ -542,19 +665,19 @@
         &__form-forgot-password {
             font-size: 2.4rem;
         }
-        
+
         &__btn {
             border-radius: 10rem;
             font-size: 3.6rem;
             margin-bottom: 5rem;
             height: 10rem;
         }
-        
+
         &__accaunt-title {
             font-size: 2.8rem;
             margin-bottom: 1.5rem;
         }
-        
+
         &__accaunt-link {
             font-size: 3rem;
         }
@@ -583,7 +706,7 @@
             margin-top: 2.9rem;
             margin-bottom: 2rem;
         }
-    
+
         .add-file {
             margin-top: 2rem;
             margin-bottom: 4rem;
@@ -610,8 +733,8 @@
                 }
             }
         }
-    
-        .popup{
+
+        .popup {
 
             &__body {
                 padding: 6rem 4.8rem;
@@ -639,19 +762,19 @@
                 background-size: 2.7rem;
                 padding-right: 2rem;
             }
-    
+
             &__textarea {
                 border-radius: 1.2rem;
                 height: 32.4rem;
                 padding: 2rem 3rem;
-    
+
                 font-size: 2.8rem;
             }
 
             &__bottom {
                 margin-top: 0;
             }
-    
+
             &__btn {
                 width: 100%;
                 height: 10rem;
@@ -659,8 +782,61 @@
                 margin: 0 auto;
             }
 
-          
+
         }
 
     }
+
+    .popup.add-photo-popup {
+
+        .add-file {
+            margin-top: 2rem;
+            margin-bottom: 4rem;
+
+            &__btn {
+                font-size: 3.5rem;
+
+                img {
+                    width: 2.8rem;
+                    height: 2.8rem;
+                    margin-left: 1.5rem;
+                }
+            }
+
+            &__file-preview {
+
+                &.active {
+                    width: 100%;
+                    height: 40rem;
+
+                    &::before {
+                        background-size: 5rem;
+                    }
+                }
+            }
+        }
+    
+        .popup {
+
+            &__body {
+                padding: 6rem 0rem;
+            }
+
+            &__content {
+                border-radius: 0.5rem;
+                width: 100%;
+                padding: 8rem 4rem;
+            }
+    
+            &__close {
+                width: 4rem;
+                height: 4rem;
+            }
+    
+            &__form-input {
+                margin-bottom: 5rem;
+            }
+        }
+    }
+    
 }

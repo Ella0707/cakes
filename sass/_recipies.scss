@@ -362,15 +362,22 @@
         &__top-info {
             margin-bottom: 0rem;
         }
+
+        &__title-wrap {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 6rem;
+        }
     
         &__title {
             font-size: 4rem;
-            margin-bottom: 2.8rem;
+            margin-bottom: 0rem;
         }
     
         &__filter-items {
             flex-wrap: wrap;
-            margin-bottom: 4.8rem;
+            margin-bottom: 4.4rem;
         }
     
         &__filter-item {
@@ -392,6 +399,33 @@
                 height: 1.5rem;
             }
         }
+
+        &__link-popular.mobile {
+            display: flex;
+            align-items: center;
+            margin-bottom: 4rem;
+            
+            span {
+                font-size: 3.2rem;
+                font-weight: 500;
+                background: linear-gradient(92.85deg, #FF8A00 -43.75%, #FF007A 106.98%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                margin-right: 1.2rem;
+            }
+
+            img {
+                width: 2.5rem;
+                height: 2.5rem;
+                object-fit: contain;
+            }
+        }
+
+        &__sort-block {
+            flex-direction: column;
+            align-items: start;
+        }
     
         &__content {
             display: flex;
@@ -402,6 +436,30 @@
             box-shadow: 0px 0.4rem 2.8rem rgba(36, 64, 117, 0.06);
             border-radius: 0.9rem;
             padding: 2rem 2.8rem 3.8rem 2rem;
+        }
+
+        &__select-wrap {
+            margin-bottom: 5rem;
+            .dropdown .select {
+                font-size: 2.8rem;
+                padding: 1rem;
+            }
+
+            .dropdown img {
+                right: -2rem;
+                top: 58%;
+            }
+
+            .dropdown .dropdown-menu {
+                left: -2rem;
+                top: 5rem;
+                width: max-content;
+            }
+        }
+
+        &__select-title {
+            font-size: 2.8rem;
+            margin-right: 0.8rem;
         }
     
     
@@ -442,7 +500,7 @@
             font-size: 3.2rem;
             font-weight: 500;
             color: #5E5E5E;
-            margin-bottom: 4rem;
+            margin-bottom: 0rem;
 
             img {
                 width: 3.2rem;

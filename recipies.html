@@ -71,11 +71,13 @@
             <div class="container">
                 <div class="recipies-page__inner">
                     <div class="recipies-page__top-info">
-                        <h1 class="recipies-page__title">Рецепты</h1>
-                        <button class="category__filter-open-btn mobile">
-                            <img src="./img/filter-btn.svg" alt="">
-                            Фильтр
-                        </button>
+                        <div class="recipies-page__title-wrap">
+                            <h1 class="recipies-page__title">Рецепты</h1>
+                            <button class="category__filter-open-btn mobile">
+                                <img src="./img/filter-btn.svg" alt="">
+                                Фильтр
+                            </button>
+                        </div>
                         <div class="recipies-page__sort-block">
                             <div class="recipies-page__filter-items">
                                 <div class="recipies-page__filter-item">
@@ -94,9 +96,12 @@
                                     <span>Круассаны</span>
                                     <img src="./img/close-btn-selected.svg" alt="">
                                 </div>
-
                             </div>
-                            <div class="recipies-page__select-wrap desctop">
+                            <a class="recipies-page__link-popular mobile" href="/">
+                                <span>Популярные рецепты </span>
+                                <img src="./img/arrow-link-color.svg" alt="">
+                            </a>
+                            <div class="recipies-page__select-wrap">
                                 <div class="recipies-page__select-title">Сортировать по:</div>
                                 <div class="dropdown">
                                     <div class="select">
