@@ -5546,7 +5546,7 @@ input[type=number] {
   padding: 2.9rem 3rem 5rem 3.3rem;
 }
 .board__content .filter-block__title {
-  font-weight: 600;
+  font-weight: 500;
 }
 .board__content .filter-block__item-title {
   font-weight: 600;
@@ -5583,13 +5583,10 @@ input[type=number] {
 .board__items .confectioners__name-top {
   margin-bottom: 1.5rem;
 }
-.board__items .confectioners__btns {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
 .board__items .btn.btn--more {
-  width: 20rem;
+  width: 21rem;
+  height: 4rem;
+  margin-right: 2.5rem;
 }
 .board__items .confectioners__item:not(:last-child) {
   margin-bottom: 2.2rem;

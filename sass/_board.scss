@@ -18,7 +18,7 @@
         }
 
         .filter-block__title {
-            font-weight: 600;
+            font-weight: 500;
         }
 
         .filter-block__item-title {
@@ -63,13 +63,14 @@
             margin-bottom: 1.5rem;
         }
 
-        .confectioners__btns {
-            justify-content: space-between;
-        }
+        // .confectioners__btns {
+        //     justify-content: space-between;
+        // }
 
         .btn.btn--more {
-            width: 20rem;
-            // margin-right: 5rem;
+            width: 21rem;
+            height: 4rem;
+            margin-right: 2.5rem;
         }
 
         .confectioners__item:not(:last-child) {
